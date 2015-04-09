@@ -45,6 +45,9 @@ namespace BinaryFog.NameParser
 
         }
 
+        /// <summary>
+        /// Parses this instance.
+        /// </summary>
         public void Parse()
         {
             DisplayName = fullName;
