@@ -1,6 +1,6 @@
 NameParser
 ====
-Person name parser for english names. 
+Human name parsing. Parses names using English conventions for persons names. 
 
 ```csharp
 string fullName = "Jack Johnson"; 
