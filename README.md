@@ -1,11 +1,10 @@
-# NameParser
-English name parser
+NameParser
+====
+Person name parser for english names. 
 
-#Usage:
-
-<code>
+```csharp
 string fullName = "Jack Johnson"; 
 FullNameParser target = new FullNameParser(fullName); 
 target.Parse();
 string firstName = target.FirstName;
-</code>
+```
