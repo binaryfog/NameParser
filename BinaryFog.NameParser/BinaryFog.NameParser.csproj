@@ -42,6 +42,7 @@
     <Compile Include="Patterns\CompanyPattern.cs" />
     <Compile Include="Patterns\FirstLastPattern.cs" />
     <Compile Include="Patterns\FirstNameOnlyPattern.cs" />
+    <Compile Include="Patterns\TitleFirstNickLastPattern.cs" />
     <Compile Include="Patterns\FirstNickLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstInitialLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstLastPattern.cs" />

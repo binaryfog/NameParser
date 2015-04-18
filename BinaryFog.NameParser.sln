@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9CDC2DE-BBC1-4B3E-B83A-71FF6F6CE0AE}"
 	ProjectSection(SolutionItems) = preProject
 		BinaryFog.NameParser.1.0.0.1.nupkg = BinaryFog.NameParser.1.0.0.1.nupkg
+		BinaryFog.NameParser.1.0.0.2.nuspec = BinaryFog.NameParser.1.0.0.2.nuspec
 		BinaryFog.NameParser.1.0.0.nupkg = BinaryFog.NameParser.1.0.0.nupkg
 	EndProjectSection
 EndProject

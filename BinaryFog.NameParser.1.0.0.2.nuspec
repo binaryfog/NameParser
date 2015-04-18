@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>BinaryFog.NameParser</id>
+        <version>1.0.0.2</version>
+        <title>BinaryFog.NameParser</title>
+        <authors>BinaryFog</authors>
+        <owners>BinaryFog</owners>
+        <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+        <projectUrl>https://github.com/binaryfog/NameParser</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Human name parsing. Parses names using English conventions for persons names.</description>
+        <summary>Parses full names into its components, like first and last name.</summary>
+        <copyright>BinaryFog.com 2015</copyright>
+        <language>en-US</language>
+        <tags>nameparsing name parser binaryfog</tags>
+    </metadata>
+    <files>
+        <file src="BinaryFog.NameParser\bin\Release\BinaryFog.NameParser.dll" target="lib\BinaryFog.NameParser.dll" />
+    </files>
+</package>

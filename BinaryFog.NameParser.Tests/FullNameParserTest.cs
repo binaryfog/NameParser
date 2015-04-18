@@ -198,6 +198,20 @@ namespace BinaryFog.NameParser.Tests
         }
 
         [TestMethod()]
+        public void Parse_MrDOTPasqualeSCOPEPatSCOPEJohnson()
+        {
+            string fullName = "Mr. Pasquale (Pat) Johnson";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Mr.", target.Title);
+            Assert.AreEqual("Pasquale", target.FirstName);
+            Assert.AreEqual("Johnson", target.LastName);
+            Assert.AreEqual("Pasquale Johnson", target.DisplayName);
+            Assert.AreEqual("Pat", target.NickName);
+        }
+
+        [TestMethod()]
         public void Parse_CompanyNamesAsPersonNames()
         {
             string[] companyNamesAsPersonNames = new string[] { "AL HUGHES (MARINE)", "HI TECH HYDRAULICS (1985) LT", "ALFALFA BEEKEEPERS LTD",
