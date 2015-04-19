@@ -48,9 +48,21 @@
     <Compile Include="Patterns\TitleFirstLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstLastSuffixPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USCensusLastNamesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USCensusLastNamesResource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DutchLastNamePrefixes.resx" />
+    <EmbeddedResource Include="USCensusLastNamesResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USCensusLastNamesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USCensusLastNames.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

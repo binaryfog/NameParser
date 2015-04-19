@@ -15,10 +15,23 @@ namespace BinaryFog.NameParser.Patterns
             {
                 ParsedName pn = new ParsedName()
                 {
-                    FirstName = match.Groups["first"].Value,
                     DisplayName = rawName,
                     Score = 100
                 };
+
+                string[] lastNamesInUppercase = USCensusLastNamesResource.USCensusLastNames.Split('\r', '\n');
+
+                string matchedName = match.Groups["first"].Value;
+
+                int matchOccurences  = ( from c in lastNamesInUppercase
+                               where c == matchedName.ToUpper()
+                               select c).Count();
+
+                if ( matchOccurences > 0)
+                    pn.LastName = matchedName;
+                else
+                    pn.FirstName = matchedName;
+                
                 return pn;
 
             }

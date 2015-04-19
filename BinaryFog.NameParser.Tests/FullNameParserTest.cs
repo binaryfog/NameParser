@@ -247,5 +247,29 @@ namespace BinaryFog.NameParser.Tests
             
         }
 
+        [TestMethod()]
+        public void Parse_Catalin()
+        {
+            string fullName = "Catalin";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Catalin", target.FirstName);
+            
+
+        }
+
+        [TestMethod()]
+        public void Parse_Arroyo()
+        {
+            string fullName = "Arroyo";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Arroyo", target.LastName);
+
+
+        }
+
     }
 }
