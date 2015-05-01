@@ -35,34 +35,37 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DutchLastNamePrefixes.Designer.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="FullNameParser.cs" />
     <Compile Include="IPattern.cs" />
     <Compile Include="ParsedName.cs" />
     <Compile Include="Patterns\CompanyPattern.cs" />
     <Compile Include="Patterns\FirstLastPattern.cs" />
     <Compile Include="Patterns\FirstNameOnlyPattern.cs" />
+    <Compile Include="Patterns\FirstPrefixedLastPattern.cs" />
+    <Compile Include="Patterns\TitleFirstPrefixedLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstNickLastPattern.cs" />
     <Compile Include="Patterns\FirstNickLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstInitialLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstLastSuffixPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="USCensusLastNamesResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>USCensusLastNamesResource.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DutchLastNamePrefixes.resx" />
-    <EmbeddedResource Include="USCensusLastNamesResource.resx">
+    <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>USCensusLastNamesResource.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\USCensusLastNames.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DutchLastNamesPrefixes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

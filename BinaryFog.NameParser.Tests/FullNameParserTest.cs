@@ -271,5 +271,32 @@ namespace BinaryFog.NameParser.Tests
 
         }
 
+        [TestMethod()]
+        public void Parse_MrGiocomoVanExan()
+        {
+            string fullName = "Mr Giocomo Van Exan";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Mr", target.Title);
+            Assert.AreEqual("Giocomo", target.FirstName);
+            Assert.AreEqual("Van Exan", target.LastName);
+
+
+        }
+
+        [TestMethod()]
+        public void Parse_GiovanniVanDerHutte()
+        {
+            string fullName = "Giovanni Van Der Hutte";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Giovanni", target.FirstName);
+            Assert.AreEqual("Van Der Hutte", target.LastName);
+
+
+        }
+
     }
 }

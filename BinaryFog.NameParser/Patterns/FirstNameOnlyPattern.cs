@@ -19,7 +19,7 @@ namespace BinaryFog.NameParser.Patterns
                     Score = 100
                 };
 
-                string[] lastNamesInUppercase = USCensusLastNamesResource.USCensusLastNames.Split('\r', '\n');
+                string[] lastNamesInUppercase = Resources.USCensusLastNames.Split('\r', '\n');
 
                 string matchedName = match.Groups["first"].Value;
 
