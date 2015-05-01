@@ -14,6 +14,8 @@ The cases handled are:
     /// 3. Jack => First Name = "Jack"
     /// 4. Jack Johnson Enterprises => ignored
     /// 5. Pasquale (Pat) Vacoturo  =>  First Name = "Pasquale" Last Name = "Vacoturo" Nickname = Pat 
+    /// 6. Mr Giovanni Van Der Hutte  => Title = "Mr", First Name = "Giovanni" Last Name = "Van Der Hutte"
+    /// 7. Giovanni Van Der Hutte  => First Name = "Giovanni" Last Name = "Van Der Hutte"
     /// </example>
     /// <remarks>
     /// 1. The prefix "ATTN:" is removed if exists and the parsing proceeds on the new string
