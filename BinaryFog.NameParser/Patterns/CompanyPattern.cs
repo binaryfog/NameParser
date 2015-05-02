@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BinaryFog.NameParser.Patterns
@@ -11,12 +12,8 @@ namespace BinaryFog.NameParser.Patterns
 
         public ParsedName Parse(string rawName)
         {
-            if (rawName.ToLower().EndsWith(" ltd") ||
-                rawName.ToLower().EndsWith(" ltd.") ||
-                rawName.ToLower().EndsWith(" inc") ||
-                rawName.ToLower().EndsWith(" inc.") ||
-                rawName.ToLower().EndsWith(" limited") ||
-                rawName.ToLower().EndsWith(" limited."))
+            Match match = Regex.Match(rawName, @" (?<lastWord>(ltd|ltd\W?|inc|inc\W?|limited|limited\W?))$", RegexOptions.IgnoreCase);
+            if (match.Success)
             {
                 ParsedName pn = new ParsedName() 
                 {
