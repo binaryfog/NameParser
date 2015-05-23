@@ -3,6 +3,8 @@ NameParser
 Human name parsing. Parses names using English conventions for persons names. 
 Intended to be extendable, the library can be extended just by implement IPattern interface and assign a score to the returned result.
 
+If you have a person name , that is not parsed correctly, let me know. harapu@gmail.com  . I'll see what I can do.
+
 The cases handled are:
 ```csharp
     /// <summary>
