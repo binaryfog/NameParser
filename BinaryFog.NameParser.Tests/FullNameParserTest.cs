@@ -313,5 +313,29 @@ namespace BinaryFog.NameParser.Tests
 
         }
 
+        [TestMethod()]
+        public void Parse_MsSandyAccountsReceivable()
+        {
+            string fullName = "Ms Sandy Accounts Receivable";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Ms", target.Title);
+            Assert.AreEqual("Sandy", target.FirstName);
+            Assert.AreEqual("Sandy Accounts Receivable", target.DisplayName);
+
+
+        }
+
+        [TestMethod()]
+        public void Parse_SandyAccountsReceivable()
+        {
+            string fullName = "Sandy Accounts Receivable";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Sandy", target.FirstName);
+        }
+
     }
 }

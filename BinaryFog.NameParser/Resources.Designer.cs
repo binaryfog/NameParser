@@ -73,6 +73,15 @@ namespace BinaryFog.NameParser {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to accounts receivable.
+        /// </summary>
+        internal static string JobTitles {
+            get {
+                return ResourceManager.GetString("JobTitles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SMITH
         ///JOHNSON
         ///WILLIAMS
