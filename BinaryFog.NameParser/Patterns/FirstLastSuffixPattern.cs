@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace BinaryFog.NameParser.Patterns
 {
-    internal class TitleFirstLastSuffixPattern : IPattern
+    internal class FirstLastSuffixPattern : IPattern
     {
         public ParsedName Parse(string rawName)
         {
-            //Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
             //Suffix should be I or II or III or Jr. or Jr or Sr. or Sr or ESQ or ESQ. or ESQ"
-            Match match = Regex.Match(rawName, @"^(?<title>(mr|mr\W?|ms|ms\W?|mrs|mrs\W?))\s?(?<first>\w+) (?<last>\w+),? (?<suffix>(i|ii|iii|jr|jr\W?|sr|sr\W?}|esq|esq\W?|esq""\W?))$", RegexOptions.IgnoreCase);
+            Match match = Regex.Match(rawName, @"^(?<first>\w+) (?<last>\w+) (?<suffix>(i|ii|iii|jr|jr\W?|sr|sr\W?}|esq|esq\W?|esq""\W?))$", RegexOptions.IgnoreCase);
             if (match.Success)
             {
                 ParsedName pn = new ParsedName()
                 {
-                    Title = match.Groups["title"].Value,
                     FirstName = match.Groups["first"].Value,
                     LastName = match.Groups["last"].Value,
                     DisplayName = String.Format("{0} {1}", match.Groups["first"].Value, match.Groups["last"].Value),

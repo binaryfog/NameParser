@@ -11,11 +11,8 @@ namespace BinaryFog.NameParser.Patterns
     {
         public ParsedName Parse(string rawName)
         {
-            
-            string[] parts = ( from c in Resources.DutchLastNamesPrefixes.Split('\r','\n')
-                                   where String.IsNullOrEmpty(c) == false
-                                   select c).ToArray<string>();
-            
+
+            string[] parts = Utils.GetAllPrefixes();            
 
             foreach (string part in parts)
             {
