@@ -35,6 +35,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\FirstMiddleHiphenatedLastPattern.cs" />
     <Compile Include="Patterns\FirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\FirstNickInitialLastPattern.cs" />
     <Compile Include="Patterns\LastNameCommaFirstNameNickNameInitialPattern.cs" />

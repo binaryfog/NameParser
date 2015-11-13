@@ -9,7 +9,7 @@ namespace BinaryFog.NameParser.Tests
     /// Tests for 
     /// TODO: SR. John Henry William dela Vega, Jr Esq.
     /// TODO: MANUEL ESQUIPULAS SOHOM
-    /// TODO: Maria Delores Esquivel-Moreno
+    /// Maria Delores Esquivel-Moreno
     /// PHILIP DEHART ESQ
     /// DEHART, PHILIP
     /// john 'jack' kennedy
@@ -189,6 +189,21 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("John", target.FirstName);
             Assert.AreEqual("Kennedy", target.LastName);
             Assert.AreEqual("John Kennedy", target.DisplayName);
+        }
+
+        //Maria Delores Esquivel-Moreno
+        [TestMethod()]
+        public void Parse_MariaSpaceDeloresSpaceEsquivelDashMoreno()
+        {
+            string fullName = "Maria Delores Esquivel-Moreno";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Maria", target.FirstName);
+            Assert.AreEqual("Delores", target.MiddleName);
+            Assert.AreEqual("Esquivel-Moreno", target.LastName);
+            Assert.AreEqual("Maria Esquivel-Moreno", target.DisplayName);
         }
     }
 }

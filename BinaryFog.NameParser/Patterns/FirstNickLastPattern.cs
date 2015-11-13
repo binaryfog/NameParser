@@ -11,7 +11,7 @@ namespace BinaryFog.NameParser.Patterns
 
         public ParsedName Parse(string rawName)
         {
-            Match match = Regex.Match(rawName, @"^(?<first>\w+) [\(']{1}(?<nick>\w+)[\)']{1} (?<last>\w+)$", RegexOptions.IgnoreCase);
+            Match match = Regex.Match(rawName, @"^(?<first>\w+)\s*[\(']{1}(?<nick>\w+)[\)']{1}\s*(?<last>\w+)$", RegexOptions.IgnoreCase);
             if (match.Success)
             {
                 ParsedName pn = new ParsedName()
