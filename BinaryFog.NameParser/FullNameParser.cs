@@ -28,6 +28,7 @@ namespace BinaryFog.NameParser
         string fullName;
 
         public string FirstName { get; private set; }
+        public string MiddleName { get; private set; }
         public string LastName { get; private set; }
         public string Title { get; private set; }
         public string NickName { get; private set; }
@@ -64,12 +65,15 @@ namespace BinaryFog.NameParser
                 results.Add(patternType, result);
             }
 
-            var v = ( from c in results.Values.AsEnumerable<ParsedName>()
-                          where c != null
-                          orderby c.Score
-                          select c).FirstOrDefault<ParsedName>();
+            List<ParsedName> possibleAnswers = (from c in results.Values.AsEnumerable<ParsedName>()
+                                                 where c != null
+                                                 orderby c.Score descending
+                                                 select c).ToList<ParsedName>();
+
+            var v = (from c in possibleAnswers select c).FirstOrDefault<ParsedName>();
 
             FirstName = v != null ? v.FirstName :null;
+            MiddleName = v != null ? v.MiddleName : null;
             LastName = v != null ? v.LastName:null;
             Title = v != null ? v.Title:null;
             NickName = v != null ? v.NickName:null;

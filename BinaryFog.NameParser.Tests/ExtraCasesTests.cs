@@ -7,9 +7,9 @@ namespace BinaryFog.NameParser.Tests
 {
     /// <summary>
     /// Tests for 
-    /// SR. John Henry William dela Vega, Jr Esq.
-    /// MANUEL ESQUIPULAS SOHOM
-    /// Maria Delores Esquivel-Moreno
+    /// TODO: SR. John Henry William dela Vega, Jr Esq.
+    /// TODO: MANUEL ESQUIPULAS SOHOM
+    /// TODO: Maria Delores Esquivel-Moreno
     /// PHILIP DEHART ESQ
     /// DEHART, PHILIP
     /// john 'jack' kennedy
@@ -147,6 +147,48 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Johnson", target.LastName);
             Assert.AreEqual("Pasquale Johnson", target.DisplayName);
             Assert.AreEqual("Pat", target.NickName);
+        }
+
+        [TestMethod()]
+        public void Parse_JoseMiguelDelaVega()
+        {
+            string fullName = "Jose Miguel de la Vega";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Jose", target.FirstName);
+            Assert.AreEqual("Miguel", target.MiddleName);
+            Assert.AreEqual("de la Vega", target.LastName);
+            Assert.AreEqual("Jose de la Vega", target.DisplayName);
+        }
+
+        //kennedy, john(jack) f
+        [TestMethod()]
+        public void Parse_KennedyCommaJohnScopeJackScopeSpaceF()
+        {
+            string fullName = "Kennedy, John(Jack) F";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("John", target.FirstName);
+            Assert.AreEqual("Kennedy", target.LastName);
+            Assert.AreEqual("John Kennedy", target.DisplayName);
+        }
+
+        //kennedy, john(jack) f
+        [TestMethod()]
+        public void Parse_JohnScopeJackScopeSpaceFSpaceKennedy()
+        {
+            string fullName = "John(Jack) F Kennedy";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("John", target.FirstName);
+            Assert.AreEqual("Kennedy", target.LastName);
+            Assert.AreEqual("John Kennedy", target.DisplayName);
         }
     }
 }

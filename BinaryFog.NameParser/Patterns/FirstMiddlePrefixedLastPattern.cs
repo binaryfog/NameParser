@@ -7,7 +7,7 @@ using System.Text;
 
 namespace BinaryFog.NameParser.Patterns
 {
-    internal class TitleFirstPrefixedLastPattern : IPattern
+    internal class FirstMiddlePrefixedLastPattern : IPattern
     {
         public ParsedName Parse(string rawName)
         {
@@ -16,8 +16,7 @@ namespace BinaryFog.NameParser.Patterns
 
             foreach (string part in parts)
             {
-                //Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
-                StringBuilder patternBuilder = new StringBuilder(@"^(?<title>(mr|mr\W?|ms|ms\W?|mrs|mrs\W?)) (?<first>\w+) (?<prefix>");
+                StringBuilder patternBuilder = new StringBuilder(@"^(?<first>\w+) (?<middle>\w+) (?<prefix>");
                 patternBuilder.Append(part);
                 patternBuilder.Append(@"+) (?<last>\w+)$");
 
@@ -29,12 +28,13 @@ namespace BinaryFog.NameParser.Patterns
                     string prefix = match.Groups["prefix"].Value;
                     ParsedName pn = new ParsedName()
                     {
-                        Title = match.Groups["title"].Value,
+                        
                         FirstName = match.Groups["first"].Value,
+                        MiddleName = match.Groups["middle"].Value,
 
                         LastName = prefix + " " + match.Groups["last"].Value,
                         DisplayName = String.Format("{0} {1} {2}", match.Groups["first"].Value, prefix, match.Groups["last"].Value),
-                        Score = 300
+                        Score = 200
                     };
                     return pn;
                 }

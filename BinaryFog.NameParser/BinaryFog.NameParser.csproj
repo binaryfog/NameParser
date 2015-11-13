@@ -36,10 +36,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patterns\FirstNameJobTitlePattern.cs" />
+    <Compile Include="Patterns\FirstNickInitialLastPattern.cs" />
+    <Compile Include="Patterns\LastNameCommaFirstNameNickNameInitialPattern.cs" />
     <Compile Include="Patterns\LastNameCommaFirstNamePattern.cs" />
     <Compile Include="Patterns\FirstLastSuffixPattern.cs" />
     <Compile Include="Patterns\TitleFirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\TitleFirstNickLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstMiddlePrefixedLastPattern.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
