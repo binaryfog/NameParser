@@ -17,5 +17,15 @@ namespace BinaryFog.NameParser
 
             return parts;
         }
+
+        public static string[] GetAllFirstNames()
+        {
+            string[] firstNames = (from c in
+                                  Resources.MaleFirstNames.Split('\r', '\n').Union(Resources.FemaleFirstNames.Split('\r', '\n'))
+                              where String.IsNullOrEmpty(c) == false
+                              select c).Distinct<string>().ToArray<string>();
+
+            return firstNames;
+        }
     }
 }

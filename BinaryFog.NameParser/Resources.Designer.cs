@@ -73,11 +73,156 @@ namespace BinaryFog.NameParser {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Emma
+        ///Olivia
+        ///Sophia
+        ///Isabella
+        ///Ava
+        ///Mia
+        ///Emily
+        ///Abigail
+        ///Madison
+        ///Charlotte
+        ///Harper
+        ///Sofia
+        ///Avery
+        ///Elizabeth
+        ///Amelia
+        ///Evelyn
+        ///Ella
+        ///Chloe
+        ///Victoria
+        ///Aubrey
+        ///Grace
+        ///Zoey
+        ///Natalie
+        ///Addison
+        ///Lillian
+        ///Brooklyn
+        ///Lily
+        ///Hannah
+        ///Layla
+        ///Scarlett
+        ///Aria
+        ///Zoe
+        ///Samantha
+        ///Anna
+        ///Leah
+        ///Audrey
+        ///Ariana
+        ///Allison
+        ///Savannah
+        ///Arianna
+        ///Camila
+        ///Penelope
+        ///Gabriella
+        ///Claire
+        ///Aaliyah
+        ///Sadie
+        ///Riley
+        ///Skylar
+        ///Nora
+        ///Sarah
+        ///Hailey
+        ///Kaylee
+        ///Paisley
+        ///Kennedy
+        ///Ellie
+        ///Peyton
+        ///Annabelle
+        ///Caroline
+        ///Madelyn
+        ///Serenity
+        ///Aubree
+        ///Lucy
+        ///Alexa
+        ///Alexi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FemaleFirstNames {
+            get {
+                return ResourceManager.GetString("FemaleFirstNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to accounts receivable.
         /// </summary>
         internal static string JobTitles {
             get {
                 return ResourceManager.GetString("JobTitles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Noah
+        ///Liam
+        ///Mason
+        ///Jacob
+        ///William
+        ///Ethan
+        ///Michael
+        ///Alexander
+        ///James
+        ///Daniel
+        ///Elijah
+        ///Benjamin
+        ///Logan
+        ///Aiden
+        ///Jayden
+        ///Matthew
+        ///Jackson
+        ///David
+        ///Lucas
+        ///Joseph
+        ///Anthony
+        ///Andrew
+        ///Samuel
+        ///Gabriel
+        ///Joshua
+        ///John
+        ///Carter
+        ///Luke
+        ///Dylan
+        ///Christopher
+        ///Isaac
+        ///Oliver
+        ///Henry
+        ///Sebastian
+        ///Caleb
+        ///Owen
+        ///Ryan
+        ///Nathan
+        ///Wyatt
+        ///Hunter
+        ///Jack
+        ///Christian
+        ///Landon
+        ///Jonathan
+        ///Levi
+        ///Jaxon
+        ///Julian
+        ///Isaiah
+        ///Eli
+        ///Aaron
+        ///Charles
+        ///Connor
+        ///Cameron
+        ///Thomas
+        ///Jordan
+        ///Jeremiah
+        ///Nicholas
+        ///Evan
+        ///Adrian
+        ///Gavin
+        ///Robert
+        ///Brayden
+        ///Grayson
+        ///Josiah
+        ///Colto [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MaleFirstNames {
+            get {
+                return ResourceManager.GetString("MaleFirstNames", resourceCulture);
             }
         }
         

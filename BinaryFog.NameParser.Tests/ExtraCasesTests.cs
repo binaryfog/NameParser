@@ -7,8 +7,8 @@ namespace BinaryFog.NameParser.Tests
 {
     /// <summary>
     /// Tests for 
-    /// TODO: SR. John Henry William dela Vega, Jr Esq.
-    /// TODO: MANUEL ESQUIPULAS SOHOM
+    /// SR. John Henry William dela Vega, Jr Esq.
+    /// MANUEL ESQUIPULAS SOHOM
     /// Maria Delores Esquivel-Moreno
     /// PHILIP DEHART ESQ
     /// DEHART, PHILIP
@@ -204,6 +204,36 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Delores", target.MiddleName);
             Assert.AreEqual("Esquivel-Moreno", target.LastName);
             Assert.AreEqual("Maria Esquivel-Moreno", target.DisplayName);
+        }
+
+        //MANUEL ESQUIPULAS SOHOM
+        [TestMethod()]
+        public void Parse_ManuelSpaceEsquipulasSpaceSohom()
+        {
+            string fullName = "Manuel Esquipulas Sohom";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Manuel", target.FirstName);
+            Assert.AreEqual("Esquipulas Sohom", target.LastName);
+            Assert.AreEqual("Manuel Esquipulas Sohom", target.DisplayName);
+        }
+
+        //SR. John Henry William dela Vega, Jr Esq.
+        [TestMethod()]
+        public void Parse_SrJohnHenryWilliamdelaVegaCommaJrEsq()
+        {
+            string fullName = "SR. John Henry William dela Vega, Jr Esq.";
+            FullNameParser target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("SR.", target.Title);
+            Assert.AreEqual("John", target.FirstName);
+            Assert.AreEqual("Henry William", target.MiddleName);
+            Assert.AreEqual("dela Vega", target.LastName);
+            Assert.AreEqual("Jr Esq.", target.Suffix);
+            Assert.AreEqual("John dela Vega", target.DisplayName);
         }
     }
 }

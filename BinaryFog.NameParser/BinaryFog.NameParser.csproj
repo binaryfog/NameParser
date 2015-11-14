@@ -35,15 +35,18 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\FirstDoubleWordLastPattern.cs" />
     <Compile Include="Patterns\FirstMiddleHiphenatedLastPattern.cs" />
     <Compile Include="Patterns\FirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\FirstNickInitialLastPattern.cs" />
     <Compile Include="Patterns\LastNameCommaFirstNameNickNameInitialPattern.cs" />
     <Compile Include="Patterns\LastNameCommaFirstNamePattern.cs" />
     <Compile Include="Patterns\FirstLastSuffixPattern.cs" />
+    <Compile Include="Patterns\TitleFirstDoubleMiddlePrefixedLastSuffixPattern.cs" />
     <Compile Include="Patterns\TitleFirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\TitleFirstNickLastSuffixPattern.cs" />
     <Compile Include="Patterns\FirstMiddlePrefixedLastPattern.cs" />
+    <Compile Include="Patterns\TitleFirstMiddlePrefixedLastSuffixPattern.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +78,8 @@
     <None Include="Resources\USCensusLastNames.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\MaleFirstNames.txt" />
+    <None Include="Resources\FemaleFirstNames.txt" />
     <Content Include="Resources\JobTitles.txt" />
     <Content Include="Resources\DutchLastNamesPrefixes.txt" />
     <None Include="Resources\SpanishLastNamesPrefixes.txt" />
