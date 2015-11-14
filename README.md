@@ -36,4 +36,16 @@ string title = target.Title;
 
 ```
 
+Nov.13 2015: More cases are now handled. These are the cases:
 
+    /// SR. John Henry William dela Vega, Jr Esq.
+    /// MANUEL ESQUIPULAS SOHOM
+    /// Maria Delores Esquivel-Moreno
+    /// PHILIP DEHART ESQ
+    /// DEHART, PHILIP
+    /// john 'jack' kennedy
+    /// john(jack) f kennedy
+    /// kennedy, john(jack) f
+    /// Mr.Jack Johnson, ESQ"
+    /// Jose Miguel De La Vega
+    
