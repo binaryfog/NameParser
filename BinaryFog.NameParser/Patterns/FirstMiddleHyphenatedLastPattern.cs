@@ -2,21 +2,19 @@
 using static BinaryFog.NameParser.RegexNameComponents;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class TitleFirstNickLastSuffixPattern : IPattern {
+	internal class FirstMiddleHyphenatedLastPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + Nick + Space + Last + OptionalCommaSpace + Suffix + @"$",
+			@"^" + First + Space + Middle + Space + LastHyphenated + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
 			var pn = new ParsedName {
-				Title = match.Groups["title"].Value,
 				FirstName = match.Groups["first"].Value,
-				LastName = match.Groups["last"].Value,
-				NickName = match.Groups["nick"].Value,
-				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
-				Suffix = match.Groups["suffix"].Value,
+				MiddleName = match.Groups["middle"].Value,
+				LastName = $"{match.Groups["lastPart1"].Value}-{match.Groups["lastPart2"].Value}",
+				DisplayName = $"{match.Groups["first"].Value} {match.Groups["lastPart1"].Value}-{match.Groups["lastPart2"].Value}",
 				Score = 100
 			};
 			return pn;

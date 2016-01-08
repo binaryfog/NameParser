@@ -1,1 +1,5 @@
 accounts receivable
+senator
+doctor
+president
+vice president

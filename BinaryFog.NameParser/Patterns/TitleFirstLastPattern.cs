@@ -1,34 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using static BinaryFog.NameParser.RegexNameComponents;
 
-namespace BinaryFog.NameParser.Patterns
-{
-    internal class TitleFirstLastPattern :IPattern
-    {
+namespace BinaryFog.NameParser.Patterns {
+	internal class TitleFirstLastPattern : IPattern {
+		private static readonly Regex Rx = new Regex(
+			@"^" + Title + Space + First + Space + Last + @"$",
+			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-        public ParsedName Parse(string rawName)
-        {
-            //Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
-            Match match = Regex.Match(rawName, @"^(?<title>(mr|mr\W?|ms|ms\W?|mrs|mrs\W?)) (?<first>\w+) (?<last>\w+)$", RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                ParsedName pn = new ParsedName()
-                {
-                    Title = match.Groups["title"].Value,
-                    FirstName = match.Groups["first"].Value,
-                    LastName = match.Groups["last"].Value,
-                    DisplayName = String.Format("{0} {1}", match.Groups["first"].Value, match.Groups["last"].Value),
-                    Score = 100
-                };
+		public ParsedName Parse(string rawName) {
+			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
+			var match = Rx.Match(rawName);
+			if (!match.Success) return null;
+			var pn = new ParsedName {
+				Title = match.Groups["title"].Value,
+				FirstName = match.Groups["first"].Value,
+				LastName = match.Groups["last"].Value,
+				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
+				Score = 100
+			};
 
-                return pn;
-            }
-
-            return null;
-        }
-    }
+			return pn;
+		}
+	}
 }

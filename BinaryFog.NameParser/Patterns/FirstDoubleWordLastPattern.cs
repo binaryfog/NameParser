@@ -1,34 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using static BinaryFog.NameParser.RegexNameComponents;
+using static BinaryFog.NameParser.NameComponentSets;
 
-namespace BinaryFog.NameParser.Patterns
-{
-    internal class FirstDoubleWordLastPattern : IPattern
-    {
+namespace BinaryFog.NameParser.Patterns {
+	internal class FirstDoubleWordLastPattern : IPattern {
+		private static readonly Regex Rx = new Regex(
+			@"^" + First + Space + @"(?<last1>\w+)" + Space + @"(?<last2>\w+)$",
+			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-        public ParsedName Parse(string rawName)
-        {
-            Match match = Regex.Match(rawName, @"^(?<first>\w+) (?<last1>\w+) (?<last2>\w+)$", RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                string firstName = match.Groups["first"].Value;
-                if (!Utils.GetAllFirstNames().Contains(firstName))
-                    return null;
-                
-                ParsedName pn = new ParsedName()
-                {
-                    FirstName = match.Groups["first"].Value,
-                    LastName = String.Format("{0} {1}", match.Groups["last1"].Value, match.Groups["last2"].Value),
-                    DisplayName = String.Format("{0} {1} {2}", match.Groups["first"].Value, match.Groups["last1"].Value, match.Groups["last2"].Value),
-                    Score = 100
-                };
-                return pn;
-                
-            }
-            return null;
-        }
-    }
+		public ParsedName Parse(string rawName) {
+			var match = Rx.Match(rawName);
+			if (!match.Success) return null;
+			var firstName = match.Groups["first"].Value;
+			if (!FirstNames.Contains(firstName))
+				return null;
+
+			var pn = new ParsedName {
+				FirstName = match.Groups["first"].Value,
+				LastName = $"{match.Groups["last1"].Value} {match.Groups["last2"].Value}",
+				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last1"].Value} {match.Groups["last2"].Value}",
+				Score = 100
+			};
+			return pn;
+		}
+	}
 }
