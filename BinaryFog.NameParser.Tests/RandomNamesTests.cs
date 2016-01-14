@@ -10,14 +10,14 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void RandomNamesTest()
         {
-            PersonNameGenerator g = new PersonNameGenerator();
-            string firstName = g.GenerateRandomMaleFirstName();
-            string lastName = g.GenerateRandomLastName();
+            var g = new PersonNameGenerator();
+            var firstName = g.GenerateRandomMaleFirstName();
+            var lastName = g.GenerateRandomLastName();
 
-            string fullName = String.Format("{0} {1}", firstName, lastName);
+            string fullName = $"{firstName} {lastName}";
             Console.WriteLine(fullName);
 
-            FullNameParser target = new FullNameParser(fullName);
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual( firstName, target.FirstName);

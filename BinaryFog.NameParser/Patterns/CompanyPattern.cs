@@ -1,5 +1,4 @@
 ﻿using System.Text.RegularExpressions;
-using static BinaryFog.NameParser.PipeJoinedResources;
 using static BinaryFog.NameParser.RegexNameComponents;
 
 namespace BinaryFog.NameParser.Patterns {

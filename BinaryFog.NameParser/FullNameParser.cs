@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace BinaryFog.NameParser {
@@ -18,84 +19,76 @@ namespace BinaryFog.NameParser {
 	/// <remarks>
 	/// 1. The prefix "ATTN:" is removed if exists and the parsing proceeds on the new string
 	/// </remarks>
-	public class FullNameParser
-    {
-        Dictionary<Type, ParsedName> _results;
+	public class FullNameParser {
+		public IReadOnlyList<ParsedName> Results { get; set; }
 
-        string _fullName;
+		string _fullName;
 		private static readonly Type PatternType = typeof(IPattern);
 		private static readonly IEnumerable<IPattern> PatternsMap =
 			AppDomain.CurrentDomain.GetAssemblies().SelectMany(s => s.GetTypes()).Where(p => p.IsClass && PatternType.IsAssignableFrom(p))
-			.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null)).OfType<IPattern>().Where(o=>o!=null);
+			.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null)).OfType<IPattern>().Where(o => o != null);
 
 		public string FirstName { get; private set; }
-        public string MiddleName { get; private set; }
-        public string LastName { get; private set; }
-        public string Title { get; private set; }
-        public string NickName { get; private set; }
-        public string Suffix { get; private set; }
-        public string DisplayName { get; private set; }
+		public string MiddleName { get; private set; }
+		public string LastName { get; private set; }
+		public string Title { get; private set; }
+		public string NickName { get; private set; }
+		public string Suffix { get; private set; }
+		public string DisplayName { get; private set; }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FullNameParser"/> class.
-        /// </summary>
-        /// <param name="fullName">The full name.</param>
-        public FullNameParser(string fullName)
-        {
-            _fullName = fullName;
-            _results = new Dictionary<Type, ParsedName>();
+		/// <summary>
+		/// Initializes a new instance of the <see cref="FullNameParser"/> class.
+		/// </summary>
+		/// <param name="fullName">The full name.</param>
+		public FullNameParser(string fullName) {
+			_fullName = fullName;
+			Results = new ParsedName[0];
+		}
 
-        }
+		public static FullNameParser Parse(string fullName) {
+			var name = new FullNameParser(fullName);
+			name.Parse();
+			return name;
+		}
 
-        /// <summary>
-        /// Parses this instance.
-        /// </summary>
-        public void Parse()
-        {
-            DisplayName = _fullName;
-            if (string.IsNullOrEmpty(_fullName))
-                return;
+		/// <summary>
+		/// Parses this instance.
+		/// </summary>
+		public void Parse() {
+			DisplayName = _fullName;
+			if (string.IsNullOrWhiteSpace(_fullName))
+				return;
 
-            RemoveAttnPrefixIfNeeded();
+			RemoveAttnPrefixIfNeeded();
 
-	        foreach (var pattern in PatternsMap)
-            {
-                var result = pattern.Parse(_fullName);
-                _results.Add(pattern.GetType(), result);
-            }
+			Results = PatternsMap
+				.Select(pattern => pattern.Parse(_fullName))
+				.OrderByDescending( result => result?.Score ?? 0 )
+				.ToImmutableArray();
 
-            var possibleAnswers = (
-				from c in _results.Values.AsEnumerable()
-				where c != null
-				orderby c.Score descending
-				select c).ToList();
+			var v = Results.FirstOrDefault();
 
-            var v = possibleAnswers.FirstOrDefault();
+			FirstName = v?.FirstName;
+			MiddleName = v?.MiddleName;
+			LastName = v?.LastName;
+			Title = v?.Title;
+			NickName = v?.NickName;
+			Suffix = v?.Suffix;
+			DisplayName = v?.DisplayName ?? _fullName;
 
-            FirstName = v?.FirstName;
-            MiddleName = v?.MiddleName;
-            LastName = v?.LastName;
-            Title = v?.Title;
-            NickName = v?.NickName;
-            Suffix = v?.Suffix;
-            DisplayName = v?.DisplayName ?? _fullName;
-               
-            
-        }
+		}
 
-        /// <summary>
-        /// Removes the attn prefix if needed.
-        /// </summary>
-        private void RemoveAttnPrefixIfNeeded()
-        {
-            if (_fullName.StartsWith("ATTN:",StringComparison.InvariantCultureIgnoreCase))
-            {
-                _fullName = _fullName.Substring(5).Trim();
-            }
+		/// <summary>
+		/// Removes the attn prefix if needed.
+		/// </summary>
+		private void RemoveAttnPrefixIfNeeded() {
+			if (_fullName.StartsWith("ATTN:", StringComparison.InvariantCultureIgnoreCase)) {
+				_fullName = _fullName.Substring(5).Trim();
+			}
 
-        }
+		}
 
 
-        
-    }
+
+	}
 }

@@ -1,51 +1,56 @@
 NameParser
 ====
-Human name parsing. Parses names using English conventions for persons names. 
-Intended to be extendable, the library can be extended just by implement IPattern interface and assign a score to the returned result.
+Human name parsing.
 
-If you have a person name , that is not parsed correctly, let me know. harapu@gmail.com  . I'll see what I can do.
+Parses names using English conventions for persons names. 
+Intended to be extendable, the library can be extended just by implement `IPattern` interface and assign a score to the returned result.
 
-The cases handled are:
+For the sake of performance, the assembly and types implementing `IPattern` must be loaded before the first attempt to use the `NameParser`.
+
+If you have a person name that is not parsed correctly, let me know; harapu@gmail.com. I'll see what I can do.
+
+Usage:
 ```csharp
-    /// <summary>
-    /// Parse a person full name 
-    /// </summary>
-    /// <example>
-    /// 1. Mr Jack Johnson  => Title = "Mr", First Name = "Jack" Last Name = "Johnson"
-    /// 2. Jack Johnson  => First Name = "Jack" Last Name = "Johnson"
-    /// 3. Jack => First Name = "Jack"
-    /// 4. Jack Johnson Enterprises => ignored
-    /// 5. Pasquale (Pat) Vacoturo  =>  First Name = "Pasquale" Last Name = "Vacoturo" Nickname = Pat 
-    /// 6. Mr Giovanni Van Der Hutte  => Title = "Mr", First Name = "Giovanni" Last Name = "Van Der Hutte"
-    /// 7. Giovanni Van Der Hutte  => First Name = "Giovanni" Last Name = "Van Der Hutte"
-    /// </example>
-    /// <remarks>
-    /// 1. The prefix "ATTN:" is removed if exists and the parsing proceeds on the new string
-    /// </remarks>
-```
-
-```csharp
-//Usage
 string fullName = "Mr. Jack Johnson"; 
 FullNameParser target = new FullNameParser(fullName); 
 target.Parse();
 string firstName = target.FirstName;
+string middleName = target.MiddleName;
 string lastName = target.LastName;
-string displayName = target.DisplayName;
 string title = target.Title;
-
+string nickName = target.NickName;
+string suffix = target.Suffix;
+string displayName = target.DisplayName;
 ```
 
-Nov.13 2015: More cases are now handled. These are the cases:
+Alternative usage:
+```csharp
+string fullName = "Mr. Jack Johnson"; 
+FullNameParser target = FullNameParser.Parse(fullName);
+string firstName = target.FirstName;
+string middleName = target.MiddleName;
+string lastName = target.LastName;
+string title = target.Title;
+string nickName = target.NickName;
+string suffix = target.Suffix;
+string displayName = target.DisplayName;
+```
 
-    /// SR. John Henry William dela Vega, Jr Esq.
-    /// MANUEL ESQUIPULAS SOHOM
-    /// Maria Delores Esquivel-Moreno
-    /// PHILIP DEHART ESQ
-    /// DEHART, PHILIP
-    /// john 'jack' kennedy
-    /// john(jack) f kennedy
-    /// kennedy, john(jack) f
-    /// Mr.Jack Johnson, ESQ"
-    /// Jose Miguel De La Vega
+
+Nov. 13 2015: More cases are now handled. These are the cases:
+* SR. John Henry William dela Vega, Jr Esq.
+* MANUEL ESQUIPULAS SOHOM
+* Maria Delores Esquivel-Moreno
+* PHILIP DEHART ESQ
+* DEHART, PHILIP
+* john 'jack' kennedy
+* john(jack) f kennedy
+* kennedy, john(jack) f
+* Mr.Jack Johnson, ESQ"
+* Jose Miguel De La Vega
     
+Jan. 8 2016: 100% code coverage. More test cases. These are the cases:
+* Empty string and white space cases.
+* ~~SR. John Henry William dela Vega, Jr Esq.~~ SR. is not a valid title.
+* Mr. Jack Francis Van Der Waal Sr.
+* Mr. Jack Francis Marion Van Der Waal Sr.

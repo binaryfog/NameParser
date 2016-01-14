@@ -124,9 +124,6 @@
   <data name="FemaleFirstNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FemaleFirstNames.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="HonorificTitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\honorifictitles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="JobTitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\JobTitles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -135,6 +132,9 @@
   </data>
   <data name="MaleFirstNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MaleFirstNames.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PostNominals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\postnominals.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="Suffixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\suffixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
