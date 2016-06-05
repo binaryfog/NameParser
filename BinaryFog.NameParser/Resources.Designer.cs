@@ -61,14 +61,19 @@ namespace BinaryFog.NameParser {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to de
-        ///van
-        ///van der
-        ///van het.
+        ///   Looks up a localized string similar to co
+        ///company
+        ///ltd
+        ///llc
+        ///limited
+        ///inc
+        ///incorperated
+        ///corp
+        ///corporation.
         /// </summary>
-        internal static string DutchLastNamesPrefixes {
+        internal static string CompanySuffixes {
             get {
-                return ResourceManager.GetString("DutchLastNamesPrefixes", resourceCulture);
+                return ResourceManager.GetString("CompanySuffixes", resourceCulture);
             }
         }
         
@@ -145,11 +150,105 @@ namespace BinaryFog.NameParser {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to accounts receivable.
+        ///   Looks up a localized string similar to accounts receivable
+        ///senator
+        ///doctor
+        ///president
+        ///vice president.
         /// </summary>
         internal static string JobTitles {
             get {
                 return ResourceManager.GetString("JobTitles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;s
+        ///&apos;t
+        ///a
+        ///aan
+        ///aan &apos;t
+        ///aan de
+        ///aan den
+        ///aan der
+        ///aan het
+        ///af
+        ///al
+        ///am
+        ///am de
+        ///auf
+        ///auf &apos;m
+        ///auf dem
+        ///auf den
+        ///auf der
+        ///auf ter
+        ///aus
+        ///aus dem
+        ///ben
+        ///bij
+        ///bij &apos;t
+        ///bij de
+        ///bij den
+        ///bij het
+        ///bin
+        ///boven &apos;d
+        ///d&apos;
+        ///da
+        ///dal
+        ///dalla
+        ///das
+        ///de
+        ///de die
+        ///de die le
+        ///de l&apos;
+        ///de la
+        ///de le
+        ///de ter
+        ///de van der
+        ///deca
+        ///degli
+        ///dei
+        ///del
+        ///dela
+        ///della
+        ///den
+        ///der
+        ///des
+        ///di
+        ///die
+        ///die le
+        ///do
+        ///don
+        ///dos
+        ///du
+        ///el
+        ///i
+        ///im
+        ///in
+        ///in &apos;t
+        ///in de
+        ///in den
+        ///in der
+        ///in het
+        ///l
+        ///l&apos;
+        ///la
+        ///las
+        ///le
+        ///les
+        ///lo
+        ///los
+        ///met den op
+        ///on der
+        ///onder
+        ///op
+        ///op &apos;t
+        ///op de
+        ///op de [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string LastNamePrefixes {
+            get {
+                return ResourceManager.GetString("LastNamePrefixes", resourceCulture);
             }
         }
         
@@ -227,13 +326,86 @@ namespace BinaryFog.NameParser {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to de
-        ///dela
-        ///de la.
+        ///   Looks up a localized string similar to bchd
+        ///bd
+        ///bds
+        ///bdsc
+        ///bohdsc
+        ///dc
+        ///dcm
+        ///dd
+        ///dds
+        ///ddsc
+        ///dmd
+        ///dmsc
+        ///do
+        ///dpm
+        ///dpt
+        ///dvm
+        ///esq
+        ///fcps
+        ///jd
+        ///kbe
+        ///md
+        ///mds
+        ///mdsc
+        ///mhl
+        ///mmsc
+        ///ms
+        ///msc
+        ///mscds
+        ///msd
+        ///od
+        ///phd
+        ///scd
+        ///vmd.
         /// </summary>
-        internal static string SpanishLastNamesPrefixes {
+        internal static string PostNominals {
             get {
-                return ResourceManager.GetString("SpanishLastNamesPrefixes", resourceCulture);
+                return ResourceManager.GetString("PostNominals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to i
+        ///ii
+        ///iii
+        ///iv
+        ///v
+        ///vi
+        ///vii
+        ///viii
+        ///ix
+        ///x
+        ///xi
+        ///xii
+        ///xiii
+        ///xiv
+        ///xv
+        ///xvi
+        ///xvii
+        ///xviii
+        ///xix
+        ///jr
+        ///sr.
+        /// </summary>
+        internal static string Suffixes {
+            get {
+                return ResourceManager.GetString("Suffixes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mr
+        ///ms
+        ///mrs
+        ///dr
+        ///sir
+        ///madam.
+        /// </summary>
+        internal static string Titles {
+            get {
+                return ResourceManager.GetString("Titles", resourceCulture);
             }
         }
         

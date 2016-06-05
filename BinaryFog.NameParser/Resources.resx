@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DutchLastNamesPrefixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\dutchlastnamesprefixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="CompanySuffixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\companysuffixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="FemaleFirstNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FemaleFirstNames.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -127,11 +127,20 @@
   <data name="JobTitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\JobTitles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="LastNamePrefixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lastnameprefixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="MaleFirstNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MaleFirstNames.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="SpanishLastNamesPrefixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\SpanishLastNamesPrefixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="PostNominals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\postnominals.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Suffixes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\suffixes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Titles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\titles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="USCensusLastNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\uscensuslastnames.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>

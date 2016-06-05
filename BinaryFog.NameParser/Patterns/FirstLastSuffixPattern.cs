@@ -1,31 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using static BinaryFog.NameParser.RegexNameComponents;
 
-namespace BinaryFog.NameParser.Patterns
-{
-    internal class FirstLastSuffixPattern : IPattern
-    {
-        public ParsedName Parse(string rawName)
-        {
-            //Suffix should be I or II or III or Jr. or Jr or Sr. or Sr or ESQ or ESQ. or ESQ"
-            Match match = Regex.Match(rawName, @"^(?<first>\w+) (?<last>\w+) (?<suffix>(i|ii|iii|jr|jr\W?|sr|sr\W?|esq|esq\W?|esq""|jr\sesq\W?|jr\sesq|sr\sesq|sr\sesq\W?))$", RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                ParsedName pn = new ParsedName()
-                {
-                    FirstName = match.Groups["first"].Value,
-                    LastName = match.Groups["last"].Value,
-                    DisplayName = String.Format("{0} {1}", match.Groups["first"].Value, match.Groups["last"].Value),
-                    Suffix = match.Groups["suffix"].Value,
-                    Score = 200
-                };
-                return pn;
-            }
+namespace BinaryFog.NameParser.Patterns {
+	internal class FirstLastSuffixPattern : IPattern {
+		private static readonly Regex Rx = new Regex(
+			@"^" + First + Space + Last + OptionalCommaSpace + Suffix + @"$",
+			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            return null;
-        }
-    }
+		public ParsedName Parse(string rawName) {
+			var match = Rx.Match(rawName);
+			if (!match.Success) return null;
+			var pn = new ParsedName {
+				FirstName = match.Groups["first"].Value,
+				LastName = match.Groups["last"].Value,
+				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
+				Suffix = match.Groups["suffix"].Value,
+				Score = 200
+			};
+			return pn;
+		}
+	}
 }

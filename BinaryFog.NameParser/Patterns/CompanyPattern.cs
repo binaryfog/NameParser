@@ -1,30 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using static BinaryFog.NameParser.RegexNameComponents;
 
-namespace BinaryFog.NameParser.Patterns
-{
-    internal class CompanyPattern : IPattern
-    {
+namespace BinaryFog.NameParser.Patterns {
+	internal class CompanyPattern : IPattern {
+		private static readonly Regex Rx = new Regex(
+			Space + @"(?<lastWord>(" + CompanySuffixes + @")\W?)$",
+			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-        public ParsedName Parse(string rawName)
-        {
-            Match match = Regex.Match(rawName, @" (?<lastWord>(ltd|ltd\W?|inc|inc\W?|limited|limited\W?))$", RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                ParsedName pn = new ParsedName() 
-                {
-                    DisplayName = rawName,
-                    Score = ParsedName.MaxScore
-                };
 
-                return pn;
-            }
+		public ParsedName Parse(string rawName) {
+			var match = Rx.Match(rawName);
+			if (!match.Success) return null;
+			var pn = new ParsedName {
+				DisplayName = rawName,
+				Score = ParsedName.MaxScore
+			};
 
-            return null;
-        }
-    }
+			return pn;
+		}
+	}
 }

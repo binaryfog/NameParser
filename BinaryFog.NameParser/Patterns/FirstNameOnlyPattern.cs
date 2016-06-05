@@ -1,41 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using static BinaryFog.NameParser.RegexNameComponents;
 
-namespace BinaryFog.NameParser.Patterns
-{
-    internal class FirstNameOnlyPattern : IPattern
-    {
-        public ParsedName Parse(string rawName)
-        {
-            Match match = Regex.Match(rawName, @"^(?<first>\w+)$", RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                ParsedName pn = new ParsedName()
-                {
-                    DisplayName = rawName,
-                    Score = 100
-                };
+namespace BinaryFog.NameParser.Patterns {
+	internal class FirstNameOnlyPattern : IPattern {
+		private static readonly Regex Rx = new Regex(
+			@"^" + First + @"$",
+			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-                string[] lastNamesInUppercase = Resources.USCensusLastNames.Split('\r', '\n');
 
-                string matchedName = match.Groups["first"].Value;
+		public ParsedName Parse(string rawName) {
+			var match = Rx.Match(rawName);
+			if (!match.Success) return null;
+			var pn = new ParsedName {
+				DisplayName = rawName,
+				Score = 100
+			};
 
-                int matchOccurences  = ( from c in lastNamesInUppercase
-                               where c == matchedName.ToUpper()
-                               select c).Count();
+			var matchedName = match.Groups["first"].Value;
 
-                if ( matchOccurences > 0)
-                    pn.LastName = matchedName;
-                else
-                    pn.FirstName = matchedName;
-                
-                return pn;
+			if (NameComponentSets.LastNamesInUppercase.Contains(matchedName.ToUpper()))
+				pn.LastName = matchedName;
+			else
+				pn.FirstName = matchedName;
 
-            }
-            return null;
-        }
-    }
+			return pn;
+		}
+	}
 }

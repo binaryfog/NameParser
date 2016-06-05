@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
+﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BinaryFog.NameParser.Tests
@@ -21,32 +19,14 @@ namespace BinaryFog.NameParser.Tests
     [TestClass]
     public class ExtraCasesTests
     {
-        public ExtraCasesTests()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-
-        private TestContext testContextInstance;
-
-        /// <summary>
+	    /// <summary>
         ///Gets or sets the test context which provides
         ///information about and functionality for the current test run.
         ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
+        [ExcludeFromCodeCoverage]
+        public TestContext TestContext { get; set; }
 
-        #region Additional test attributes
+	    #region Additional test attributes
         //
         // You can use the following additional attributes as you write your tests:
         //
@@ -71,8 +51,8 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void Parse_DehartCommaSpacePhilip()
         {
-            string fullName = "DeHart, Philip";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "DeHart, Philip";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual("Philip", target.FirstName);
@@ -84,8 +64,8 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void Parse_DehartCommaTwoSpacesPhilip()
         {
-            string fullName = "DeHart,  Philip";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "DeHart,  Philip";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual("Philip", target.FirstName);
@@ -97,8 +77,8 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void Parse_DehartCommaPhilip()
         {
-            string fullName = "DeHart,Philip";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "DeHart,Philip";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual("Philip", target.FirstName);
@@ -110,8 +90,8 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void Parse_PhilipDeHartEsq()
         {
-            string fullName = "Philip DeHart ESQ";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Philip DeHart ESQ";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual("Philip", target.FirstName);
@@ -124,8 +104,8 @@ namespace BinaryFog.NameParser.Tests
         [TestMethod]
         public void Parse_MrJackJohnsonEsq()
         {
-            string fullName = @"Mr.Jack Johnson, ESQ""";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = @"Mr.Jack Johnson, ESQ""";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             Assert.AreEqual("Mr.", target.Title);
@@ -135,11 +115,11 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Jack Johnson", target.DisplayName);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void Parse_PasqualeQuotePatQuoteJohnson()
         {
-            string fullName = "Pasquale 'Pat' Johnson";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Pasquale 'Pat' Johnson";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
             
@@ -149,11 +129,11 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Pat", target.NickName);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void Parse_JoseMiguelDelaVega()
         {
-            string fullName = "Jose Miguel de la Vega";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Jose Miguel de la Vega";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
 
@@ -164,11 +144,11 @@ namespace BinaryFog.NameParser.Tests
         }
 
         //kennedy, john(jack) f
-        [TestMethod()]
+        [TestMethod]
         public void Parse_KennedyCommaJohnScopeJackScopeSpaceF()
         {
-            string fullName = "Kennedy, John(Jack) F";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Kennedy, John(Jack) F";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
 
@@ -178,11 +158,11 @@ namespace BinaryFog.NameParser.Tests
         }
 
         //kennedy, john(jack) f
-        [TestMethod()]
+        [TestMethod]
         public void Parse_JohnScopeJackScopeSpaceFSpaceKennedy()
         {
-            string fullName = "John(Jack) F Kennedy";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "John(Jack) F Kennedy";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
 
@@ -192,11 +172,11 @@ namespace BinaryFog.NameParser.Tests
         }
 
         //Maria Delores Esquivel-Moreno
-        [TestMethod()]
+        [TestMethod]
         public void Parse_MariaSpaceDeloresSpaceEsquivelDashMoreno()
         {
-            string fullName = "Maria Delores Esquivel-Moreno";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Maria Delores Esquivel-Moreno";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
 
@@ -207,11 +187,11 @@ namespace BinaryFog.NameParser.Tests
         }
 
         //MANUEL ESQUIPULAS SOHOM
-        [TestMethod()]
+        [TestMethod]
         public void Parse_ManuelSpaceEsquipulasSpaceSohom()
         {
-            string fullName = "Manuel Esquipulas Sohom";
-            FullNameParser target = new FullNameParser(fullName);
+            var fullName = "Manuel Esquipulas Sohom";
+            var target = new FullNameParser(fullName);
             target.Parse();
 
 
@@ -220,6 +200,7 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Manuel Esquipulas Sohom", target.DisplayName);
         }
 
+		/* No, you can not have a title of SR.
         //SR. John Henry William dela Vega, Jr Esq.
         [TestMethod()]
         public void Parse_SrJohnHenryWilliamdelaVegaCommaJrEsq()
@@ -235,5 +216,6 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Jr Esq.", target.Suffix);
             Assert.AreEqual("John dela Vega", target.DisplayName);
         }
+		*/
     }
 }
