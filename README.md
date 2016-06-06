@@ -1,5 +1,7 @@
 NameParser
 ====
+
+[![Join the chat at https://gitter.im/binaryfog/NameParser](https://badges.gitter.im/binaryfog/NameParser.svg)](https://gitter.im/binaryfog/NameParser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Human name parsing.
 
 Parses names using English conventions for persons names. 
