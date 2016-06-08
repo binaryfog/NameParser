@@ -4,7 +4,7 @@ using static BinaryFog.NameParser.RegexNameComponents;
 namespace BinaryFog.NameParser.Patterns {
 	internal class FirstLastSuffixPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + First + Space + Last + OptionalCommaSpace + Suffix + @"$",
+			@"^" + First + Space + Last + Space + Suffix + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {
@@ -16,7 +16,7 @@ namespace BinaryFog.NameParser.Patterns {
 				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
 				Suffix = match.Groups["suffix"].Value,
 				Score = 200
-			};
+            };
 			return pn;
 		}
 	}
