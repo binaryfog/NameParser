@@ -12,8 +12,9 @@ namespace BinaryFog.NameParser.Patterns {
 			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var pn = new ParsedName {
-				Title = match.Groups["title"].Value,
+            var pn = new ParsedName(this.GetType().Name)
+            {
+                Title = match.Groups["title"].Value,
 				FirstName = match.Groups["first"].Value,
 				LastName = match.Groups["last"].Value,
 				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",

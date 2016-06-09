@@ -15,8 +15,9 @@ namespace BinaryFog.NameParser.Patterns {
 			if (!FirstNames.Contains(firstName))
 				return null;
 
-			var pn = new ParsedName {
-				FirstName = match.Groups["first"].Value,
+            var pn = new ParsedName(this.GetType().Name)
+            {
+                FirstName = match.Groups["first"].Value,
 				LastName = $"{match.Groups["last1"].Value} {match.Groups["last2"].Value}",
 				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last1"].Value} {match.Groups["last2"].Value}",
 				Score = 100

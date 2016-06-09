@@ -12,8 +12,9 @@ namespace BinaryFog.NameParser.Patterns {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
 			var jobTitle = match.Groups["jobTitle"].Value;
-			var pn = new ParsedName {
-				Title = match.Groups["title"].Value,
+            var pn = new ParsedName(this.GetType().Name)
+            {
+                Title = match.Groups["title"].Value,
 				FirstName = match.Groups["first"].Value,
 
 				DisplayName = $"{match.Groups["first"].Value} {jobTitle}",

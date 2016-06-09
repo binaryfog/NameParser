@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patterns\FirstDoubleWordLastPattern.cs" />
+    <Compile Include="Patterns\FirstIrishLastPattern.cs" />
     <Compile Include="Patterns\FirstMiddleHyphenatedLastPattern.cs" />
     <Compile Include="Patterns\FirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\FirstNickInitialLastPattern.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Patterns\FirstLastSuffixPattern.cs" />
     <Compile Include="NameComponentSets.cs" />
     <Compile Include="Patterns\TitleFirstDoubleMiddlePrefixedLastSuffixPattern.cs" />
+    <Compile Include="Patterns\TitleFirstIrishLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstNameJobTitlePattern.cs" />
     <Compile Include="Patterns\TitleFirstNickLastSuffixPattern.cs" />
     <Compile Include="Patterns\FirstMiddlePrefixedLastPattern.cs" />

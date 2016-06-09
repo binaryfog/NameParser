@@ -2,24 +2,24 @@
 using static BinaryFog.NameParser.RegexNameComponents;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class TitleFirstNickLastSuffixPattern : IPattern {
+	internal class TitleFirstIrishLastPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + Nick + Space + Last + OptionalCommaSpace + Suffix + @"$",
+			@"^" + Title + Space + First + Space + "O'" + Last + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {
+			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
             var pn = new ParsedName(this.GetType().Name)
             {
                 Title = match.Groups["title"].Value,
 				FirstName = match.Groups["first"].Value,
-				LastName = match.Groups["last"].Value,
-				NickName = match.Groups["nick"].Value,
-				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
-				Suffix = match.Groups["suffix"].Value,
-				Score = 100
+                LastName = $"O'{match.Groups["last"].Value}",
+                DisplayName = $"{match.Groups["first"].Value} O'{match.Groups["last"].Value}",
+                Score = 100
 			};
+
 			return pn;
 		}
 	}

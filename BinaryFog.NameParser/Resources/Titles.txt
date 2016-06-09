@@ -17,3 +17,4 @@ lord
 lady
 hon.
 honorable
+right hon.

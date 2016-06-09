@@ -27,10 +27,16 @@ namespace BinaryFog.NameParser.Tests
             string lastName = Convert.ToString(TestContext.DataRow["PersonOfficialLastName"]);
 
             string fullName;
-            if ( !String.IsNullOrEmpty(title))
+            string expectedDisplayName = $"{firstName} {lastName}";
+            if (!String.IsNullOrEmpty(title))
+            {
                 fullName = $"{title} {firstName} {lastName}";
+
+            }
             else
+            {
                 fullName = $"{firstName} {lastName}";
+            }
 
             Console.WriteLine(fullName);
 
@@ -40,13 +46,14 @@ namespace BinaryFog.NameParser.Tests
 
             //ASSERT
             if (!String.IsNullOrEmpty(title))
-                Assert.AreEqual(title, target.Title);
+                Assert.AreEqual(title, target.Title, "Titles doesn't match");
             else
-                Assert.IsNull(target.Title);
+                Assert.IsNull(target.Title, "Title was expected to be null");
 
-            Assert.AreEqual( firstName, target.FirstName);
-            Assert.AreEqual( lastName, target.LastName);
-            Assert.AreEqual(fullName, target.DisplayName);
+            Assert.AreEqual( firstName, target.FirstName, "First Name doesn't match");
+            Assert.AreEqual( lastName, target.LastName, "Last Name doesn't match");
+
+            Assert.AreEqual(expectedDisplayName, target.DisplayName, "DisplayName doesn't match");
         }
 
 
@@ -60,6 +67,19 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Kevin", target.FirstName);
             Assert.AreEqual("Lamoureux", target.LastName);
             Assert.AreEqual("Kevin Lamoureux", target.DisplayName);
+            Assert.IsNull(target.Title);
+        }
+
+        [TestMethod]
+        public void Parse_JenniferOConnell()
+        {
+            var fullName = "Jennifer O'Connell";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Jennifer", target.FirstName);
+            Assert.AreEqual("O'Connell", target.LastName);
+            Assert.AreEqual("Jennifer O'Connell", target.DisplayName);
             Assert.IsNull(target.Title);
         }
     }

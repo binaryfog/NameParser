@@ -11,8 +11,9 @@ namespace BinaryFog.NameParser.Patterns {
 		public ParsedName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var pn = new ParsedName {
-				DisplayName = rawName,
+            var pn = new ParsedName(this.GetType().Name)
+            {
+                DisplayName = rawName,
 				Score = ParsedName.MaxScore
 			};
 

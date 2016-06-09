@@ -12,9 +12,9 @@ namespace BinaryFog.NameParser.Patterns {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
 			var prefix = match.Groups["prefix"].Value;
-			var pn = new ParsedName {
-
-				FirstName = match.Groups["first"].Value,
+            var pn = new ParsedName(this.GetType().Name)
+            {
+                FirstName = match.Groups["first"].Value,
 				MiddleName = match.Groups["middle"].Value,
 
 				LastName = prefix + " " + match.Groups["last"].Value,
