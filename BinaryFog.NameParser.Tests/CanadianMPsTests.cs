@@ -82,5 +82,18 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Jennifer O'Connell", target.DisplayName);
             Assert.IsNull(target.Title);
         }
+
+        [TestMethod]
+        public void Parse_FayçalElDASHKhoury()
+        {
+            var fullName = "Fayçal El-Khoury";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Fayçal", target.FirstName);
+            Assert.AreEqual("El-Khoury", target.LastName);
+            Assert.AreEqual("Fayçal El-Khoury", target.DisplayName);
+            Assert.IsNull(target.Title);
+        }
     }
 }
