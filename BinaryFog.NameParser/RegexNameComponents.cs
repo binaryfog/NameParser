@@ -31,11 +31,13 @@ namespace BinaryFog.NameParser {
 
 		public static readonly string JobTitle = @"(?<jobTitle>" + JobTitles + @")";
 		public static readonly string Title = @"(?<title>(" + Titles + @")((?!\s)\W)?)";
-		public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
-		public static readonly string Prefix = @"(?<prefix>" + LastNamePrefixes + @")";
+        //public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
+        public static readonly string Suffix = @"(?<suffix>(" + Suffixes + @")((?!\s)\W)?)";
+        public static readonly string Prefix = @"(?<prefix>" + LastNamePrefixes + @")";
 		public const string Space = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)";
-		public const string OptionalCommaSpace = @"(\s*,)?\s*";
-		public const string CommaSpace = @"\s*,\s*";
+		//public const string OptionalCommaSpace = @"(\s*,)?\s*";
+        public const string OptionalCommaSpace = @"\s*,?\s+";
+        public const string CommaSpace = @"\s*,\s*";
 		public const string Initial = @"(?<initial>[a-z]\.?)";
 		public const string First = @"(?<first>\w+)";
 		public const string Last = @"(?<last>\w+)";

@@ -130,10 +130,11 @@ namespace BinaryFog.NameParser.Tests {
 			var target = new FullNameParser(fullName);
 			target.Parse();
 
-			Assert.AreEqual("Jack", target.FirstName);
+            Assert.AreEqual("Mr", target.Title);
+            Assert.AreEqual("Jack", target.FirstName);
 			Assert.AreEqual("Johnson", target.LastName);
 			Assert.AreEqual("Jack Johnson", target.DisplayName);
-			Assert.AreEqual("Mr", target.Title);
+			
 		}
 
 		[TestMethod]
@@ -312,7 +313,8 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.AreEqual("Francis", target.MiddleName);
 			Assert.AreEqual("Van Der Waal", target.LastName);
 			Assert.AreEqual("Sr.", target.Suffix);
-		}
+            Assert.AreEqual("Jack Van Der Waal", target.DisplayName);
+        }
 
 		[TestMethod]
 		public void Parse_MrJackFrancisMarionVanDerWaalSr() {

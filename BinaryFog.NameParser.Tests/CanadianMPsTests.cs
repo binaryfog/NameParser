@@ -95,5 +95,47 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Fayçal El-Khoury", target.DisplayName);
             Assert.IsNull(target.Title);
         }
+
+        [TestMethod]
+        public void Parse_HonDOTGinettePetitpasTaylor()
+        {
+            var fullName = "Hon. Ginette Petitpas Taylor";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Hon.", target.Title, "Incorrect title");
+            Assert.AreEqual("Ginette", target.FirstName, "Incorrect first name");
+            Assert.AreEqual("Petitpas Taylor", target.LastName, "Incorrect last name");
+            Assert.AreEqual("Ginette Petitpas Taylor", target.DisplayName, "Incorrect display name");
+            
+        }
+
+        [TestMethod]
+        public void Parse_HonDOTDeepakObhrai()
+        {
+            var fullName = "Hon. Deepak Obhrai";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Hon.", target.Title, "Incorrect title");
+            Assert.AreEqual("Deepak", target.FirstName, "Incorrect first name");
+            Assert.AreEqual("Obhrai", target.LastName, "Incorrect last name");
+            Assert.AreEqual("Deepak Obhrai", target.DisplayName, "Incorrect display name");
+
+        }
+
+        [TestMethod]
+        public void Parse_HonDOTJodyWilsonDASHRaybould()
+        {
+            var fullName = "Hon. Jody Wilson-Raybould";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Hon.", target.Title, "Incorrect title");
+            Assert.AreEqual("Jody", target.FirstName, "Incorrect first name");
+            Assert.AreEqual("Wilson-Raybould", target.LastName, "Incorrect last name");
+            Assert.AreEqual("Jody Wilson-Raybould", target.DisplayName, "Incorrect display name");
+
+        }
     }
 }

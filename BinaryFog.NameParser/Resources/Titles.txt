@@ -15,6 +15,6 @@ master
 mz
 lord
 lady
-hon.
+hon
 honorable
-right hon.
+right hon

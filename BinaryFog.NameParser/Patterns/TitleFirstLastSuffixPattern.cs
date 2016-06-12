@@ -8,8 +8,6 @@ namespace BinaryFog.NameParser.Patterns {
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {
-			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
-			//Suffix should be I or II or III or Jr. or Jr or Sr. or Sr or ESQ or ESQ. or ESQ"
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
             var pn = new ParsedName(this.GetType().Name)
@@ -19,7 +17,7 @@ namespace BinaryFog.NameParser.Patterns {
 				LastName = match.Groups["last"].Value,
 				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
 				Suffix = match.Groups["suffix"].Value,
-				Score = 100
+				Score = 200
 			};
 			return pn;
 		}

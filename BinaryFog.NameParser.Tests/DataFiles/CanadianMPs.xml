@@ -1332,16 +1332,6 @@
   </MemberOfParliament>
   <MemberOfParliament>
     <PersonShortHonorific />
-    <PersonOfficialFirstName>David de Burgh</PersonOfficialFirstName>
-    <PersonOfficialLastName>Graham</PersonOfficialLastName>
-    <ConstituencyName>Laurentides—Labelle</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Liberal</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
-    <PersonShortHonorific />
     <PersonOfficialFirstName>Raj</PersonOfficialFirstName>
     <PersonOfficialLastName>Grewal</PersonOfficialLastName>
     <ConstituencyName>Brampton East</ConstituencyName>
@@ -1397,16 +1387,6 @@
     <ConstituencyName>Calgary Heritage</ConstituencyName>
     <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
     <CaucusShortName>Conservative</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
-    <PersonShortHonorific />
-    <PersonOfficialFirstName>T.J.</PersonOfficialFirstName>
-    <PersonOfficialLastName>Harvey</PersonOfficialLastName>
-    <ConstituencyName>Tobique—Mactaquac</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Liberal</CaucusShortName>
     <FromDateTime>2015-10-19T00:00:00</FromDateTime>
     <ToDateTime xsi:nil="true" />
   </MemberOfParliament>
@@ -1767,16 +1747,6 @@
     <ConstituencyName>Sudbury</ConstituencyName>
     <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
     <CaucusShortName>Liberal</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
-    <PersonShortHonorific>Hon.</PersonShortHonorific>
-    <PersonOfficialFirstName>K. Kellie</PersonOfficialFirstName>
-    <PersonOfficialLastName>Leitch</PersonOfficialLastName>
-    <ConstituencyName>Simcoe—Grey</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Conservative</CaucusShortName>
     <FromDateTime>2015-10-19T00:00:00</FromDateTime>
     <ToDateTime xsi:nil="true" />
   </MemberOfParliament>
@@ -2481,16 +2451,6 @@
     <ToDateTime xsi:nil="true" />
   </MemberOfParliament>
   <MemberOfParliament>
-    <PersonShortHonorific />
-    <PersonOfficialFirstName>Anne Minh-Thu</PersonOfficialFirstName>
-    <PersonOfficialLastName>Quach</PersonOfficialLastName>
-    <ConstituencyName>Salaberry—Suroît</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>NDP</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
     <PersonShortHonorific>Hon.</PersonShortHonorific>
     <PersonOfficialFirstName>Carla</PersonOfficialFirstName>
     <PersonOfficialLastName>Qualtrough</PersonOfficialLastName>
@@ -2711,16 +2671,6 @@
     <ToDateTime xsi:nil="true" />
   </MemberOfParliament>
   <MemberOfParliament>
-    <PersonShortHonorific>Hon.</PersonShortHonorific>
-    <PersonOfficialFirstName>Harjit S.</PersonOfficialFirstName>
-    <PersonOfficialLastName>Sajjan</PersonOfficialLastName>
-    <ConstituencyName>Vancouver South</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Liberal</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
     <PersonShortHonorific />
     <PersonOfficialFirstName>Darrell</PersonOfficialFirstName>
     <PersonOfficialLastName>Samson</PersonOfficialLastName>
@@ -2825,16 +2775,6 @@
     <PersonOfficialFirstName>Marc</PersonOfficialFirstName>
     <PersonOfficialLastName>Serré</PersonOfficialLastName>
     <ConstituencyName>Nickel Belt</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Liberal</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
-    <PersonShortHonorific>Hon.</PersonShortHonorific>
-    <PersonOfficialFirstName>Judy A.</PersonOfficialFirstName>
-    <PersonOfficialLastName>Sgro</PersonOfficialLastName>
-    <ConstituencyName>Humber River—Black Creek</ConstituencyName>
     <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
     <CaucusShortName>Liberal</CaucusShortName>
     <FromDateTime>2015-10-19T00:00:00</FromDateTime>
@@ -3236,16 +3176,6 @@
     <PersonOfficialLastName>Warkentin</PersonOfficialLastName>
     <ConstituencyName>Grande Prairie—Mackenzie</ConstituencyName>
     <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
-    <CaucusShortName>Conservative</CaucusShortName>
-    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
-    <ToDateTime xsi:nil="true" />
-  </MemberOfParliament>
-  <MemberOfParliament>
-    <PersonShortHonorific />
-    <PersonOfficialFirstName>Dianne L.</PersonOfficialFirstName>
-    <PersonOfficialLastName>Watts</PersonOfficialLastName>
-    <ConstituencyName>South Surrey—White Rock</ConstituencyName>
-    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
     <CaucusShortName>Conservative</CaucusShortName>
     <FromDateTime>2015-10-19T00:00:00</FromDateTime>
     <ToDateTime xsi:nil="true" />

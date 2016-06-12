@@ -60,8 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patterns\DoubleWordFirstLastPattern.cs" />
+    <Compile Include="Patterns\TitleFirstDoubleWordHyphenatedLastPattern.cs" />
+    <Compile Include="Patterns\TitleDoubleWordHyphenatedFirstLastPattern.cs" />
     <Compile Include="Patterns\DoubleWordHyphenatedFirstLastPattern.cs" />
     <Compile Include="Patterns\FirstDoubleWordHyphenatedLastPattern.cs" />
+    <Compile Include="Patterns\TitleFirstDoubleWordLastPattern.cs" />
     <Compile Include="Patterns\FirstDoubleWordLastPattern.cs" />
     <Compile Include="Patterns\FirstIrishLastPattern.cs" />
     <Compile Include="Patterns\FirstMiddleHyphenatedLastPattern.cs" />

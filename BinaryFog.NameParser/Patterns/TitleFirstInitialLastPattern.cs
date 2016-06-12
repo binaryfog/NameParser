@@ -18,7 +18,7 @@ namespace BinaryFog.NameParser.Patterns {
 				FirstName = match.Groups["first"].Value,
 				LastName = match.Groups["last"].Value,
 				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
-				Score = 100
+				Score = 200
 			};
 			return pn;
 		}
