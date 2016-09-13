@@ -5,7 +5,7 @@ using static BinaryFog.NameParser.NameComponentSets;
 namespace BinaryFog.NameParser.Patterns {
 	internal class FirstDoubleWordHyphenatedLastPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + First + Space + @"(?<last1>\w+)-(?<last2>\w+)$",
+			@"^" + First + Space + @"(?<last1>\w+|\w+'\w*)-(?<last2>\w+)$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {

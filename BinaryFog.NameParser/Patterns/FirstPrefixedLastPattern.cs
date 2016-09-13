@@ -4,7 +4,7 @@ using static BinaryFog.NameParser.RegexNameComponents;
 namespace BinaryFog.NameParser.Patterns {
 	internal class FirstPrefixedLastPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + First + Space + Prefix + Space + Last + @"$",
+			@"^" + First + " " + Prefix + Space + Last + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {
