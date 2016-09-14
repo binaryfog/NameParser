@@ -9,7 +9,7 @@ Intended to be extendable, the library can be extended just by implement `IPatte
 
 For the sake of performance, the assembly and types implementing `IPattern` must be loaded before the first attempt to use the `NameParser`.
 
-If you have a person name that is not parsed correctly, let me know; harapu@gmail.com. I'll see what I can do.
+If you have a person name that is not parsed correctly, please post a message on https://gitter.im/binaryfog/NameParser. I'll see what I can do.
 
 Usage:
 ```csharp
