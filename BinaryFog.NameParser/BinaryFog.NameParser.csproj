@@ -59,6 +59,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\DoubleInitialsFirstLastPattern.cs" />
     <Compile Include="Patterns\DoubleWordFirstLastPattern.cs" />
     <Compile Include="Patterns\TitleFirstDoubleWordHyphenatedLastPattern.cs" />
     <Compile Include="Patterns\TitleDoubleWordHyphenatedFirstLastPattern.cs" />

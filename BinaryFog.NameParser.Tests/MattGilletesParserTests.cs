@@ -75,9 +75,44 @@ namespace BinaryFog.NameParser.Tests {
 
         }
 
+        [TestMethod]
+        public void Parse_EDOTJDOTSPACEManuel()
+        {
+            var fullName = "E.J. Manuel";
+            var target = new FullNameParser(fullName);
+            target.Parse();
 
+            Assert.AreEqual("E.J.", target.FirstName);
+            Assert.AreEqual("Manuel", target.LastName);
+            Assert.AreEqual("E.J. Manuel", target.DisplayName);
 
+        }
 
+        [TestMethod]
+        public void Parse_DDOTSpaceJDotSpaceFoster()
+        {
+            var fullName = "D. J. Foster";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("D.J.", target.FirstName);
+            Assert.AreEqual("Foster", target.LastName);
+            Assert.AreEqual("D.J. Foster", target.DisplayName);
+
+        }
+
+        [TestMethod]
+        public void Parse_AlDASHHajjSPACEShabazz()
+        {
+            var fullName = "Al-Hajj Shabazz";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("Al-Hajj", target.FirstName);
+            Assert.AreEqual("Shabazz", target.LastName);
+            Assert.AreEqual("Al-Hajj Shabazz", target.DisplayName);
+
+        }
 
     }
 }

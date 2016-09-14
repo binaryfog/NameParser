@@ -37,6 +37,7 @@ namespace BinaryFog.NameParser {
 		public const string Space = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)";
 		//public const string OptionalCommaSpace = @"(\s*,)?\s*";
         public const string OptionalCommaSpace = @"\s*,?\s+";
+        public const string OptionalSpace = @"\s?";
         public const string CommaSpace = @"\s*,\s*";
 		public const string Initial = @"(?<initial>[a-z]\.?)";
 		public const string First = @"(?<first>\w+|\w+'\w*)";
