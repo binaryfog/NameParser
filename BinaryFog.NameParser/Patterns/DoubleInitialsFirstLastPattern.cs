@@ -5,7 +5,7 @@ using static BinaryFog.NameParser.NameComponentSets;
 namespace BinaryFog.NameParser.Patterns {
 	internal class DoubleInitialsFirstLastPattern : IPattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + @"(?<first1>\w\.)" + OptionalSpace + @"(?<first2>\w\.)" + Space + @"(?<last>\w+)$",
+			@"^" + @"(?<first1>\w\.)" + OptionalSpace + @"(?<first2>\w\.?)" + Space + @"(?<last>\w+)$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 		public ParsedName Parse(string rawName) {

@@ -114,5 +114,31 @@ namespace BinaryFog.NameParser.Tests {
 
         }
 
+        [TestMethod]
+        public void Parse_DeAndreHoustonDASHCarson()
+        {
+            var fullName = "DeAndre Houston-Carson";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("DeAndre", target.FirstName);
+            Assert.AreEqual("Houston-Carson", target.LastName);
+            Assert.AreEqual("DeAndre Houston-Carson", target.DisplayName);
+
+        }
+
+        [TestMethod]
+        public void Parse_CDOTSpaceJSpaceFoster()
+        {
+            var fullName = "C. J Smith";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.AreEqual("C.J", target.FirstName);
+            Assert.AreEqual("Smith", target.LastName);
+            Assert.AreEqual("C.J Smith", target.DisplayName);
+
+        }
+
     }
 }

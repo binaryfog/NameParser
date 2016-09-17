@@ -41,7 +41,7 @@ namespace BinaryFog.NameParser {
         public const string CommaSpace = @"\s*,\s*";
 		public const string Initial = @"(?<initial>[a-z]\.?)";
 		public const string First = @"(?<first>\w+|\w+'\w*)";
-		public const string Last = @"(?<last>\w+)";
+		public const string Last = @"(?<last>\w+|\w+'\w*|'\w+)";
 		public const string Middle = @"(?<middle>\w+)";
 		public const string LastHyphenated = @"(?<last>(?<lastPart1>\w+)-(?<lastPart2>\w+))";
 		public const string Nick = @"(?=\(\w+\)|'\w+'|""\w+"")[\('""](?<nick>\w+)[\)'""]";

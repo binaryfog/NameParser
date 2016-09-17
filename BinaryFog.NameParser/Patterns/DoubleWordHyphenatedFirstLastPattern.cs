@@ -14,10 +14,10 @@ namespace BinaryFog.NameParser.Patterns {
 			var firstName1 = match.Groups["first1"].Value;
             var firstName2 = match.Groups["first2"].Value;
 
-            if (!FirstNames.Contains(firstName1))
+            if (!FirstNames.Contains(firstName1.ToLowerInvariant()))
 				return null;
 
-            if (!FirstNames.Contains(firstName2))
+            if (!FirstNames.Contains(firstName2.ToLowerInvariant()))
                 return null;
 
             var pn = new ParsedName(this.GetType().Name)
