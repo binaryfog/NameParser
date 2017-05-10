@@ -200,7 +200,116 @@ namespace BinaryFog.NameParser.Tests
             Assert.AreEqual("Manuel Esquipulas Sohom", target.DisplayName);
         }
 
-		/* No, you can not have a title of SR.
+        //Tammy L. Baker
+        [TestMethod]
+        public void Parse_TammySpaceLDotBaker()
+        {
+            var fullName = "Tammy L. Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("Baker", target.LastName);
+            Assert.AreEqual("Tammy Baker", target.DisplayName);
+        }
+
+        //Tammy L. van Baker
+        [TestMethod]
+        public void Parse_TammySpaceLDotVanSpaceBaker()
+        {
+            var fullName = "Tammy L. van Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("van Baker", target.LastName);
+            Assert.AreEqual("Tammy van Baker", target.DisplayName);
+        }
+
+        //Tammy L. Blythe-Baker
+        [TestMethod]
+        public void Parse_TammySpaceLDotBlytheHyphenBaker()
+        {
+            var fullName = "Tammy L. Blythe-Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("Blythe-Baker", target.LastName);
+            Assert.AreEqual("Tammy Blythe-Baker", target.DisplayName);
+        }
+
+        //Jimmy Lee Dabney II
+        [TestMethod]
+        public void Parse_JimmySpaceLeeSpaceDabneySpaceII()
+        {
+            var fullName = "Jimmy Lee Dabney II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Jimmy", target.FirstName);
+            Assert.AreEqual("Lee", target.MiddleName);
+            Assert.AreEqual("Dabney", target.LastName);
+            Assert.AreEqual("II", target.Suffix);
+            Assert.AreEqual("Jimmy Dabney", target.DisplayName);
+        }
+
+        //Tammy L. Baker II
+        [TestMethod]
+        public void Parse_TammySpaceLDotBakerSpaceII()
+        {
+            var fullName = "Tammy L. Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("Baker", target.LastName);
+            Assert.AreEqual("II", target.Suffix);
+            Assert.AreEqual("Tammy Baker", target.DisplayName);
+        }
+
+        //Tammy L. Blythe-Baker II
+        [TestMethod]
+        public void Parse_TammySpaceLDotBlytheHyphenBakerSpaceII()
+        {
+            var fullName = "Tammy L. Blythe-Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("Blythe-Baker", target.LastName);
+            Assert.AreEqual("II", target.Suffix);
+            Assert.AreEqual("Tammy Blythe-Baker", target.DisplayName);
+        }
+
+        //Tammy L. van Baker II
+        [TestMethod]
+        public void Parse_TammySpaceLDotVanSpaceBakerSpaceII()
+        {
+            var fullName = "Tammy L. van Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.AreEqual("Tammy", target.FirstName);
+            Assert.AreEqual("L", target.MiddleName);
+            Assert.AreEqual("van Baker", target.LastName);
+            Assert.AreEqual("II", target.Suffix);
+            Assert.AreEqual("Tammy van Baker", target.DisplayName);
+        }
+
+        /* No, you can not have a title of SR.
         //SR. John Henry William dela Vega, Jr Esq.
         [TestMethod()]
         public void Parse_SrJohnHenryWilliamdelaVegaCommaJrEsq()

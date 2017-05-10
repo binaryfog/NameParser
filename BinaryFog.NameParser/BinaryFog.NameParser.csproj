@@ -49,6 +49,12 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -62,6 +68,15 @@
   <ItemGroup>
     <Compile Include="Patterns\DoubleInitialsFirstLastPattern.cs" />
     <Compile Include="Patterns\DoubleWordFirstLastPattern.cs" />
+    <Compile Include="Patterns\FirstInitialHyphenatedLastPattern.cs" />
+    <Compile Include="Patterns\FirstInitialHyphenatedLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstInitialLastPattern.cs" />
+    <Compile Include="Patterns\FirstInitialLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstInitialPrefixedLastPattern.cs" />
+    <Compile Include="Patterns\FirstInitialPrefixedLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstMiddleHyphenatedLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstMiddleLastSuffixPattern.cs" />
+    <Compile Include="Patterns\FirstMiddlePrefixedLastSuffixPattern.cs" />
     <Compile Include="Patterns\TitleFirstDoubleWordHyphenatedLastPattern.cs" />
     <Compile Include="Patterns\TitleDoubleWordHyphenatedFirstLastPattern.cs" />
     <Compile Include="Patterns\DoubleWordHyphenatedFirstLastPattern.cs" />
