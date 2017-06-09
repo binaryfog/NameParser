@@ -51,15 +51,16 @@ namespace BinaryFog.NameParser {
 
 		public static readonly string JobTitle = @"(?<jobTitle>" + JobTitles + @")";
 		public static readonly string Title = @"(?<title>(" + Titles + @")((?!\s)\W)?)";
-		public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
+        //public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
+        public static readonly string Suffix = @"(?<suffix>(" + Suffixes + @")((?!\s)\W)?)";
 		public static readonly string Prefix = @"(?<prefix>" + LastNamePrefixes + @")";
 
 		public const string Space = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)";
 		public const string OptionalCommaSpace = @"(\s*,)?\s+";
 		public const string CommaSpace = @"\s*,\s*";
 		public const string Initial = @"(?<initial>[a-z]\.?)";
-		public const string First = @"(?<first>\w+)";
-		public const string Last = @"(?<last>\w+)";
+		public const string First = @"(?<first>\w+|\w+'\w*)";
+		public const string Last = @"(?<last>\w+|\w+'\w*|'\w+)";
 		public const string Middle = @"(?<middle>\w+)";
 		public const string TwoMiddle = @"(?<middle1>\w+)" + Space + @"(?<middle2>\w+)";
 		public const string Hyphen = "[-\u00AD\u058A\u1806\u2010\u2011\u30FB\uFE63\uFF0D\uFF65]";

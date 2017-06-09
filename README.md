@@ -1,13 +1,15 @@
 NameParser
 ====
-Human name parsing.
+
+[![Join the chat at https://gitter.im/binaryfog/NameParser](https://badges.gitter.im/binaryfog/NameParser.svg)](https://gitter.im/binaryfog/NameParser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build status](https://ci.appveyor.com/api/projects/status/8d3nkp5crr6mdftx/branch/master?svg=true)](https://ci.appveyor.com/project/binaryfog/nameparser/branch/master)   Human name parsing.
 
 Parses names using English conventions for persons names. 
 Intended to be extendable, the library can be extended just by implement `IPattern` interface and assign a score to the returned result.
 
 For the sake of performance, the assembly and types implementing `IPattern` must be loaded before the first attempt to use the `NameParser`.
 
-If you have a person name that is not parsed correctly, let me know; harapu@gmail.com. I'll see what I can do.
+If you have a person name that is not parsed correctly, please post a message on https://gitter.im/binaryfog/NameParser. I'll see what I can do.
 
 Usage:
 ```csharp

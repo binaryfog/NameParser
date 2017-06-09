@@ -1,0 +1,3303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ziad</PersonOfficialFirstName>
+    <PersonOfficialLastName>Aboultaif</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Manning</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Albas</PersonOfficialLastName>
+    <ConstituencyName>Central Okanagan—Similkameen—Nicola</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Harold</PersonOfficialFirstName>
+    <PersonOfficialLastName>Albrecht</PersonOfficialLastName>
+    <ConstituencyName>Kitchener—Conestoga</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>Aldag</PersonOfficialLastName>
+    <ConstituencyName>Cloverdale—Langley City</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Omar</PersonOfficialFirstName>
+    <PersonOfficialLastName>Alghabra</PersonOfficialLastName>
+    <ConstituencyName>Mississauga Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Leona</PersonOfficialFirstName>
+    <PersonOfficialLastName>Alleslev</PersonOfficialLastName>
+    <ConstituencyName>Aurora—Oak Ridges—Richmond Hill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dean</PersonOfficialFirstName>
+    <PersonOfficialLastName>Allison</PersonOfficialLastName>
+    <ConstituencyName>Niagara West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Rona</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ambrose</PersonOfficialLastName>
+    <ConstituencyName>Sturgeon River—Parkland</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>William</PersonOfficialFirstName>
+    <PersonOfficialLastName>Amos</PersonOfficialLastName>
+    <ConstituencyName>Pontiac</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gary</PersonOfficialFirstName>
+    <PersonOfficialLastName>Anandasangaree</PersonOfficialLastName>
+    <ConstituencyName>Scarborough—Rouge Park</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Anderson</PersonOfficialLastName>
+    <ConstituencyName>Cypress Hills—Grasslands</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Charlie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Angus</PersonOfficialLastName>
+    <ConstituencyName>Timmins—James Bay</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Arnold</PersonOfficialLastName>
+    <ConstituencyName>North Okanagan—Shuswap</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>René</PersonOfficialFirstName>
+    <PersonOfficialLastName>Arseneault</PersonOfficialLastName>
+    <ConstituencyName>Madawaska—Restigouche</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Chandra</PersonOfficialFirstName>
+    <PersonOfficialLastName>Arya</PersonOfficialLastName>
+    <ConstituencyName>Nepean</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Niki</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ashton</PersonOfficialLastName>
+    <ConstituencyName>Churchill—Keewatinook Aski</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Aubin</PersonOfficialLastName>
+    <ConstituencyName>Trois-Rivières</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ramez</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ayoub</PersonOfficialLastName>
+    <ConstituencyName>Thérèse-De Blainville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Vance</PersonOfficialFirstName>
+    <PersonOfficialLastName>Badawey</PersonOfficialLastName>
+    <ConstituencyName>Niagara Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Larry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bagnell</PersonOfficialLastName>
+    <ConstituencyName>Yukon</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Yukon</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Navdeep</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bains</PersonOfficialLastName>
+    <ConstituencyName>Mississauga—Malton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>Barlow</PersonOfficialLastName>
+    <ConstituencyName>Foothills</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Xavier</PersonOfficialFirstName>
+    <PersonOfficialLastName>Barsalou-Duval</PersonOfficialLastName>
+    <ConstituencyName>Pierre-Boucher—Les Patriotes—Verchères</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Frank</PersonOfficialFirstName>
+    <PersonOfficialLastName>Baylis</PersonOfficialLastName>
+    <ConstituencyName>Pierrefonds—Dollard</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mario</PersonOfficialFirstName>
+    <PersonOfficialLastName>Beaulieu</PersonOfficialLastName>
+    <ConstituencyName>La Pointe-de-l'Île</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Terry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Beech</PersonOfficialLastName>
+    <ConstituencyName>Burnaby North—Seymour</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Mauril</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bélanger</PersonOfficialLastName>
+    <ConstituencyName>Ottawa—Vanier</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Carolyn</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bennett</PersonOfficialLastName>
+    <ConstituencyName>Toronto—St. Paul's</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sheri</PersonOfficialFirstName>
+    <PersonOfficialLastName>Benson</PersonOfficialLastName>
+    <ConstituencyName>Saskatoon West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Candice</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bergen</PersonOfficialLastName>
+    <ConstituencyName>Portage—Lisgar</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Maxime</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bernier</PersonOfficialLastName>
+    <ConstituencyName>Beauce</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Luc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Berthold</PersonOfficialLastName>
+    <ConstituencyName>Mégantic—L'Érable</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>James</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bezan</PersonOfficialLastName>
+    <ConstituencyName>Selkirk—Interlake—Eastman</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Marie-Claude</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bibeau</PersonOfficialLastName>
+    <ConstituencyName>Compton—Stanstead</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Chris</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bittle</PersonOfficialLastName>
+    <ConstituencyName>St. Catharines</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Daniel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Blaikie</PersonOfficialLastName>
+    <ConstituencyName>Elmwood—Transcona</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bill</PersonOfficialFirstName>
+    <PersonOfficialLastName>Blair</PersonOfficialLastName>
+    <ConstituencyName>Scarborough Southwest</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Rachel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Blaney</PersonOfficialLastName>
+    <ConstituencyName>North Island—Powell River</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Steven</PersonOfficialFirstName>
+    <PersonOfficialLastName>Blaney</PersonOfficialLastName>
+    <ConstituencyName>Bellechasse—Les Etchemins—Lévis</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kelly</PersonOfficialFirstName>
+    <PersonOfficialLastName>Block</PersonOfficialLastName>
+    <ConstituencyName>Carlton Trail—Eagle Creek</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Randy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Boissonnault</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mike</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bossio</PersonOfficialLastName>
+    <ConstituencyName>Hastings—Lennox and Addington</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sylvie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Boucher</PersonOfficialLastName>
+    <ConstituencyName>Beauport—Côte-de-Beaupré—Île d'Orléans—Charlevoix</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Michel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Boudrias</PersonOfficialLastName>
+    <ConstituencyName>Terrebonne</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alexandre</PersonOfficialFirstName>
+    <PersonOfficialLastName>Boulerice</PersonOfficialLastName>
+    <ConstituencyName>Rosemont—La Petite-Patrie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marjolaine</PersonOfficialFirstName>
+    <PersonOfficialLastName>Boutin-Sweet</PersonOfficialLastName>
+    <ConstituencyName>Hochelaga</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>Brassard</PersonOfficialLastName>
+    <ConstituencyName>Barrie—Innisfil</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bob</PersonOfficialFirstName>
+    <PersonOfficialLastName>Bratina</PersonOfficialLastName>
+    <ConstituencyName>Hamilton East—Stoney Creek</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pierre</PersonOfficialFirstName>
+    <PersonOfficialLastName>Breton</PersonOfficialLastName>
+    <ConstituencyName>Shefford</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Scott</PersonOfficialFirstName>
+    <PersonOfficialLastName>Brison</PersonOfficialLastName>
+    <ConstituencyName>Kings—Hants</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ruth Ellen</PersonOfficialFirstName>
+    <PersonOfficialLastName>Brosseau</PersonOfficialLastName>
+    <ConstituencyName>Berthier—Maskinongé</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gordon</PersonOfficialFirstName>
+    <PersonOfficialLastName>Brown</PersonOfficialLastName>
+    <ConstituencyName>Leeds—Grenville—Thousand Islands and Rideau Lakes</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Celina</PersonOfficialFirstName>
+    <PersonOfficialLastName>Caesar-Chavannes</PersonOfficialLastName>
+    <ConstituencyName>Whitby</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Blaine</PersonOfficialFirstName>
+    <PersonOfficialLastName>Calkins</PersonOfficialLastName>
+    <ConstituencyName>Red Deer—Lacombe</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Richard</PersonOfficialFirstName>
+    <PersonOfficialLastName>Cannings</PersonOfficialLastName>
+    <ConstituencyName>South Okanagan—West Kootenay</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Guy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Caron</PersonOfficialLastName>
+    <ConstituencyName>Rimouski-Neigette—Témiscouata—Les Basques</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Jim</PersonOfficialFirstName>
+    <PersonOfficialLastName>Carr</PersonOfficialLastName>
+    <ConstituencyName>Winnipeg South Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Colin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Carrie</PersonOfficialLastName>
+    <ConstituencyName>Oshawa</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bill</PersonOfficialFirstName>
+    <PersonOfficialLastName>Casey</PersonOfficialLastName>
+    <ConstituencyName>Cumberland—Colchester</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sean</PersonOfficialFirstName>
+    <PersonOfficialLastName>Casey</PersonOfficialLastName>
+    <ConstituencyName>Charlottetown</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Prince Edward Island</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Bardish</PersonOfficialFirstName>
+    <PersonOfficialLastName>Chagger</PersonOfficialLastName>
+    <ConstituencyName>Waterloo</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>François-Philippe</PersonOfficialFirstName>
+    <PersonOfficialLastName>Champagne</PersonOfficialLastName>
+    <ConstituencyName>Saint-Maurice—Champlain</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Arnold</PersonOfficialFirstName>
+    <PersonOfficialLastName>Chan</PersonOfficialLastName>
+    <ConstituencyName>Scarborough—Agincourt</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Shaun</PersonOfficialFirstName>
+    <PersonOfficialLastName>Chen</PersonOfficialLastName>
+    <ConstituencyName>Scarborough North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Michael</PersonOfficialFirstName>
+    <PersonOfficialLastName>Chong</PersonOfficialLastName>
+    <ConstituencyName>Wellington—Halton Hills</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>François</PersonOfficialFirstName>
+    <PersonOfficialLastName>Choquette</PersonOfficialLastName>
+    <ConstituencyName>Drummond</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Christopherson</PersonOfficialLastName>
+    <ConstituencyName>Hamilton Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alupa</PersonOfficialFirstName>
+    <PersonOfficialLastName>Clarke</PersonOfficialLastName>
+    <ConstituencyName>Beauport—Limoilou</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Tony</PersonOfficialFirstName>
+    <PersonOfficialLastName>Clement</PersonOfficialLastName>
+    <ConstituencyName>Parry Sound—Muskoka</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Michael</PersonOfficialFirstName>
+    <PersonOfficialLastName>Cooper</PersonOfficialLastName>
+    <ConstituencyName>St. Albert—Edmonton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Serge</PersonOfficialFirstName>
+    <PersonOfficialLastName>Cormier</PersonOfficialLastName>
+    <ConstituencyName>Acadie—Bathurst</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Nathan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Cullen</PersonOfficialLastName>
+    <ConstituencyName>Skeena—Bulkley Valley</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Rodger</PersonOfficialFirstName>
+    <PersonOfficialLastName>Cuzner</PersonOfficialLastName>
+    <ConstituencyName>Cape Breton—Canso</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Julie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dabrusin</PersonOfficialLastName>
+    <ConstituencyName>Toronto—Danforth</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pam</PersonOfficialFirstName>
+    <PersonOfficialLastName>Damoff</PersonOfficialLastName>
+    <ConstituencyName>Oakville North—Burlington</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Don</PersonOfficialFirstName>
+    <PersonOfficialLastName>Davies</PersonOfficialLastName>
+    <ConstituencyName>Vancouver Kingsway</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Matt</PersonOfficialFirstName>
+    <PersonOfficialLastName>DeCourcey</PersonOfficialLastName>
+    <ConstituencyName>Fredericton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gérard</PersonOfficialFirstName>
+    <PersonOfficialLastName>Deltell</PersonOfficialLastName>
+    <ConstituencyName>Louis-Saint-Laurent</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sukh</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dhaliwal</PersonOfficialLastName>
+    <ConstituencyName>Surrey—Newton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Anju</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dhillon</PersonOfficialLastName>
+    <ConstituencyName>Dorval—Lachine—LaSalle</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Nicola</PersonOfficialFirstName>
+    <PersonOfficialLastName>Di Iorio</PersonOfficialLastName>
+    <ConstituencyName>Saint-Léonard—Saint-Michel</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Stéphane</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dion</PersonOfficialLastName>
+    <ConstituencyName>Saint-Laurent</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kerry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Diotte</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Griesbach</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Todd</PersonOfficialFirstName>
+    <PersonOfficialLastName>Doherty</PersonOfficialLastName>
+    <ConstituencyName>Cariboo—Prince George</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Fin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Donnelly</PersonOfficialLastName>
+    <ConstituencyName>Port Moody—Coquitlam</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Earl</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dreeshen</PersonOfficialLastName>
+    <ConstituencyName>Red Deer—Mountain View</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Francis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Drouin</PersonOfficialLastName>
+    <ConstituencyName>Glengarry—Prescott—Russell</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Matthew</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dubé</PersonOfficialLastName>
+    <ConstituencyName>Beloeil—Chambly</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Emmanuel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dubourg</PersonOfficialLastName>
+    <ConstituencyName>Bourassa</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Jean-Yves</PersonOfficialFirstName>
+    <PersonOfficialLastName>Duclos</PersonOfficialLastName>
+    <ConstituencyName>Québec</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Terry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Duguid</PersonOfficialLastName>
+    <ConstituencyName>Winnipeg South</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Kirsty</PersonOfficialFirstName>
+    <PersonOfficialLastName>Duncan</PersonOfficialLastName>
+    <ConstituencyName>Etobicoke North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Linda</PersonOfficialFirstName>
+    <PersonOfficialLastName>Duncan</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Strathcona</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pierre-Luc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dusseault</PersonOfficialLastName>
+    <ConstituencyName>Sherbrooke</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Scott</PersonOfficialFirstName>
+    <PersonOfficialLastName>Duvall</PersonOfficialLastName>
+    <ConstituencyName>Hamilton Mountain</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Julie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Dzerowicz</PersonOfficialLastName>
+    <ConstituencyName>Davenport</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Wayne</PersonOfficialFirstName>
+    <PersonOfficialLastName>Easter</PersonOfficialLastName>
+    <ConstituencyName>Malpeque</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Prince Edward Island</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jim</PersonOfficialFirstName>
+    <PersonOfficialLastName>Eglinski</PersonOfficialLastName>
+    <ConstituencyName>Yellowhead</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ali</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ehsassi</PersonOfficialLastName>
+    <ConstituencyName>Willowdale</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Fayçal</PersonOfficialFirstName>
+    <PersonOfficialLastName>El-Khoury</PersonOfficialLastName>
+    <ConstituencyName>Laval—Les Îles</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Neil</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ellis</PersonOfficialLastName>
+    <ConstituencyName>Bay of Quinte</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Nathaniel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Erskine-Smith</PersonOfficialLastName>
+    <ConstituencyName>Beaches—East York</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Mark</PersonOfficialFirstName>
+    <PersonOfficialLastName>Eyking</PersonOfficialLastName>
+    <ConstituencyName>Sydney—Victoria</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Doug</PersonOfficialFirstName>
+    <PersonOfficialLastName>Eyolfson</PersonOfficialLastName>
+    <ConstituencyName>Charleswood—St. James—Assiniboia—Headingley</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ted</PersonOfficialFirstName>
+    <PersonOfficialLastName>Falk</PersonOfficialLastName>
+    <ConstituencyName>Provencher</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Ed</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fast</PersonOfficialLastName>
+    <ConstituencyName>Abbotsford</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Greg</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fergus</PersonOfficialLastName>
+    <ConstituencyName>Hull—Aylmer</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Andy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fillmore</PersonOfficialLastName>
+    <ConstituencyName>Halifax</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Diane</PersonOfficialFirstName>
+    <PersonOfficialLastName>Finley</PersonOfficialLastName>
+    <ConstituencyName>Haldimand—Norfolk</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pat</PersonOfficialFirstName>
+    <PersonOfficialLastName>Finnigan</PersonOfficialLastName>
+    <ConstituencyName>Miramichi—Grand Lake</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Darren</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fisher</PersonOfficialLastName>
+    <ConstituencyName>Dartmouth—Cole Harbour</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fonseca</PersonOfficialLastName>
+    <ConstituencyName>Mississauga East—Cooksville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Judy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Foote</PersonOfficialLastName>
+    <ConstituencyName>Bonavista—Burin—Trinity</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Rhéal</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fortin</PersonOfficialLastName>
+    <ConstituencyName>Rivière-du-Nord</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fragiskatos</PersonOfficialLastName>
+    <ConstituencyName>London North Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Colin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fraser</PersonOfficialLastName>
+    <ConstituencyName>West Nova</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sean</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fraser</PersonOfficialLastName>
+    <ConstituencyName>Central Nova</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Chrystia</PersonOfficialFirstName>
+    <PersonOfficialLastName>Freeland</PersonOfficialLastName>
+    <ConstituencyName>University—Rosedale</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Hedy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fry</PersonOfficialLastName>
+    <ConstituencyName>Vancouver Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Stephen</PersonOfficialFirstName>
+    <PersonOfficialLastName>Fuhr</PersonOfficialLastName>
+    <ConstituencyName>Kelowna—Lake Country</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Cheryl</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gallant</PersonOfficialLastName>
+    <ConstituencyName>Renfrew—Nipissing—Pembroke</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Marc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Garneau</PersonOfficialLastName>
+    <ConstituencyName>Notre-Dame-de-Grâce—Westmount</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Randall</PersonOfficialFirstName>
+    <PersonOfficialLastName>Garrison</PersonOfficialLastName>
+    <ConstituencyName>Esquimalt—Saanich—Sooke</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bernard</PersonOfficialFirstName>
+    <PersonOfficialLastName>Généreux</PersonOfficialLastName>
+    <ConstituencyName>Montmagny—L'Islet—Kamouraska—Rivière-du-Loup</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Garnett</PersonOfficialFirstName>
+    <PersonOfficialLastName>Genuis</PersonOfficialLastName>
+    <ConstituencyName>Sherwood Park—Fort Saskatchewan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mark</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gerretsen</PersonOfficialLastName>
+    <ConstituencyName>Kingston and the Islands</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marilène</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gill</PersonOfficialLastName>
+    <ConstituencyName>Manicouagan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marilyn</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gladu</PersonOfficialLastName>
+    <ConstituencyName>Sarnia—Lambton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Joël</PersonOfficialFirstName>
+    <PersonOfficialLastName>Godin</PersonOfficialLastName>
+    <ConstituencyName>Portneuf—Jacques-Cartier</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pam</PersonOfficialFirstName>
+    <PersonOfficialLastName>Goldsmith-Jones</PersonOfficialLastName>
+    <ConstituencyName>West Vancouver—Sunshine Coast—Sea to Sky Country</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Ralph</PersonOfficialFirstName>
+    <PersonOfficialLastName>Goodale</PersonOfficialLastName>
+    <ConstituencyName>Regina—Wascana</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Karina</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gould</PersonOfficialLastName>
+    <ConstituencyName>Burlington</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jacques</PersonOfficialFirstName>
+    <PersonOfficialLastName>Gourde</PersonOfficialLastName>
+    <ConstituencyName>Lévis—Lotbinière</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Raj</PersonOfficialFirstName>
+    <PersonOfficialLastName>Grewal</PersonOfficialLastName>
+    <ConstituencyName>Brampton East</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Patty</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hajdu</PersonOfficialLastName>
+    <ConstituencyName>Thunder Bay—Superior North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Cheryl</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hardcastle</PersonOfficialLastName>
+    <ConstituencyName>Windsor—Tecumseh</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Rachael</PersonOfficialFirstName>
+    <PersonOfficialLastName>Harder</PersonOfficialLastName>
+    <ConstituencyName>Lethbridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ken</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hardie</PersonOfficialLastName>
+    <ConstituencyName>Fleetwood—Port Kells</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Right Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Stephen</PersonOfficialFirstName>
+    <PersonOfficialLastName>Harper</PersonOfficialLastName>
+    <ConstituencyName>Calgary Heritage</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Kent</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hehr</PersonOfficialLastName>
+    <ConstituencyName>Calgary Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Randy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hoback</PersonOfficialLastName>
+    <ConstituencyName>Prince Albert</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mark</PersonOfficialFirstName>
+    <PersonOfficialLastName>Holland</PersonOfficialLastName>
+    <ConstituencyName>Ajax</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Anthony</PersonOfficialFirstName>
+    <PersonOfficialLastName>Housefather</PersonOfficialLastName>
+    <ConstituencyName>Mount Royal</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Carol</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hughes</PersonOfficialLastName>
+    <ConstituencyName>Algoma—Manitoulin—Kapuskasing</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ahmed</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hussen</PersonOfficialLastName>
+    <ConstituencyName>York South—Weston</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gudie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Hutchings</PersonOfficialLastName>
+    <ConstituencyName>Long Range Mountains</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Angelo</PersonOfficialFirstName>
+    <PersonOfficialLastName>Iacono</PersonOfficialLastName>
+    <ConstituencyName>Alfred-Pellan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Matt</PersonOfficialFirstName>
+    <PersonOfficialLastName>Jeneroux</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Riverbend</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gord</PersonOfficialFirstName>
+    <PersonOfficialLastName>Johns</PersonOfficialLastName>
+    <ConstituencyName>Courtenay—Alberni</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Georgina</PersonOfficialFirstName>
+    <PersonOfficialLastName>Jolibois</PersonOfficialLastName>
+    <ConstituencyName>Desnethé—Missinippi—Churchill River</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Mélanie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Joly</PersonOfficialLastName>
+    <ConstituencyName>Ahuntsic-Cartierville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Yvonne</PersonOfficialFirstName>
+    <PersonOfficialLastName>Jones</PersonOfficialLastName>
+    <ConstituencyName>Labrador</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bernadette</PersonOfficialFirstName>
+    <PersonOfficialLastName>Jordan</PersonOfficialLastName>
+    <ConstituencyName>South Shore—St. Margarets</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Majid</PersonOfficialFirstName>
+    <PersonOfficialLastName>Jowhari</PersonOfficialLastName>
+    <ConstituencyName>Richmond Hill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Julian</PersonOfficialLastName>
+    <ConstituencyName>New Westminster—Burnaby</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Darshan Singh</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kang</PersonOfficialLastName>
+    <ConstituencyName>Calgary Skyview</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pat</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kelly</PersonOfficialLastName>
+    <ConstituencyName>Calgary Rocky Ridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Jason</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kenney</PersonOfficialLastName>
+    <ConstituencyName>Calgary Midnapore</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kent</PersonOfficialLastName>
+    <ConstituencyName>Thornhill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Iqra</PersonOfficialFirstName>
+    <PersonOfficialLastName>Khalid</PersonOfficialLastName>
+    <ConstituencyName>Mississauga—Erin Mills</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kamal</PersonOfficialFirstName>
+    <PersonOfficialLastName>Khera</PersonOfficialLastName>
+    <ConstituencyName>Brampton West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kitchen</PersonOfficialLastName>
+    <ConstituencyName>Souris—Moose Mountain</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Tom</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kmiec</PersonOfficialLastName>
+    <ConstituencyName>Calgary Shepard</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jenny</PersonOfficialFirstName>
+    <PersonOfficialLastName>Kwan</PersonOfficialLastName>
+    <ConstituencyName>Vancouver East</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Mike</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lake</PersonOfficialLastName>
+    <ConstituencyName>Edmonton—Wetaskiwin</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lametti</PersonOfficialLastName>
+    <ConstituencyName>LaSalle—Émard—Verdun</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kevin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lamoureux</PersonOfficialLastName>
+    <ConstituencyName>Winnipeg North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Linda</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lapointe</PersonOfficialLastName>
+    <ConstituencyName>Rivière-des-Mille-Îles</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Guy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lauzon</PersonOfficialLastName>
+    <ConstituencyName>Stormont—Dundas—South Glengarry</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Stéphane</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lauzon</PersonOfficialLastName>
+    <ConstituencyName>Argenteuil—La Petite-Nation</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Hélène</PersonOfficialFirstName>
+    <PersonOfficialLastName>Laverdière</PersonOfficialLastName>
+    <ConstituencyName>Laurier—Sainte-Marie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Denis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lebel</PersonOfficialLastName>
+    <ConstituencyName>Lac-Saint-Jean</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Dominic</PersonOfficialFirstName>
+    <PersonOfficialLastName>LeBlanc</PersonOfficialLastName>
+    <ConstituencyName>Beauséjour</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Diane</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lebouthillier</PersonOfficialLastName>
+    <ConstituencyName>Gaspésie—Les Îles-de-la-Madeleine</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Paul</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lefebvre</PersonOfficialLastName>
+    <ConstituencyName>Sudbury</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Denis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lemieux</PersonOfficialLastName>
+    <ConstituencyName>Chicoutimi—Le Fjord</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Andrew</PersonOfficialFirstName>
+    <PersonOfficialLastName>Leslie</PersonOfficialLastName>
+    <ConstituencyName>Orléans</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Michael</PersonOfficialFirstName>
+    <PersonOfficialLastName>Levitt</PersonOfficialLastName>
+    <ConstituencyName>York Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ron</PersonOfficialFirstName>
+    <PersonOfficialLastName>Liepert</PersonOfficialLastName>
+    <ConstituencyName>Calgary Signal Hill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Joël</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lightbound</PersonOfficialLastName>
+    <ConstituencyName>Louis-Hébert</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ben</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lobb</PersonOfficialLastName>
+    <ConstituencyName>Huron—Bruce</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alaina</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lockhart</PersonOfficialLastName>
+    <ConstituencyName>Fundy Royal</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Wayne</PersonOfficialFirstName>
+    <PersonOfficialLastName>Long</PersonOfficialLastName>
+    <ConstituencyName>Saint John—Rothesay</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Lloyd</PersonOfficialFirstName>
+    <PersonOfficialLastName>Longfield</PersonOfficialLastName>
+    <ConstituencyName>Guelph</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Karen</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ludwig</PersonOfficialLastName>
+    <ConstituencyName>New Brunswick Southwest</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Tom</PersonOfficialFirstName>
+    <PersonOfficialLastName>Lukiwski</PersonOfficialLastName>
+    <ConstituencyName>Moose Jaw—Lake Centre—Lanigan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Lawrence</PersonOfficialFirstName>
+    <PersonOfficialLastName>MacAulay</PersonOfficialLastName>
+    <ConstituencyName>Cardigan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Prince Edward Island</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alistair</PersonOfficialFirstName>
+    <PersonOfficialLastName>MacGregor</PersonOfficialLastName>
+    <ConstituencyName>Cowichan—Malahat—Langford</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dave</PersonOfficialFirstName>
+    <PersonOfficialLastName>MacKenzie</PersonOfficialLastName>
+    <ConstituencyName>Oxford</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Steven</PersonOfficialFirstName>
+    <PersonOfficialLastName>MacKinnon</PersonOfficialLastName>
+    <ConstituencyName>Gatineau</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Larry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Maguire</PersonOfficialLastName>
+    <ConstituencyName>Brandon—Souris</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sheila</PersonOfficialFirstName>
+    <PersonOfficialLastName>Malcolmson</PersonOfficialLastName>
+    <ConstituencyName>Nanaimo—Ladysmith</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>James</PersonOfficialFirstName>
+    <PersonOfficialLastName>Maloney</PersonOfficialLastName>
+    <ConstituencyName>Etobicoke—Lakeshore</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Simon</PersonOfficialFirstName>
+    <PersonOfficialLastName>Marcil</PersonOfficialLastName>
+    <ConstituencyName>Mirabel</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Brian</PersonOfficialFirstName>
+    <PersonOfficialLastName>Masse</PersonOfficialLastName>
+    <ConstituencyName>Windsor West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Rémi</PersonOfficialFirstName>
+    <PersonOfficialLastName>Massé</PersonOfficialLastName>
+    <ConstituencyName>Avignon—La Mitis—Matane—Matapédia</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Irene</PersonOfficialFirstName>
+    <PersonOfficialLastName>Mathyssen</PersonOfficialLastName>
+    <ConstituencyName>London—Fanshawe</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bryan</PersonOfficialFirstName>
+    <PersonOfficialLastName>May</PersonOfficialLastName>
+    <ConstituencyName>Cambridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Elizabeth</PersonOfficialFirstName>
+    <PersonOfficialLastName>May</PersonOfficialLastName>
+    <ConstituencyName>Saanich—Gulf Islands</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Green Party</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>McCallum</PersonOfficialLastName>
+    <ConstituencyName>Markham—Thornhill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kelly</PersonOfficialFirstName>
+    <PersonOfficialLastName>McCauley</PersonOfficialLastName>
+    <ConstituencyName>Edmonton West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Phil</PersonOfficialFirstName>
+    <PersonOfficialLastName>McColeman</PersonOfficialLastName>
+    <ConstituencyName>Brantford—Brant</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Karen</PersonOfficialFirstName>
+    <PersonOfficialLastName>McCrimmon</PersonOfficialLastName>
+    <ConstituencyName>Kanata—Carleton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ken</PersonOfficialFirstName>
+    <PersonOfficialLastName>McDonald</PersonOfficialLastName>
+    <ConstituencyName>Avalon</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>McGuinty</PersonOfficialLastName>
+    <ConstituencyName>Ottawa South</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>McKay</PersonOfficialLastName>
+    <ConstituencyName>Scarborough—Guildwood</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Catherine</PersonOfficialFirstName>
+    <PersonOfficialLastName>McKenna</PersonOfficialLastName>
+    <ConstituencyName>Ottawa Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ron</PersonOfficialFirstName>
+    <PersonOfficialLastName>McKinnon</PersonOfficialLastName>
+    <ConstituencyName>Coquitlam—Port Coquitlam</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Cathy</PersonOfficialFirstName>
+    <PersonOfficialLastName>McLeod</PersonOfficialLastName>
+    <ConstituencyName>Kamloops—Thompson—Cariboo</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Michael</PersonOfficialFirstName>
+    <PersonOfficialLastName>McLeod</PersonOfficialLastName>
+    <ConstituencyName>Northwest Territories</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Northwest Territories</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alexandra</PersonOfficialFirstName>
+    <PersonOfficialLastName>Mendès</PersonOfficialLastName>
+    <ConstituencyName>Brossard—Saint-Lambert</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marco</PersonOfficialFirstName>
+    <PersonOfficialLastName>Mendicino</PersonOfficialLastName>
+    <ConstituencyName>Eglinton—Lawrence</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>MaryAnn</PersonOfficialFirstName>
+    <PersonOfficialLastName>Mihychuk</PersonOfficialLastName>
+    <ConstituencyName>Kildonan—St. Paul</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Larry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Miller</PersonOfficialLastName>
+    <ConstituencyName>Bruce—Grey—Owen Sound</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Miller</PersonOfficialLastName>
+    <ConstituencyName>Ville-Marie—Le Sud-Ouest—Île-des-Soeurs</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Maryam</PersonOfficialFirstName>
+    <PersonOfficialLastName>Monsef</PersonOfficialLastName>
+    <ConstituencyName>Peterborough—Kawartha</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Christine</PersonOfficialFirstName>
+    <PersonOfficialLastName>Moore</PersonOfficialLastName>
+    <ConstituencyName>Abitibi—Témiscamingue</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Bill</PersonOfficialFirstName>
+    <PersonOfficialLastName>Morneau</PersonOfficialLastName>
+    <ConstituencyName>Toronto Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Morrissey</PersonOfficialLastName>
+    <ConstituencyName>Egmont</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Prince Edward Island</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Thomas</PersonOfficialFirstName>
+    <PersonOfficialLastName>Mulcair</PersonOfficialLastName>
+    <ConstituencyName>Outremont</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Joyce</PersonOfficialFirstName>
+    <PersonOfficialLastName>Murray</PersonOfficialLastName>
+    <ConstituencyName>Vancouver Quadra</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pierre</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nantel</PersonOfficialLastName>
+    <ConstituencyName>Longueuil—Saint-Hubert</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Eva</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nassif</PersonOfficialLastName>
+    <ConstituencyName>Vimy</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nater</PersonOfficialLastName>
+    <ConstituencyName>Perth—Wellington</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nault</PersonOfficialLastName>
+    <ConstituencyName>Kenora</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Rob</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nicholson</PersonOfficialLastName>
+    <ConstituencyName>Niagara Falls</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alexander</PersonOfficialFirstName>
+    <PersonOfficialLastName>Nuttall</PersonOfficialLastName>
+    <ConstituencyName>Barrie—Springwater—Oro-Medonte</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Deepak</PersonOfficialFirstName>
+    <PersonOfficialLastName>Obhrai</PersonOfficialLastName>
+    <ConstituencyName>Calgary Forest Lawn</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jennifer</PersonOfficialFirstName>
+    <PersonOfficialLastName>O'Connell</PersonOfficialLastName>
+    <ConstituencyName>Pickering—Uxbridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Oliphant</PersonOfficialLastName>
+    <ConstituencyName>Don Valley West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>John</PersonOfficialFirstName>
+    <PersonOfficialLastName>Oliver</PersonOfficialLastName>
+    <ConstituencyName>Oakville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Seamus</PersonOfficialFirstName>
+    <PersonOfficialLastName>O'Regan</PersonOfficialLastName>
+    <ConstituencyName>St. John's South—Mount Pearl</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Erin</PersonOfficialFirstName>
+    <PersonOfficialLastName>O'Toole</PersonOfficialLastName>
+    <ConstituencyName>Durham</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert-Falcon</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ouellette</PersonOfficialLastName>
+    <ConstituencyName>Winnipeg Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Denis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Paradis</PersonOfficialLastName>
+    <ConstituencyName>Brome—Missisquoi</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pierre</PersonOfficialFirstName>
+    <PersonOfficialLastName>Paul-Hus</PersonOfficialLastName>
+    <ConstituencyName>Charlesbourg—Haute-Saint-Charles</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Monique</PersonOfficialFirstName>
+    <PersonOfficialLastName>Pauzé</PersonOfficialLastName>
+    <ConstituencyName>Repentigny</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Joe</PersonOfficialFirstName>
+    <PersonOfficialLastName>Peschisolido</PersonOfficialLastName>
+    <ConstituencyName>Steveston—Richmond East</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kyle</PersonOfficialFirstName>
+    <PersonOfficialLastName>Peterson</PersonOfficialLastName>
+    <ConstituencyName>Newmarket—Aurora</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Ginette</PersonOfficialFirstName>
+    <PersonOfficialLastName>Petitpas Taylor</PersonOfficialLastName>
+    <ConstituencyName>Moncton—Riverview—Dieppe</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>New Brunswick</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Jane</PersonOfficialFirstName>
+    <PersonOfficialLastName>Philpott</PersonOfficialLastName>
+    <ConstituencyName>Markham—Stouffville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Michel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Picard</PersonOfficialLastName>
+    <ConstituencyName>Montarville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Louis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Plamondon</PersonOfficialLastName>
+    <ConstituencyName>Bécancour—Nicolet—Saurel</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Pierre</PersonOfficialFirstName>
+    <PersonOfficialLastName>Poilievre</PersonOfficialLastName>
+    <ConstituencyName>Carleton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jean-Claude</PersonOfficialFirstName>
+    <PersonOfficialLastName>Poissant</PersonOfficialLastName>
+    <ConstituencyName>La Prairie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Carla</PersonOfficialFirstName>
+    <PersonOfficialLastName>Qualtrough</PersonOfficialLastName>
+    <ConstituencyName>Delta</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Lisa</PersonOfficialFirstName>
+    <PersonOfficialLastName>Raitt</PersonOfficialLastName>
+    <ConstituencyName>Milton</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Tracey</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ramsey</PersonOfficialLastName>
+    <ConstituencyName>Essex</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Murray</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rankin</PersonOfficialLastName>
+    <ConstituencyName>Victoria</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Yasmin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ratansi</PersonOfficialLastName>
+    <ConstituencyName>Don Valley East</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Alain</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rayes</PersonOfficialLastName>
+    <ConstituencyName>Richmond—Arthabaska</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Geoff</PersonOfficialFirstName>
+    <PersonOfficialLastName>Regan</PersonOfficialLastName>
+    <ConstituencyName>Halifax West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Scott</PersonOfficialFirstName>
+    <PersonOfficialLastName>Reid</PersonOfficialLastName>
+    <ConstituencyName>Lanark—Frontenac—Kingston</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Michelle</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rempel</PersonOfficialLastName>
+    <ConstituencyName>Calgary Nose Hill</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Blake</PersonOfficialFirstName>
+    <PersonOfficialLastName>Richards</PersonOfficialLastName>
+    <ConstituencyName>Banff—Airdrie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jean</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rioux</PersonOfficialLastName>
+    <ConstituencyName>Saint-Jean</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Gerry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ritz</PersonOfficialLastName>
+    <ConstituencyName>Battlefords—Lloydminster</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Yves</PersonOfficialFirstName>
+    <PersonOfficialLastName>Robillard</PersonOfficialLastName>
+    <ConstituencyName>Marc-Aurèle-Fortin</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Pablo</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rodriguez</PersonOfficialLastName>
+    <ConstituencyName>Honoré-Mercier</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sherry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Romanado</PersonOfficialLastName>
+    <ConstituencyName>Longueuil—Charles-LeMoyne</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Anthony</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rota</PersonOfficialLastName>
+    <ConstituencyName>Nipissing—Timiskaming</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kim</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rudd</PersonOfficialLastName>
+    <ConstituencyName>Northumberland—Peterborough South</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ruimy</PersonOfficialLastName>
+    <ConstituencyName>Pitt Meadows—Maple Ridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Don</PersonOfficialFirstName>
+    <PersonOfficialLastName>Rusnak</PersonOfficialLastName>
+    <ConstituencyName>Thunder Bay—Rainy River</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Romeo</PersonOfficialFirstName>
+    <PersonOfficialLastName>Saganash</PersonOfficialLastName>
+    <ConstituencyName>Abitibi—Baie-James—Nunavik—Eeyou</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ruby</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sahota</PersonOfficialLastName>
+    <ConstituencyName>Brampton North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Raj</PersonOfficialFirstName>
+    <PersonOfficialLastName>Saini</PersonOfficialLastName>
+    <ConstituencyName>Kitchener Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Darrell</PersonOfficialFirstName>
+    <PersonOfficialLastName>Samson</PersonOfficialLastName>
+    <ConstituencyName>Sackville—Preston—Chezzetcook</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nova Scotia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Ramesh</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sangha</PersonOfficialLastName>
+    <ConstituencyName>Brampton Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Brigitte</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sansoucy</PersonOfficialLastName>
+    <ConstituencyName>Saint-Hyacinthe—Bagot</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Randeep</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sarai</PersonOfficialLastName>
+    <ConstituencyName>Surrey Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bob</PersonOfficialFirstName>
+    <PersonOfficialLastName>Saroya</PersonOfficialLastName>
+    <ConstituencyName>Markham—Unionville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Francis</PersonOfficialFirstName>
+    <PersonOfficialLastName>Scarpaleggia</PersonOfficialLastName>
+    <ConstituencyName>Lac-Saint-Louis</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Andrew</PersonOfficialFirstName>
+    <PersonOfficialLastName>Scheer</PersonOfficialLastName>
+    <ConstituencyName>Regina—Qu'Appelle</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Schiefke</PersonOfficialLastName>
+    <ConstituencyName>Vaudreuil—Soulanges</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jamie</PersonOfficialFirstName>
+    <PersonOfficialLastName>Schmale</PersonOfficialLastName>
+    <ConstituencyName>Haliburton—Kawartha Lakes—Brock</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Deborah</PersonOfficialFirstName>
+    <PersonOfficialLastName>Schulte</PersonOfficialLastName>
+    <ConstituencyName>King—Vaughan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Serré</PersonOfficialLastName>
+    <ConstituencyName>Nickel Belt</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Brenda</PersonOfficialFirstName>
+    <PersonOfficialLastName>Shanahan</PersonOfficialLastName>
+    <ConstituencyName>Châteauguay—Lacolle</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Terry</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sheehan</PersonOfficialLastName>
+    <ConstituencyName>Sault Ste. Marie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Martin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Shields</PersonOfficialLastName>
+    <ConstituencyName>Bow River</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bev</PersonOfficialFirstName>
+    <PersonOfficialLastName>Shipley</PersonOfficialLastName>
+    <ConstituencyName>Lambton—Kent—Middlesex</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jati</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sidhu</PersonOfficialLastName>
+    <ConstituencyName>Mission—Matsqui—Fraser Canyon</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sonia</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sidhu</PersonOfficialLastName>
+    <ConstituencyName>Brampton South</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gagan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sikand</PersonOfficialLastName>
+    <ConstituencyName>Mississauga—Streetsville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Scott</PersonOfficialFirstName>
+    <PersonOfficialLastName>Simms</PersonOfficialLastName>
+    <ConstituencyName>Coast of Bays—Central—Notre Dame</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Amarjeet</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sohi</PersonOfficialLastName>
+    <ConstituencyName>Edmonton Mill Woods</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Robert</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sopuck</PersonOfficialLastName>
+    <ConstituencyName>Dauphin—Swan River—Neepawa</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Francesco</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sorbara</PersonOfficialLastName>
+    <ConstituencyName>Vaughan—Woodbridge</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Kevin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sorenson</PersonOfficialLastName>
+    <ConstituencyName>Battle River—Crowfoot</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Sven</PersonOfficialFirstName>
+    <PersonOfficialLastName>Spengemann</PersonOfficialLastName>
+    <ConstituencyName>Mississauga—Lakeshore</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bruce</PersonOfficialFirstName>
+    <PersonOfficialLastName>Stanton</PersonOfficialLastName>
+    <ConstituencyName>Simcoe North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Gabriel</PersonOfficialFirstName>
+    <PersonOfficialLastName>Ste-Marie</PersonOfficialLastName>
+    <ConstituencyName>Joliette</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Wayne</PersonOfficialFirstName>
+    <PersonOfficialLastName>Stetski</PersonOfficialLastName>
+    <ConstituencyName>Kootenay—Columbia</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kennedy</PersonOfficialFirstName>
+    <PersonOfficialLastName>Stewart</PersonOfficialLastName>
+    <ConstituencyName>Burnaby South</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mark</PersonOfficialFirstName>
+    <PersonOfficialLastName>Strahl</PersonOfficialLastName>
+    <ConstituencyName>Chilliwack—Hope</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Shannon</PersonOfficialFirstName>
+    <PersonOfficialLastName>Stubbs</PersonOfficialLastName>
+    <ConstituencyName>Lakeland</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Sweet</PersonOfficialLastName>
+    <ConstituencyName>Flamborough—Glanbrook</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Marwan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Tabbara</PersonOfficialLastName>
+    <ConstituencyName>Kitchener South—Hespeler</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Geng</PersonOfficialFirstName>
+    <PersonOfficialLastName>Tan</PersonOfficialLastName>
+    <ConstituencyName>Don Valley North</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Filomena</PersonOfficialFirstName>
+    <PersonOfficialLastName>Tassi</PersonOfficialLastName>
+    <ConstituencyName>Hamilton West—Ancaster—Dundas</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Luc</PersonOfficialFirstName>
+    <PersonOfficialLastName>Thériault</PersonOfficialLastName>
+    <ConstituencyName>Montcalm</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Bloc Québécois</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Tilson</PersonOfficialLastName>
+    <ConstituencyName>Dufferin—Caledon</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Hunter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Tootoo</PersonOfficialLastName>
+    <ConstituencyName>Nunavut</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Nunavut</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Independent</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Brad</PersonOfficialFirstName>
+    <PersonOfficialLastName>Trost</PersonOfficialLastName>
+    <ConstituencyName>Saskatoon—University</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Right Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Justin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Trudeau</PersonOfficialLastName>
+    <ConstituencyName>Papineau</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Karine</PersonOfficialFirstName>
+    <PersonOfficialLastName>Trudel</PersonOfficialLastName>
+    <ConstituencyName>Jonquière</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Quebec</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dave</PersonOfficialFirstName>
+    <PersonOfficialLastName>Van Kesteren</PersonOfficialLastName>
+    <ConstituencyName>Chatham-Kent—Leamington</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Peter</PersonOfficialFirstName>
+    <PersonOfficialLastName>Van Loan</PersonOfficialLastName>
+    <ConstituencyName>York—Simcoe</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Dan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Vandal</PersonOfficialLastName>
+    <ConstituencyName>Saint Boniface—Saint Vital</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Manitoba</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Anita</PersonOfficialFirstName>
+    <PersonOfficialLastName>Vandenbeld</PersonOfficialLastName>
+    <ConstituencyName>Ottawa West—Nepean</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Adam</PersonOfficialFirstName>
+    <PersonOfficialLastName>Vaughan</PersonOfficialLastName>
+    <ConstituencyName>Spadina—Fort York</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Karen</PersonOfficialFirstName>
+    <PersonOfficialLastName>Vecchio</PersonOfficialLastName>
+    <ConstituencyName>Elgin—Middlesex—London</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Arnold</PersonOfficialFirstName>
+    <PersonOfficialLastName>Viersen</PersonOfficialLastName>
+    <ConstituencyName>Peace River—Westlock</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Arif</PersonOfficialFirstName>
+    <PersonOfficialLastName>Virani</PersonOfficialLastName>
+    <ConstituencyName>Parkdale—High Park</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Cathay</PersonOfficialFirstName>
+    <PersonOfficialLastName>Wagantall</PersonOfficialLastName>
+    <ConstituencyName>Yorkton—Melville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Mark</PersonOfficialFirstName>
+    <PersonOfficialLastName>Warawa</PersonOfficialLastName>
+    <ConstituencyName>Langley—Aldergrove</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Chris</PersonOfficialFirstName>
+    <PersonOfficialLastName>Warkentin</PersonOfficialLastName>
+    <ConstituencyName>Grande Prairie—Mackenzie</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kevin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Waugh</PersonOfficialLastName>
+    <ConstituencyName>Saskatoon—Grasswood</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Len</PersonOfficialFirstName>
+    <PersonOfficialLastName>Webber</PersonOfficialLastName>
+    <ConstituencyName>Calgary Confederation</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Erin</PersonOfficialFirstName>
+    <PersonOfficialLastName>Weir</PersonOfficialLastName>
+    <ConstituencyName>Regina—Lewvan</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Saskatchewan</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>NDP</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Nick</PersonOfficialFirstName>
+    <PersonOfficialLastName>Whalen</PersonOfficialLastName>
+    <ConstituencyName>St. John's East</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Newfoundland and Labrador</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Jonathan</PersonOfficialFirstName>
+    <PersonOfficialLastName>Wilkinson</PersonOfficialLastName>
+    <ConstituencyName>North Vancouver</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Jody</PersonOfficialFirstName>
+    <PersonOfficialLastName>Wilson-Raybould</PersonOfficialLastName>
+    <ConstituencyName>Vancouver Granville</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific>Hon.</PersonShortHonorific>
+    <PersonOfficialFirstName>Alice</PersonOfficialFirstName>
+    <PersonOfficialLastName>Wong</PersonOfficialLastName>
+    <ConstituencyName>Richmond Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Borys</PersonOfficialFirstName>
+    <PersonOfficialLastName>Wrzesnewskyj</PersonOfficialLastName>
+    <ConstituencyName>Etobicoke Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Kate</PersonOfficialFirstName>
+    <PersonOfficialLastName>Young</PersonOfficialLastName>
+    <ConstituencyName>London West</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>David</PersonOfficialFirstName>
+    <PersonOfficialLastName>Yurdiga</PersonOfficialLastName>
+    <ConstituencyName>Fort McMurray—Cold Lake</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Alberta</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Salma</PersonOfficialFirstName>
+    <PersonOfficialLastName>Zahid</PersonOfficialLastName>
+    <ConstituencyName>Scarborough Centre</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>Ontario</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Liberal</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+  <MemberOfParliament>
+    <PersonShortHonorific />
+    <PersonOfficialFirstName>Bob</PersonOfficialFirstName>
+    <PersonOfficialLastName>Zimmer</PersonOfficialLastName>
+    <ConstituencyName>Prince George—Peace River—Northern Rockies</ConstituencyName>
+    <ConstituencyProvinceTerritoryName>British Columbia</ConstituencyProvinceTerritoryName>
+    <CaucusShortName>Conservative</CaucusShortName>
+    <FromDateTime>2015-10-19T00:00:00</FromDateTime>
+    <ToDateTime xsi:nil="true" />
+  </MemberOfParliament>
+</List>
