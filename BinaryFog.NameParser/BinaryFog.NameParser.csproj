@@ -4,9 +4,17 @@
 		<TargetFramework>netstandard1.6</TargetFramework>
 		<Company>BinaryFog.com</Company>
 		<Authors>BinaryFog</Authors>
-		<Description>Human name parsing. Parses names using English conventions for persons names.</Description>
-		<Copyright>Copyright © BinaryFog.com 2015</Copyright>
+		<Description>Human name parsing.
+Parses names using English conventions for persons names.
+Many thanks to Tyler Young, Matt Gillette.</Description>
+		<Copyright>Copyright © BinaryFog.com 2015 - 2017</Copyright>
 		<Version>1.1.0</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
+		<PackageIconUrl>https://avatars2.githubusercontent.com/u/999230?v=3&amp;s=460</PackageIconUrl>
+		<PackageLicenseUrl>https://github.com/binaryfog/NameParser</PackageLicenseUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
