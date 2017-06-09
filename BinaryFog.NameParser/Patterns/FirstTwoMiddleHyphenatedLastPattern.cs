@@ -5,10 +5,10 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class FirstTwoMiddleHyphenatedLastPattern : IFullNamePattern {
+	public class FirstTwoMiddleHyphenatedLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + First + Space + TwoMiddle + Space + LastHyphenated + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
@@ -17,22 +17,21 @@ namespace BinaryFog.NameParser.Patterns {
 			var firstName = match.Groups["first"].Value;
 			var middleName1 = match.Groups["middle1"].Value;
 			var middleName2 = match.Groups["middle2"].Value;
-			var lastPart1 = match.Groups["lastPart1"].Value;
-			var lastPart2 = match.Groups["lastPart2"].Value;
+			var lastPart1 = match.Groups["last1"].Value;
+			var lastPart2 = match.Groups["last2"].Value;
 
 			var scoreMod = 0;
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedFirstName(ref scoreMod, middleName1, 10);
-			ModifyScoreExpectedFirstName(ref scoreMod, middleName2, 10);
+			ModifyScoreExpectedFirstNames(ref scoreMod, firstName, middleName1, middleName2);
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart2);
 
 			var lastName = $"{lastPart1}-{lastPart2}";
+			var middleName = $"{middleName1} {middleName2}";
 			var pn = new ParsedFullName {
 				FirstName = firstName,
-				MiddleName = $"{middleName1} {middleName2}",
+				MiddleName = middleName,
 				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
+				DisplayName = $"{firstName} {middleName} {lastName}",
 				Score = 75 + scoreMod
 			};
 			return pn;

@@ -5,18 +5,18 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class SingleHyphenatedNameOnlyPattern : IFullNamePattern {
+	public class SingleHyphenatedNameOnlyPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + LastHyphenated + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
 			
-			var lastPart1 = match.Groups["lastPart1"].Value;
-			var lastPart2 = match.Groups["lastPart2"].Value;
+			var lastPart1 = match.Groups["last1"].Value;
+			var lastPart2 = match.Groups["last2"].Value;
 			
 			var scoreMod = 0;
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);

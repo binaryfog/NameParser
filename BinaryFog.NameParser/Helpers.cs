@@ -49,19 +49,17 @@ namespace BinaryFog.NameParser {
 			return Stopwatch.ElapsedMilliseconds;
 		}
 
-		internal class AssemblyComparer : IComparer<Assembly> {
-			internal static AssemblyComparer Instance = new AssemblyComparer();
+		internal sealed class AssemblyComparer : IComparer<Assembly> {
+			internal static readonly AssemblyComparer Instance = new AssemblyComparer();
 			public int Compare(Assembly x, Assembly y) {
 				Debug.Assert(x != null);
 				Debug.Assert(y != null);
 				Debug.Assert(!ReferenceEquals(x,y));
 				Debug.Assert(!Equals(x,y));
-				/* code coverage says no hits
-				if (x == null && y == null) return 0;
-				if (x == null) return -1;
-				if (y == null) return 1;
-				if (ReferenceEquals(x, y)||Equals(x, y)) return 0;
-				*/
+				//if (x == null && y == null) return 0;
+				//if (x == null) return -1;
+				//if (y == null) return 1;
+				//if (ReferenceEquals(x, y)||Equals(x, y)) return 0;
 				var xHashCode = x.GetHashCode();
 				var yHashCode = y.GetHashCode();
 				return xHashCode == yHashCode
