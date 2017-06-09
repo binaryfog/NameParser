@@ -157,7 +157,116 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Manuel Esquipulas Sohom", target.DisplayName);
 		}
 
-		/* No, you can not have a title of SR.
+        //Tammy L. Baker
+        [Fact]
+        public void Parse_TammySpaceLDotBaker()
+        {
+            var fullName = "Tammy L. Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("Baker", target.LastName);
+            Assert.Equal("Tammy L. Baker", target.DisplayName);
+        }
+
+        //Tammy L. van Baker
+        [Fact]
+        public void Parse_TammySpaceLDotVanSpaceBaker()
+        {
+            var fullName = "Tammy L. van Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("van Baker", target.LastName);
+            Assert.Equal("Tammy L. van Baker", target.DisplayName);
+        }
+
+        //Tammy L. Blythe-Baker
+        [Fact]
+        public void Parse_TammySpaceLDotBlytheHyphenBaker()
+        {
+            var fullName = "Tammy L. Blythe-Baker";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("Blythe-Baker", target.LastName);
+            Assert.Equal("Tammy L. Blythe-Baker", target.DisplayName);
+        }
+
+        //Jimmy Lee Dabney II
+        [Fact]
+        public void Parse_JimmySpaceLeeSpaceDabneySpaceII()
+        {
+            var fullName = "Jimmy Lee Dabney II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Jimmy", target.FirstName);
+            Assert.Equal("Lee", target.MiddleName);
+            Assert.Equal("Dabney", target.LastName);
+            Assert.Equal("II", target.Suffix);
+            Assert.Equal("Jimmy Lee Dabney", target.DisplayName);
+        }
+
+        //Tammy L. Baker II
+        [Fact]
+        public void Parse_TammySpaceLDotBakerSpaceII()
+        {
+            var fullName = "Tammy L. Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("Baker", target.LastName);
+            Assert.Equal("II", target.Suffix);
+            Assert.Equal("Tammy L. Baker", target.DisplayName);
+        }
+
+        //Tammy L. Blythe-Baker II
+        [Fact]
+        public void Parse_TammySpaceLDotBlytheHyphenBakerSpaceII()
+        {
+            var fullName = "Tammy L. Blythe-Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("Blythe-Baker", target.LastName);
+            Assert.Equal("II", target.Suffix);
+            Assert.Equal("Tammy L. Blythe-Baker", target.DisplayName);
+        }
+
+        //Tammy L. van Baker II
+        [Fact]
+        public void Parse_TammySpaceLDotVanSpaceBakerSpaceII()
+        {
+            var fullName = "Tammy L. van Baker II";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("van Baker", target.LastName);
+            Assert.Equal("II", target.Suffix);
+            Assert.Equal("Tammy L. van Baker", target.DisplayName);
+        }
+
+        /* No, you can not have a title of SR.
         //SR. John Henry William dela Vega, Jr Esq.
         [Fact]
         public void Parse_SrJohnHenryWilliamdelaVegaCommaJrEsq()
@@ -174,10 +283,17 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("John dela Vega", target.DisplayName);
         }
 		*/
+		 
+		[Fact]
+		public void FirstMiddlePrefixedLastSuffix() {
+			var fullName = "Tammy van Baker II";
+			var target = new FullNameParser(fullName);
+			target.Parse();
 
-		/*
-single hyphenated
-		 */
+			Assert.Equal("Tammy", target.FirstName);
+			Assert.Equal("Baker", target.LastName);
+			Assert.Equal("Tammy van Baker", target.DisplayName);
+		}
 		 
 		[Fact]
 		public void FirstNickHyphenatedLast() {
@@ -203,7 +319,19 @@ single hyphenated
 		}
 
 		[Fact]
-		public void FirstNickTwoMiddleHyphenatedLast() {
+		public void FirstMiddleHyphenatedLastSuffix() {
+			var fullName = "Manuel Miguel Esquipulas-Sohom II";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Manuel", target.FirstName);
+			Assert.Equal("Miguel", target.MiddleName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Manuel Miguel Esquipulas-Sohom", target.DisplayName);
+		}
+
+		[Fact]
+		public void FirstTwoMiddleHyphenatedLast() {
 			var fullName = "Manuel Miguel Montoya Esquipulas-Sohom";
 			var target = new FullNameParser(fullName);
 			target.Parse();
@@ -215,7 +343,7 @@ single hyphenated
 		}
 		
 		[Fact]
-		public void FemaleFirstNickTwoMiddleHyphenatedLast() {
+		public void FemaleFirstTwoMiddleHyphenatedLast() {
 			var fullName = "Maria Ellen Delores Esquipulas-Sohom";
 			var target = new FullNameParser(fullName);
 			target.Parse();
@@ -257,6 +385,8 @@ single hyphenated
 			Assert.Equal("Esquipulas-Sohom", target.LastName);
 			Assert.Equal("Esquipulas-Sohom", target.DisplayName);
 		}
+
+
 
 	}
 }

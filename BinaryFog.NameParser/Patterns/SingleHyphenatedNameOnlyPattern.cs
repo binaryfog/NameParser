@@ -14,10 +14,10 @@ namespace BinaryFog.NameParser.Patterns {
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			
+
 			var lastPart1 = match.Groups["last1"].Value;
 			var lastPart2 = match.Groups["last2"].Value;
-			
+
 			var scoreMod = 0;
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart2);

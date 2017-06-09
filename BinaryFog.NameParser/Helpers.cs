@@ -51,15 +51,14 @@ namespace BinaryFog.NameParser {
 
 		internal sealed class AssemblyComparer : IComparer<Assembly> {
 			internal static readonly AssemblyComparer Instance = new AssemblyComparer();
+			// implementation varies between frameworks;
+			// some eliminate need for ReferenceEquals compares, drops coverage by 1 line
+			[ExcludeFromCodeCoverage]
 			public int Compare(Assembly x, Assembly y) {
-				Debug.Assert(x != null);
-				Debug.Assert(y != null);
-				Debug.Assert(!ReferenceEquals(x,y));
-				Debug.Assert(!Equals(x,y));
-				//if (x == null && y == null) return 0;
-				//if (x == null) return -1;
-				//if (y == null) return 1;
-				//if (ReferenceEquals(x, y)||Equals(x, y)) return 0;
+				if (x == null && y == null) return 0;
+				if (x == null) return -1;
+				if (y == null) return 1;
+				if (ReferenceEquals(x, y)) return 0;
 				var xHashCode = x.GetHashCode();
 				var yHashCode = y.GetHashCode();
 				return xHashCode == yHashCode
@@ -97,7 +96,9 @@ namespace BinaryFog.NameParser {
 		/// Accurate to <see cref="KnownAssembliesTimeout"/> milliseconds.
 		/// </summary>
 		internal static ISet<Assembly> KnownAssemblies
-			=> _knownAssemblies ?? GetLoadedAssemblies();
+			=> CreateTimestamp() - _lastCheckedLoadedAssemblies < KnownAssembliesTimeout
+			? (_knownAssemblies ?? GetLoadedAssemblies())
+			: GetLoadedAssemblies();
 
 		/// <summary>
 		/// A minimum freshness in milliseconds of the <see cref="KnownAssemblies"/> set.

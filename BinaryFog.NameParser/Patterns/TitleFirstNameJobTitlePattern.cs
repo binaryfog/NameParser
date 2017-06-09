@@ -16,7 +16,7 @@ namespace BinaryFog.NameParser.Patterns {
 			if (!match.Success) return null;
 			var jobTitle = match.Groups["jobTitle"].Value;
 			var firstName = match.Groups["first"].Value;
-			
+
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
 

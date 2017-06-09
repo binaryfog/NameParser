@@ -5,20 +5,19 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	public class FirstIrishLastPattern : IFullNamePattern {
+	public class FirstInitialPrefixedLastSuffixPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + First + Space + @"(?<irishPrefix>O'|Mc|Mac)" + Last + @"$",
+			@"^" + First + Space + Initial + Space + Prefix + Space + Last + Space + Suffix + @"$",
 			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-
-
 			var firstName = match.Groups["first"].Value;
-			var irishPrefix = match.Groups["irishPrefix"].Value;
+			var middleName = $"{match.Groups["initial"]}.";
+			var prefix = match.Groups["prefix"].Value;
 			var lastPart = match.Groups["last"].Value;
-			var lastName = $"{irishPrefix}{lastPart}";
+			var lastName = $"{prefix} {lastPart}";
 
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
@@ -26,9 +25,11 @@ namespace BinaryFog.NameParser.Patterns {
 
 			var pn = new ParsedFullName {
 				FirstName = firstName,
+				MiddleName = middleName,
 				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 300 + scoreMod
+				Suffix = match.Groups["suffix"].Value,
+				DisplayName = $"{firstName} {middleName} {lastName}",
+				Score = 100
 			};
 			return pn;
 		}

@@ -23,13 +23,12 @@ namespace BinaryFog.NameParser.Patterns {
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart);
 
-			var pn = new ParsedFullName
-            {
-                Title = match.Groups["title"].Value,
+			var pn = new ParsedFullName {
+				Title = match.Groups["title"].Value,
 				FirstName = firstName,
-                LastName = lastName,
-                DisplayName = $"{firstName} {lastName}",
-                Score = 300 + scoreMod
+				LastName = lastName,
+				DisplayName = $"{firstName} {lastName}",
+				Score = 300 + scoreMod
 			};
 
 			return pn;

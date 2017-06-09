@@ -15,7 +15,7 @@ namespace BinaryFog.NameParser.Patterns {
 			if (!match.Success) return null;
 
 			var firstPart1 = match.Groups["first1"].Value;
-            var firstPart2 = match.Groups["first2"].Value;
+			var firstPart2 = match.Groups["first2"].Value;
 			var firstName = $"{match.Groups["first1"].Value}-{match.Groups["first2"].Value}";
 			var lastName = match.Groups["last"].Value;
 
@@ -24,9 +24,8 @@ namespace BinaryFog.NameParser.Patterns {
 			ModifyScoreExpectedLastName(ref scoreMod, lastName);
 
 
-			var pn = new ParsedFullName
-            {
-                FirstName = firstName,
+			var pn = new ParsedFullName {
+				FirstName = firstName,
 				LastName = lastName,
 				DisplayName = $"{firstName} {lastName}",
 				Score = 100 + scoreMod
