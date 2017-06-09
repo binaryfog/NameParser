@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
+using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
@@ -13,13 +14,20 @@ namespace BinaryFog.NameParser.Patterns {
 			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-            var pn = new ParsedFullName()
+			var firstName = match.Groups["first"].Value;
+			var lastPart = match.Groups["last"].Value;
+
+			var scoreMod = 0;
+			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart);
+
+			var pn = new ParsedFullName
             {
                 Title = match.Groups["title"].Value,
-				FirstName = match.Groups["first"].Value,
-                LastName = $"O'{match.Groups["last"].Value}",
-                DisplayName = $"{match.Groups["first"].Value} O'{match.Groups["last"].Value}",
-                Score = 300
+				FirstName = firstName,
+                LastName = $"O'{lastPart}",
+                DisplayName = $"{firstName} O'{lastPart}",
+                Score = 300 + scoreMod
 			};
 
 			return pn;

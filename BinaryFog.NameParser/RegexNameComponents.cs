@@ -58,17 +58,22 @@ namespace BinaryFog.NameParser {
 
 		public static readonly string Prefix = @"(?<prefix>" + LastNamePrefixes + @")";
 
-		public const string Space = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)";
+		public const string Space = @"(\s+|(?<!\w)\s*)";
 		public const string OptionalSpace = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)?";
 		public const string OptionalCommaSpace = @"(" + OptionalSpace + @",)?" + Space;
-		public const string CommaSpace = @"\s*,\s*";
+		public const string CommaSpace = OptionalSpace + @"," + Space;
 		public const string Initial = @"(?<initial>[a-z]\.?)";
-		public const string First = @"(?<first>\w+|\w+'\w*)";
-		public const string Last = @"(?<last>\w+|\w+'\w*|'\w+)";
-		public const string Middle = @"(?<middle>\w+)";
-		public const string TwoMiddle = @"(?<middle1>\w+)" + Space + @"(?<middle2>\w+)";
+		public const string Name = @"\w+|\w+'\w*";
+		public const string First = @"(?<first>"+Name+@")";
+		public const string Last = @"(?<last>"+Name+@")";
+		public const string Middle = @"(?<middle>"+Name+@")";
+		public const string TwoMiddle = @"(?<middle1>"+Name+@")" + Space + @"(?<middle2>"+Name+@")";
 		public const string Hyphen = "[-\u00AD\u058A\u1806\u2010\u2011\u30FB\uFE63\uFF0D\uFF65]";
-		public const string LastHyphenated = @"(?<last>(?<lastPart1>\w+)" + Hyphen + @"(?<lastPart2>\w+))";
-		public const string Nick = @"(?=\(\w+\)|'\w+'|""\w+"")[\('""](?<nick>\w+)[\)'""]";
+		public const string HyphenOptionallySpaced = OptionalSpace + Hyphen + OptionalSpace;
+		public const string LastHyphenated = @"(?<last>(?<lastPart1>"+Name+@")" + HyphenOptionallySpaced + @"(?<lastPart2>"+Name+@"))";
+		public const string SpaceOrHyphen = Space + "|" + HyphenOptionallySpaced;
+		public const string Word = @"\w+";
+		public const string Words = @"("+Word + @"|" + SpaceOrHyphen + @")+";
+		public const string Nick = @"(\((?<nick>("+Words+@"))\)|(?<nickquote>['""])(?<nick>("+Words+@"))\k<nickquote>)";
 	}
 }

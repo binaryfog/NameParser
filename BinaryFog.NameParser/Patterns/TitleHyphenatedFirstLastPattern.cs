@@ -5,7 +5,7 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleDoubleWordHyphenatedFirstLastPattern : IFullNamePattern {
+	internal class TitleHyphenatedFirstLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + Title + Space + @"(?<first1>\w+)-(?<first2>\w+)" + Space + @"(?<last>\w+)$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
@@ -13,22 +13,23 @@ namespace BinaryFog.NameParser.Patterns {
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
+
 			var firstName1 = match.Groups["first1"].Value;
             var firstName2 = match.Groups["first2"].Value;
+			var lastName = match.Groups["last"].Value;
+			
+			var scoreMod = 0;
+			ModifyScoreExpectedFirstName(ref scoreMod, firstName1);
+			ModifyScoreExpectedFirstName(ref scoreMod, firstName2);
+			ModifyScoreExpectedLastName(ref scoreMod, lastName);
 
-            if (!FirstNames.Contains(firstName1.ToLowerInvariant()))
-				return null;
-
-            if (!FirstNames.Contains(firstName2.ToLowerInvariant()))
-                return null;
-
-            var pn = new ParsedFullName()
+			var pn = new ParsedFullName
             {
                 Title = match.Groups["title"].Value,
-                FirstName = $"{match.Groups["first1"].Value}-{match.Groups["first2"].Value}",
-				LastName = match.Groups["last"].Value,
-				DisplayName = $"{match.Groups["first1"].Value}-{match.Groups["first2"].Value} {match.Groups["last"].Value}",
-				Score = 200
+                FirstName = $"{firstName1}-{firstName2}",
+				LastName = lastName,
+				DisplayName = $"{firstName1}-{firstName2} {lastName}",
+				Score = 200 + scoreMod
 			};
 			return pn;
 		}

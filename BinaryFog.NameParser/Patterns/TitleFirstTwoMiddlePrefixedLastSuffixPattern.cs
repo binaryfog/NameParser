@@ -5,7 +5,7 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstDoubleMiddlePrefixedLastSuffixPattern : IFullNamePattern {
+	internal class TitleFirstTwoMiddlePrefixedLastSuffixPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + Title + Space + First + Space + @"(?<middle1>\w+)" + Space + @"(?<middle2>\w+)" + Space + Prefix + Space + Last + OptionalCommaSpace + Suffix + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);

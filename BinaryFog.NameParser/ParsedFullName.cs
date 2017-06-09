@@ -3,7 +3,10 @@ using System.Diagnostics;
 using System.Reflection;
 
 namespace BinaryFog.NameParser {
-	public class ParsedFullName
+#if DEBUG_FULL_NAME_PATTERN_RESULTS
+	[DebuggerDisplay("{" + nameof(DebuggerDisplay) + "}")]
+#endif
+	public sealed class ParsedFullName
     {
 #if DEBUG_FULL_NAME_PATTERN_RESULTS
 		/*
@@ -12,7 +15,7 @@ namespace BinaryFog.NameParser {
 		 * You might have to adjust this for your specific platform.
 		 */
 
-	    private static Type GetOuterStackFrameType(int frameOffset = 0) {
+		private static Type GetOuterStackFrameType(int frameOffset = 0) {
 		    var st = (StackTrace) typeof(StackTrace).GetConstructor(Type.EmptyTypes).Invoke(null);
 		    var frames = st.GetFrames();
 		    var thisType = typeof(ParsedFullName);
@@ -26,7 +29,8 @@ namespace BinaryFog.NameParser {
 		    return frames[frameIndex+frameOffset].GetMethod().DeclaringType;
 	    }
 
-	    public Type Pattern { get; } = GetOuterStackFrameType();
+	    private Type Pattern { get; } = GetOuterStackFrameType();
+		private string DebuggerDisplay => $"{Score:G4} {Pattern.Name}: {DisplayName}";
 #endif
 		public const int MaxScore = int.MaxValue;
 
