@@ -5,11 +5,6 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFog.NameParser", "BinaryFog.NameParser\BinaryFog.NameParser.csproj", "{5BCB7AA3-D399-4246-A8B9-E88F1FB15465}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9CDC2DE-BBC1-4B3E-B83A-71FF6F6CE0AE}"
-	ProjectSection(SolutionItems) = preProject
-		BinaryFog.NameParser.nupkg = BinaryFog.NameParser.nupkg
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFog.NameParser.Tests", "BinaryFog.NameParser.Tests\BinaryFog.NameParser.Tests.csproj", "{2D16C3D8-4EC7-4BE4-A991-BF4F85BF54F7}"
 EndProject
 Global

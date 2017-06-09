@@ -283,16 +283,27 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("John dela Vega", target.DisplayName);
         }
 		*/
-		 
 		[Fact]
-		public void FirstMiddlePrefixedLastSuffix() {
+		public void FirstPrefixedLastSuffix() {
 			var fullName = "Tammy van Baker II";
 			var target = new FullNameParser(fullName);
 			target.Parse();
-
+			
 			Assert.Equal("Tammy", target.FirstName);
-			Assert.Equal("Baker", target.LastName);
+			Assert.Equal("van Baker", target.LastName);
 			Assert.Equal("Tammy van Baker", target.DisplayName);
+		}
+		 
+		[Fact]
+		public void FirstMiddlePrefixedLastSuffix() {
+			var fullName = "Tammy Lee van Baker II";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+			
+			Assert.Equal("Tammy", target.FirstName);
+			Assert.Equal("Lee", target.MiddleName);
+			Assert.Equal("van Baker", target.LastName);
+			Assert.Equal("Tammy Lee van Baker", target.DisplayName);
 		}
 		 
 		[Fact]

@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
+using JetBrains.Annotations;
 using Microsoft.Extensions.PlatformAbstractions;
 
 namespace BinaryFog.NameParser {
@@ -32,13 +33,36 @@ namespace BinaryFog.NameParser {
 
 		protected static Type PatternType { get; } = typeof(IFullNamePattern);
 
-		protected static IEnumerable<IFullNamePattern> PatternsMap { get; } =
-			KnownAssemblies
-				.Where(a => !a.FullName.StartsWith("System.") && !a.FullName.StartsWith("Microsoft."))
-				.SelectMany(s => TryOrDefault(s.GetExportedTypes, Type.EmptyTypes))
+		private static bool _enableThirdParty;
+
+		[UsedImplicitly]
+		public static bool EnableAutomaticThirdPartyIntegration {
+			get => _enableThirdParty;
+			set {
+				_enableThirdParty = value;
+				BuildPatternsMap();
+			}
+		}
+
+		private static void BuildPatternsMap() {
+			PatternsMap = (_enableThirdParty
+					? KnownAssemblies
+						.Where(a
+							=> !a.FullName.StartsWith("System.")
+								&& !a.FullName.StartsWith("Microsoft."))
+						.SelectMany(s => TryOrDefault(s.GetExportedTypes, Type.EmptyTypes))
+					: typeof(FullNameParser).GetTypeInfo().Assembly.GetExportedTypes()
+				)
 				.Where(p => PatternType.IsAssignableFrom(p))
 				.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null))
 				.OfType<IFullNamePattern>();
+		}
+
+		static FullNameParser() {
+			BuildPatternsMap();
+		}
+
+		protected static IEnumerable<IFullNamePattern> PatternsMap { get; private set; }
 
 
 		public string FirstName { get; private set; }
