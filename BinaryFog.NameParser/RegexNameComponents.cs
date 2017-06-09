@@ -7,7 +7,6 @@ namespace BinaryFog.NameParser {
 	using static Helpers;
 
 	public static class RegexNameComponents {
-
 		/// <summary>
 		/// Read and escape lines from a resource stream and combine
 		/// them all together with pipe characters to create a string
@@ -50,13 +49,18 @@ namespace BinaryFog.NameParser {
 
 
 		public static readonly string JobTitle = @"(?<jobTitle>" + JobTitles + @")";
+
 		public static readonly string Title = @"(?<title>(" + Titles + @")((?!\s)\W)?)";
-        //public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
-        public static readonly string Suffix = @"(?<suffix>(" + Suffixes + @")((?!\s)\W)?)";
+
+		//public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
+
+		public static readonly string Suffix = @"(?<suffix>(" + Suffixes + @")((?!\s)\W)?)";
+
 		public static readonly string Prefix = @"(?<prefix>" + LastNamePrefixes + @")";
 
 		public const string Space = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)";
-		public const string OptionalCommaSpace = @"(\s*,)?\s+";
+		public const string OptionalSpace = @"((?<=\W)\s*|\s*(?=\W)|(?<!\W)\s+)?";
+		public const string OptionalCommaSpace = @"(" + OptionalSpace + @",)?" + Space;
 		public const string CommaSpace = @"\s*,\s*";
 		public const string Initial = @"(?<initial>[a-z]\.?)";
 		public const string First = @"(?<first>\w+|\w+'\w*)";

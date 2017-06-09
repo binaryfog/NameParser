@@ -1,22 +1,13 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 
 namespace BinaryFog.NameParser.Tests
 {
-    [TestClass]
     public class AfricanNamesTests
     {
-        private TestContext testContextInstance;
-        public TestContext TestContext
-        {
-            get { return testContextInstance; }
-            set { testContextInstance = value; }
-        }
-
-
-
-        [TestMethod]
+		/*
+        [Fact]
         [DeploymentItem(@".\DataFiles\AfricanNames.xml")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\AfricanNames.xml", "Person", DataAccessMethod.Sequential)]
         public void AfricanNames_Test()
@@ -35,13 +26,11 @@ namespace BinaryFog.NameParser.Tests
 
             //ASSERT
             
-            Assert.AreEqual( firstName, target.FirstName, "First Name doesn't match");
-            Assert.AreEqual( lastName, target.LastName, "Last Name doesn't match");
+            Assert.Equal( firstName, target.FirstName, "First Name doesn't match");
+            Assert.Equal( lastName, target.LastName, "Last Name doesn't match");
 
-            Assert.AreEqual(expectedDisplayName, target.DisplayName, "DisplayName doesn't match");
+            Assert.Equal(expectedDisplayName, target.DisplayName, "DisplayName doesn't match");
         }
-
-
-        
+		*/
     }
 }

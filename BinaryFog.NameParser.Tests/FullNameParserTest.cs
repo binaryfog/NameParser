@@ -261,7 +261,7 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Francis", target.MiddleName);
 			Assert.Equal("Van Der Waal", target.LastName);
 			Assert.Equal("Sr.", target.Suffix);
-            Assert.AreEqual("Jack Van Der Waal", target.DisplayName);
+            Assert.Equal("Jack Van Der Waal", target.DisplayName);
 		}
 
 		[Fact]
