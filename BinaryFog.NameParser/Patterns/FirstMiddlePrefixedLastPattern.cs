@@ -17,19 +17,19 @@ namespace BinaryFog.NameParser.Patterns {
 			var prefix = match.Groups["prefix"].Value;
 			var firstName = match.Groups["first"].Value;
 			var middleName = match.Groups["middle"].Value;
-			var lastName = match.Groups["last"].Value;
-			
+			var lastPart = match.Groups["last"].Value;
+			var lastName = $"{prefix} {lastPart}";
+
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstNames(ref scoreMod, firstName, middleName);
-			ModifyScoreExpectedLastName(ref scoreMod, lastName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart);
 
 			var pn = new ParsedFullName {
-
 				FirstName = firstName,
 				MiddleName = middleName,
 
-				LastName = prefix + " " + lastName,
-				DisplayName = $"{firstName} {middleName} {prefix} {lastName}",
+				LastName = lastName,
+				DisplayName = $"{firstName} {middleName} {lastName}",
 				Score = 250 + scoreMod
 			};
 			return pn;

@@ -18,7 +18,7 @@ namespace BinaryFog.NameParser.Patterns {
 			var nickName = match.Groups["nick"].Value;
 			var lastPart1 = match.Groups["last1"].Value;
 			var lastPart2 = match.Groups["last2"].Value;
-			
+
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
 			ModifyScoreExpectedName(ref scoreMod, nickName);

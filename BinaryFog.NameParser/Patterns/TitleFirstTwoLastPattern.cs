@@ -22,10 +22,9 @@ namespace BinaryFog.NameParser.Patterns {
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
 			ModifyScoreExpectedLastName(ref scoreMod, lastPart2);
 
-            var pn = new ParsedFullName
-            {
-                Title = match.Groups["title"].Value,
-                FirstName = firstName,
+			var pn = new ParsedFullName {
+				Title = match.Groups["title"].Value,
+				FirstName = firstName,
 				LastName = $"{lastPart1} {lastPart2}",
 				DisplayName = $"{firstName} {lastPart1} {lastPart2}",
 				Score = 50 + scoreMod

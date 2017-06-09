@@ -21,6 +21,12 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
 	  <DefineConstants>TRACE;DEBUG;NETSTANDARD1_6;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
 	</PropertyGroup>
 
+  <PropertyGroup>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
 	<ItemGroup>
 	  <None Remove="Resources\CompanySuffixes.txt" />
 	  <None Remove="Resources\FemaleFirstNames.txt" />
