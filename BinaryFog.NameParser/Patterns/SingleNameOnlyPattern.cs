@@ -1,24 +1,27 @@
 ﻿using System.Text.RegularExpressions;
+using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
+using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class FirstNameOnlyPattern : IPattern {
+	[UsedImplicitly]
+	internal class SingleNameOnlyPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + First + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 
-		public ParsedName Parse(string rawName) {
+		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var pn = new ParsedName {
+			var pn = new ParsedFullName {
 				DisplayName = rawName,
-				Score = 100
+				Score = 50
 			};
 
 			var matchedName = match.Groups["first"].Value;
 
-			if (NameComponentSets.LastNamesInUppercase.Contains(matchedName.ToUpper()))
+			if (LastNames.Contains(matchedName))
 				pn.LastName = matchedName;
 			else
 				pn.FirstName = matchedName;

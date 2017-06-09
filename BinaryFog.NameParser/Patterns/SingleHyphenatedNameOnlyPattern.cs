@@ -1,31 +1,35 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
 using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class LastNameCommaFirstNamePattern : IFullNamePattern {
+	internal class SingleHyphenatedNameOnlyPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Last + CommaSpace + First + @"$",
+			@"^" + LastHyphenated + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var firstName = match.Groups["first"].Value;
-			var lastName = match.Groups["last"].Value;
+			
+			var lastPart1 = match.Groups["lastPart1"].Value;
+			var lastPart2 = match.Groups["lastPart2"].Value;
 			
 			var scoreMod = 0;
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedLastName(ref scoreMod, lastName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart2);
+
+			var lastName = $"{lastPart1}-{lastPart2}";
 
 			var pn = new ParsedFullName {
-				FirstName = firstName,
 				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 100 + scoreMod
+				DisplayName = lastName,
+				Score = 50 + scoreMod
 			};
+
 			return pn;
 		}
 	}

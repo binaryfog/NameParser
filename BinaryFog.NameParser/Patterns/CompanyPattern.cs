@@ -1,19 +1,21 @@
 ﻿using System.Text.RegularExpressions;
+using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class CompanyPattern : IPattern {
+	[UsedImplicitly]
+	internal class CompanyPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			Space + @"(?<lastWord>(" + CompanySuffixes + @")\W?)$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 
-		public ParsedName Parse(string rawName) {
+		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var pn = new ParsedName {
+			var pn = new ParsedFullName {
 				DisplayName = rawName,
-				Score = ParsedName.MaxScore
+				Score = ParsedFullName.MaxScore
 			};
 
 			return pn;

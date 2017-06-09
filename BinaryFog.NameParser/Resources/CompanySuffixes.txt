@@ -7,3 +7,10 @@ inc
 incorperated
 corp
 corporation
+service
+services
+laboratories
+systems
+enterprises
+outfitters
+holdings

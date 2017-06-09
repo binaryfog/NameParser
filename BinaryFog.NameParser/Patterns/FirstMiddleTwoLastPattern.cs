@@ -5,29 +5,32 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstInitialLastPattern : IFullNamePattern {
+	internal class FirstMiddleTwoLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + Initial + Space + Last + @"$",
+			@"^" + First + Space + Middle + Space + @"(?<last1>\w+)" + Space + @"(?<last2>\w+)$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-
 		public ParsedFullName Parse(string rawName) {
-			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
+			
 			var firstName = match.Groups["first"].Value;
-			var lastName = match.Groups["last"].Value;
+			var middleName = match.Groups["middle"].Value;
+			var lastName1 = match.Groups["last1"].Value;
+			var lastName2 = match.Groups["last2"].Value;
 			
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedLastName(ref scoreMod, lastName);
+			ModifyScoreExpectedFirstName(ref scoreMod, middleName, 10);
+			ModifyScoreExpectedLastName(ref scoreMod, lastName1);
+			ModifyScoreExpectedLastName(ref scoreMod, lastName2);
 
 			var pn = new ParsedFullName {
-				Title = match.Groups["title"].Value,
 				FirstName = firstName,
-				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 100 + scoreMod
+				MiddleName = middleName,
+				LastName = $"{lastName1} {lastName2}",
+				DisplayName = $"{firstName} {lastName1} {lastName2}",
+				Score = 50 + scoreMod
 			};
 			return pn;
 		}

@@ -5,29 +5,33 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstInitialLastPattern : IFullNamePattern {
+	internal class FirstNickHyphenatedLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + Initial + Space + Last + @"$",
+			@"^" + First + Space + Nick + Space + LastHyphenated + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-
 		public ParsedFullName Parse(string rawName) {
-			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
+
 			var firstName = match.Groups["first"].Value;
-			var lastName = match.Groups["last"].Value;
+			var nickName = match.Groups["nick"].Value;
+			var lastPart1 = match.Groups["lastPart1"].Value;
+			var lastPart2 = match.Groups["lastPart2"].Value;
 			
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedLastName(ref scoreMod, lastName);
+			ModifyScoreExpectedName(ref scoreMod, nickName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart2);
+
 
 			var pn = new ParsedFullName {
-				Title = match.Groups["title"].Value,
 				FirstName = firstName,
-				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 100 + scoreMod
+				NickName = nickName,
+				LastName = $"{lastPart1}-{lastPart2}",
+				DisplayName = $"{firstName} {lastPart1}-{lastPart2}",
+				Score = 75 + scoreMod
 			};
 			return pn;
 		}

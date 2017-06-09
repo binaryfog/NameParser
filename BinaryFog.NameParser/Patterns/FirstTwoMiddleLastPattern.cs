@@ -5,29 +5,32 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstInitialLastPattern : IFullNamePattern {
+	internal class FirstTwoMiddleLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + Initial + Space + Last + @"$",
+			@"^" + First + Space + TwoMiddle + Space + Last + @"$",
 			RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-
 		public ParsedFullName Parse(string rawName) {
-			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
+
 			var firstName = match.Groups["first"].Value;
+			var middleName1 = match.Groups["middle1"].Value;
+			var middleName2 = match.Groups["middle2"].Value;
 			var lastName = match.Groups["last"].Value;
-			
+
 			var scoreMod = 0;
 			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
+			ModifyScoreExpectedFirstName(ref scoreMod, middleName1, 10);
+			ModifyScoreExpectedFirstName(ref scoreMod, middleName2, 10);
 			ModifyScoreExpectedLastName(ref scoreMod, lastName);
 
 			var pn = new ParsedFullName {
-				Title = match.Groups["title"].Value,
 				FirstName = firstName,
+				MiddleName = $"{middleName1} {middleName2}",
 				LastName = lastName,
 				DisplayName = $"{firstName} {lastName}",
-				Score = 100 + scoreMod
+				Score = 50 + scoreMod
 			};
 			return pn;
 		}
