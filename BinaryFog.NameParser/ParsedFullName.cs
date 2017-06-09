@@ -5,7 +5,7 @@ using System.Reflection;
 namespace BinaryFog.NameParser {
 	public class ParsedFullName
     {
-#if DEBUG
+#if DEBUG_FULL_NAME_PATTERN_RESULTS
 		/*
 		 * This is used for determining indisputably which IFullNamePattern
 		 * implementation constructed this ParsedFullName instance.

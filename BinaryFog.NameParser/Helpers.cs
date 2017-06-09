@@ -52,10 +52,16 @@ namespace BinaryFog.NameParser {
 		internal class AssemblyComparer : IComparer<Assembly> {
 			internal static AssemblyComparer Instance = new AssemblyComparer();
 			public int Compare(Assembly x, Assembly y) {
+				Debug.Assert(x != null);
+				Debug.Assert(y != null);
+				Debug.Assert(!ReferenceEquals(x,y));
+				Debug.Assert(!Equals(x,y));
+				/* code coverage says no hits
 				if (x == null && y == null) return 0;
 				if (x == null) return -1;
 				if (y == null) return 1;
 				if (ReferenceEquals(x, y)||Equals(x, y)) return 0;
+				*/
 				var xHashCode = x.GetHashCode();
 				var yHashCode = y.GetHashCode();
 				return xHashCode == yHashCode
@@ -70,18 +76,8 @@ namespace BinaryFog.NameParser {
 		/// 
 		///		This updates a cache of <see cref="KnownAssemblies" /> when called.
 		/// </summary>
-		/// <param name="forceUpdate">
-		///		Updates the cache of <see cref="KnownAssemblies" /> without reguards
-		///		to the freshness of the cache. Defaults to true.
-		/// </param>
 		/// <returns>A set of loaded assemblies.</returns>
-		internal static ISet<Assembly> GetLoadedAssemblies(bool forceUpdate = true) {
-			if (!forceUpdate) {
-				var stopwatchTime = CreateTimestamp();
-				var elapsed = stopwatchTime - _lastCheckedLoadedAssemblies;
-				if (elapsed <= KnownAssembliesTimeout)
-					return _knownAssemblies;
-			}
+		internal static ISet<Assembly> GetLoadedAssemblies() {
 
 			_lastCheckedLoadedAssemblies = CreateTimestamp();
 			var procMods = Process.GetCurrentProcess().Modules.OfType<ProcessModule>();

@@ -26,7 +26,7 @@ namespace BinaryFog.NameParser {
 	/// 1. The prefix "ATTN:" is removed if exists and the parsing proceeds on the new string
 	/// </remarks>
 	public class FullNameParser {
-		public IReadOnlyList<ParsedFullName> Results { get; set; }
+		public IReadOnlyList<ParsedFullName> Results { get; set; } = new ParsedFullName[0];
 
 		protected string FullName { get; private set; }
 
@@ -54,7 +54,6 @@ namespace BinaryFog.NameParser {
 		/// <param name="fullName">The full name.</param>
 		public FullNameParser(string fullName) {
 			FullName = fullName;
-			Results = new ParsedFullName[0];
 		}
 
 		public static FullNameParser Parse(string fullName) {
@@ -71,7 +70,7 @@ namespace BinaryFog.NameParser {
 			if (string.IsNullOrWhiteSpace(FullName))
 				return;
 
-			RemoveAttnPrefixIfNeeded();
+			Preparse();
 
 			Results = PatternsMap
 				.Select(pattern => pattern.Parse(FullName))
@@ -79,24 +78,23 @@ namespace BinaryFog.NameParser {
 				.OrderByDescending(result => result?.Score ?? 0)
 				.ToImmutableArray();
 
-			var v = Results.FirstOrDefault();
+			var selectedResult = Results.FirstOrDefault();
 
-			FirstName = v?.FirstName;
-			MiddleName = v?.MiddleName;
-			LastName = v?.LastName;
-			Title = v?.Title;
-			NickName = v?.NickName;
-			Suffix = v?.Suffix;
-			DisplayName = v?.DisplayName ?? FullName;
+			FirstName = selectedResult?.FirstName;
+			MiddleName = selectedResult?.MiddleName;
+			LastName = selectedResult?.LastName;
+			Title = selectedResult?.Title;
+			NickName = selectedResult?.NickName;
+			Suffix = selectedResult?.Suffix;
+			DisplayName = selectedResult?.DisplayName ?? FullName;
 		}
 
 		/// <summary>
 		/// Removes the attn prefix if needed.
 		/// </summary>
-		protected void RemoveAttnPrefixIfNeeded() {
-			if (FullName.StartsWith("ATTN:", StringComparison.OrdinalIgnoreCase)) {
+		protected void Preparse() {
+			if (FullName.StartsWith("ATTN:", StringComparison.OrdinalIgnoreCase))
 				FullName = FullName.Substring(5).Trim();
-			}
 		}
 	}
 }

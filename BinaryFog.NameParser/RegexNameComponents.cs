@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -23,7 +24,8 @@ namespace BinaryFog.NameParser {
 			using (var reader = new StreamReader(res)) {
 				// first line case
 				var line = reader.ReadLine();
-				if (line == null) return "";
+				//if (line == null) return "";
+				Debug.Assert(line != null);
 				stringBuilder.Append(Regex.Escape(line));
 
 				// second line
