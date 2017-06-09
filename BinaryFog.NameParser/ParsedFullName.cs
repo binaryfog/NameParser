@@ -14,7 +14,7 @@ namespace BinaryFog.NameParser {
 		 * implementation constructed this ParsedFullName instance.
 		 * You might have to adjust this for your specific platform.
 		 */
-
+		[ExcludeFromCodeCoverage]
 		private static Type GetOuterStackFrameType(int frameOffset = 0) {
 		    var st = (StackTrace) typeof(StackTrace).GetConstructor(Type.EmptyTypes).Invoke(null);
 		    var frames = st.GetFrames();
@@ -29,7 +29,10 @@ namespace BinaryFog.NameParser {
 		    return frames[frameIndex+frameOffset].GetMethod().DeclaringType;
 	    }
 
+		[ExcludeFromCodeCoverage]
 	    private Type Pattern { get; } = GetOuterStackFrameType();
+
+	    [ExcludeFromCodeCoverage]
 		private string DebuggerDisplay => $"{Score:G4} {Pattern.Name}: {DisplayName}";
 #endif
 		public const int MaxScore = int.MaxValue;
@@ -40,6 +43,11 @@ namespace BinaryFog.NameParser {
         public string Title { get; set; }
         public string NickName { get; set; }
         public string Suffix { get; set; }
+
+		/// <summary>
+		/// This property is intended to display all names as would appear for presentation purposes.
+		/// This excludes titles and suffixes.
+		/// </summary>
         public string DisplayName { get; set; }
 
         public int Score { get; set; }

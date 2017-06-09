@@ -5,10 +5,10 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class FirstMiddleLastPattern : IFullNamePattern {
+	public class FirstMiddleLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + First + Space + Middle + Space + Last + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
@@ -19,16 +19,15 @@ namespace BinaryFog.NameParser.Patterns {
 			var lastName = match.Groups["last"].Value;
 
 			var scoreMod = 0;
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedFirstName(ref scoreMod, middleName, 10);
+			ModifyScoreExpectedFirstNames(ref scoreMod, firstName, middleName);
 			ModifyScoreExpectedLastName(ref scoreMod, lastName);
 
 			var pn = new ParsedFullName {
 				FirstName = firstName,
 				MiddleName = middleName,
 				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 10 + scoreMod
+				DisplayName = $"{firstName} {middleName} {lastName}",
+				Score = 50 + scoreMod
 			};
 			return pn;
 		}

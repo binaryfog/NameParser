@@ -5,17 +5,18 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TwoInitialsFirstLastPattern : IFullNamePattern {
+	public class TwoInitialsFirstLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + @"(?<first1>\w\.)" + OptionalSpace + @"(?<first2>\w\.?)" + Space + @"(?<last>\w+)$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			@"^" + TwoInitial + Space + @"(?<last>\w+)$",
+			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-			var firstPart1 = match.Groups["first1"].Value;
-            var firstPart2 = match.Groups["first2"].Value;
-			var firstName = $"{firstPart1}{firstPart2}";
+			var initial1 = match.Groups["initial1"].Value;
+            var initial2 = match.Groups["initial2"].Value;
+			var firstName = $"{initial1}.";
+			var middleName = $"{initial2}.";
 			var lastName = match.Groups["last"].Value;
 
 			
@@ -26,8 +27,9 @@ namespace BinaryFog.NameParser.Patterns {
 			var pn = new ParsedFullName
             {
                 FirstName = firstName,
-				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
+	            MiddleName = middleName,
+	            LastName = lastName,
+				DisplayName = $"{firstName} {middleName} {lastName}",
 				Score = 100 + scoreMod
 			};
 			return pn;

@@ -4,10 +4,10 @@ using static BinaryFog.NameParser.RegexNameComponents;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class CompanyPattern : IFullNamePattern {
+	public class CompanyPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			Space + @"(?<lastWord>(" + CompanySuffixes + @")\W?)$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 
 		public ParsedFullName Parse(string rawName) {

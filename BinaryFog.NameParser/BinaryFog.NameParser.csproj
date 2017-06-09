@@ -17,6 +17,10 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
 		<PackageLicenseUrl>https://github.com/binaryfog/NameParser</PackageLicenseUrl>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Patterns|AnyCPU'">
+	  <DefineConstants>TRACE;DEBUG;NETSTANDARD1_6;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
+	</PropertyGroup>
+
 	<ItemGroup>
 	  <None Remove="Resources\CompanySuffixes.txt" />
 	  <None Remove="Resources\FemaleFirstNames.txt" />
@@ -26,7 +30,6 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
 	  <None Remove="Resources\PostNominals.txt" />
 	  <None Remove="Resources\Suffixes.txt" />
 	  <None Remove="Resources\Titles.txt" />
-	  <None Remove="Resources\UsCensusLastNames.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -38,7 +41,7 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
 	  <EmbeddedResource Include="Resources\PostNominals.txt" />
 	  <EmbeddedResource Include="Resources\Suffixes.txt" />
 	  <EmbeddedResource Include="Resources\Titles.txt" />
-	  <EmbeddedResource Include="Resources\UsCensusLastNames.txt" />
+	  <EmbeddedResource Include="Resources\LastNames.txt" />
 	</ItemGroup>
 
 	<ItemGroup>

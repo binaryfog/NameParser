@@ -5,10 +5,10 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstLastPattern : IFullNamePattern {
+	public class TitleFirstLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + Title + Space + First + Space + Last + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.

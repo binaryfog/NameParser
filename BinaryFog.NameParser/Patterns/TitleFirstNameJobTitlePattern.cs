@@ -5,10 +5,10 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleFirstNameJobTitlePattern : IFullNamePattern {
+	public class TitleFirstNameJobTitlePattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
 			@"^" + Title + Space + First + Space + JobTitle + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			CommonPatternRegexOptions);
 
 
 		public ParsedFullName Parse(string rawName) {

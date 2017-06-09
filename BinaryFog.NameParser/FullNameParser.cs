@@ -34,7 +34,8 @@ namespace BinaryFog.NameParser {
 
 		protected static IEnumerable<IFullNamePattern> PatternsMap { get; } =
 			KnownAssemblies
-				.SelectMany(s => TryOrDefault(s.GetTypes, Type.EmptyTypes))
+				.Where(a => !a.FullName.StartsWith("System.") && !a.FullName.StartsWith("Microsoft."))
+				.SelectMany(s => TryOrDefault(s.GetExportedTypes, Type.EmptyTypes))
 				.Where(p => PatternType.IsAssignableFrom(p))
 				.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null))
 				.OfType<IFullNamePattern>();

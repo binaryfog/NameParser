@@ -5,10 +5,10 @@ using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
 	[UsedImplicitly]
-	internal class TitleHyphenatedFirstLastPattern : IFullNamePattern {
+	public class TitleHyphenatedFirstLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + @"(?<first1>\w+)-(?<first2>\w+)" + Space + @"(?<last>\w+)$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			@"^" + Title + Space + @"(?<first1>" + Name + @")-(?<first2>" + Name + @")" + Space + @"(?<last>" + Name + @")$",
+			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
@@ -19,8 +19,7 @@ namespace BinaryFog.NameParser.Patterns {
 			var lastName = match.Groups["last"].Value;
 			
 			var scoreMod = 0;
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName1);
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName2);
+			ModifyScoreExpectedFirstNames(ref scoreMod, firstName1, firstName2);
 			ModifyScoreExpectedLastName(ref scoreMod, lastName);
 
 			var pn = new ParsedFullName

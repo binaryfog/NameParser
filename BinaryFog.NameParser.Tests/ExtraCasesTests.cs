@@ -100,7 +100,7 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Jose", target.FirstName);
 			Assert.Equal("Miguel", target.MiddleName);
 			Assert.Equal("de la Vega", target.LastName);
-			Assert.Equal("Jose de la Vega", target.DisplayName);
+			Assert.Equal(fullName, target.DisplayName);
 		}
 
 		//kennedy, john(jack) f
@@ -126,7 +126,7 @@ namespace BinaryFog.NameParser.Tests {
 
 			Assert.Equal("John", target.FirstName);
 			Assert.Equal("Kennedy", target.LastName);
-			Assert.Equal("John Kennedy", target.DisplayName);
+			Assert.Equal("John F. Kennedy", target.DisplayName);
 		}
 
 		//Maria Delores Esquivel-Moreno
@@ -140,7 +140,7 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Maria", target.FirstName);
 			Assert.Equal("Delores", target.MiddleName);
 			Assert.Equal("Esquivel-Moreno", target.LastName);
-			Assert.Equal("Maria Esquivel-Moreno", target.DisplayName);
+			Assert.Equal(fullName, target.DisplayName);
 		}
 
 		//MANUEL ESQUIPULAS SOHOM
@@ -152,7 +152,8 @@ namespace BinaryFog.NameParser.Tests {
 
 
 			Assert.Equal("Manuel", target.FirstName);
-			Assert.Equal("Esquipulas Sohom", target.LastName);
+			Assert.Equal("Esquipulas", target.MiddleName);
+			Assert.Equal("Sohom", target.LastName);
 			Assert.Equal("Manuel Esquipulas Sohom", target.DisplayName);
 		}
 
@@ -173,5 +174,89 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("John dela Vega", target.DisplayName);
         }
 		*/
+
+		/*
+single hyphenated
+		 */
+		 
+		[Fact]
+		public void FirstNickHyphenatedLast() {
+			var fullName = "Manuel \"Manny\" Esquipulas-Sohom";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Manuel", target.FirstName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Manuel Esquipulas-Sohom", target.DisplayName);
+		}
+		 
+		[Fact]
+		public void FirstNickMiddleHyphenatedLast() {
+			var fullName = "Maria \"Mary\" Delores Esquipulas-Sohom";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Maria", target.FirstName);
+			Assert.Equal("Delores", target.MiddleName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Maria Delores Esquipulas-Sohom", target.DisplayName);
+		}
+
+		[Fact]
+		public void FirstNickTwoMiddleHyphenatedLast() {
+			var fullName = "Manuel Miguel Montoya Esquipulas-Sohom";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Manuel", target.FirstName);
+			Assert.Equal("Miguel Montoya", target.MiddleName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Manuel Miguel Montoya Esquipulas-Sohom", target.DisplayName);
+		}
+		
+		[Fact]
+		public void FemaleFirstNickTwoMiddleHyphenatedLast() {
+			var fullName = "Maria Ellen Delores Esquipulas-Sohom";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Maria", target.FirstName);
+			Assert.Equal("Ellen Delores", target.MiddleName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Maria Ellen Delores Esquipulas-Sohom", target.DisplayName);
+		}
+		
+		[Fact]
+		public void FirstLastNick() {
+			var fullName = "Manuel Sohom \"Manny\"";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Manuel", target.FirstName);
+			Assert.Equal("Sohom", target.LastName);
+			Assert.Equal("Manuel Sohom", target.DisplayName);
+		}
+		
+		[Fact]
+		public void FirstHyphenatedLastNick() {
+			var fullName = "Manuel Esquipulas-Sohom \"Manny\"";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Manuel", target.FirstName);
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Manuel Esquipulas-Sohom", target.DisplayName);
+		}
+
+		[Fact]
+		public void SingleHyphenated() {
+			var fullName = "Esquipulas-Sohom";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+			
+			Assert.Equal("Esquipulas-Sohom", target.LastName);
+			Assert.Equal("Esquipulas-Sohom", target.DisplayName);
+		}
+
 	}
 }

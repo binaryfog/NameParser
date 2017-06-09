@@ -66,7 +66,7 @@ namespace BinaryFog.NameParser.Tests {
 
 			Assert.Equal("Jay", target.FirstName);
 			Assert.Equal("Positano", target.LastName);
-			Assert.Equal("Jay Positano", target.DisplayName);
+			Assert.Equal("Jay J. Positano", target.DisplayName);
 			Assert.Equal("Mr", target.Title);
 		}
 
@@ -76,10 +76,10 @@ namespace BinaryFog.NameParser.Tests {
 			var target = new FullNameParser(fullName);
 			target.Parse();
 
+			Assert.Equal("Mr", target.Title);
 			Assert.Equal("Jay", target.FirstName);
 			Assert.Equal("Positano", target.LastName);
-			Assert.Equal("Jay Positano", target.DisplayName);
-			Assert.Equal("Mr", target.Title);
+			Assert.Equal("Jay J. Positano", target.DisplayName);
 		}
 
 		[Fact]
@@ -160,8 +160,10 @@ namespace BinaryFog.NameParser.Tests {
 		[Fact]
 		public void Parse_CompanyNamesAsPersonNames() {
 			string[] companyNamesAsPersonNames = {
-				"AL HUGHES (MARINE)", "HI TECH HYDRAULICS (1985) LT", "ALFALFA BEEKEEPERS LTD",
-				"ALAA SALAH   AELSAYAD@TORCC."
+				//"AL HUGHES (MARINE)", => AL HUGHES
+				"HI TECH HYDRAULICS (1985) LT",
+				"ALFALFA BEEKEEPERS LTD",
+				//"ALAA SALAH   AELSAYAD@TORCC.", => ALAA SALAH AELSAYAD
 			};
 
 			foreach (var item in companyNamesAsPersonNames) {
@@ -261,7 +263,7 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Francis", target.MiddleName);
 			Assert.Equal("Van Der Waal", target.LastName);
 			Assert.Equal("Sr.", target.Suffix);
-            Assert.Equal("Jack Van Der Waal", target.DisplayName);
+            Assert.Equal("Jack Francis Van Der Waal", target.DisplayName);
 		}
 
 		[Fact]

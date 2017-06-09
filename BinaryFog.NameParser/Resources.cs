@@ -41,8 +41,8 @@ namespace BinaryFog.NameParser {
 		public static Stream Titles { get; }
 			= GetTxtStream(nameof(Titles));
 		
-		public static Stream UsCensusLastNames { get; }
-			= GetTxtStream(nameof(UsCensusLastNames));
+		public static Stream LastNames { get; }
+			= GetTxtStream(nameof(LastNames));
 
 	}
 }

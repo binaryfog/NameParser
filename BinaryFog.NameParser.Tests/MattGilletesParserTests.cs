@@ -43,9 +43,10 @@ namespace BinaryFog.NameParser.Tests {
             var target = new FullNameParser(fullName);
             target.Parse();
 
-            Assert.Equal("E.J.", target.FirstName);
+            Assert.Equal("E.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
             Assert.Equal("Manuel", target.LastName);
-            Assert.Equal("E.J. Manuel", target.DisplayName);
+            Assert.Equal("E. J. Manuel", target.DisplayName);
 
         }
 
@@ -55,10 +56,11 @@ namespace BinaryFog.NameParser.Tests {
             var fullName = "D. J. Foster";
             var target = new FullNameParser(fullName);
             target.Parse();
-
-            Assert.Equal("D.J.", target.FirstName);
+			
+	        Assert.Equal("D.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
             Assert.Equal("Foster", target.LastName);
-            Assert.Equal("D.J. Foster", target.DisplayName);
+            Assert.Equal("D. J. Foster", target.DisplayName);
 
         }
 
@@ -94,10 +96,11 @@ namespace BinaryFog.NameParser.Tests {
             var fullName = "C. J Smith";
             var target = new FullNameParser(fullName);
             target.Parse();
-
-            Assert.Equal("C.J", target.FirstName);
+			
+	        Assert.Equal("C.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
             Assert.Equal("Smith", target.LastName);
-            Assert.Equal("C.J Smith", target.DisplayName);
+            Assert.Equal("C. J. Smith", target.DisplayName);
 
         }
 
