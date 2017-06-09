@@ -1,47 +1,35 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Xunit;
 
 
-namespace BinaryFog.NameParser.Tests
-{
-    [TestClass]
-    public class AfricanNamesTests
-    {
-        private TestContext testContextInstance;
-        public TestContext TestContext
-        {
-            get { return testContextInstance; }
-            set { testContextInstance = value; }
-        }
+namespace BinaryFog.NameParser.Tests {
+	public class AfricanNamesTests {
+		public static IEnumerable<object[]> GetAfricanNames()
+			=> DataFiles.GetXDocument("AfricanNames.xml")?
+			.Root?.Elements("Person")
+			.Select(xe => new object[] {
+				xe.Element("FirstName")?.Value,
+				xe.Element("LastName")?.Value,
+				xe.Element("Name")?.Value,
+			});
 
+		[Theory]
+		[MemberData(nameof(GetAfricanNames), DisableDiscoveryEnumeration = true)]
+		public void AfricanNames_Test(string firstName, string lastName, string expectedDisplayName) {
+			// ARRANGE
+			string fullName = $"{firstName} {lastName}";
+			//Console.WriteLine(fullName);
 
+			// ACT
+			var target = new FullNameParser(fullName);
+			target.Parse();
 
-        [TestMethod]
-        [DeploymentItem(@".\DataFiles\AfricanNames.xml")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\AfricanNames.xml", "Person", DataAccessMethod.Sequential)]
-        public void AfricanNames_Test()
-        {
-            //ARRANGE 
-            string firstName = Convert.ToString(TestContext.DataRow["FirstName"]);
-            string lastName = Convert.ToString(TestContext.DataRow["LastName"]);
-            string expectedDisplayName = Convert.ToString(TestContext.DataRow["Name"]);
-
-            string fullName = $"{firstName} {lastName}";
-            Console.WriteLine(fullName);
-
-            //ACT
-            var target = new FullNameParser(fullName);
-            target.Parse();
-
-            //ASSERT
-            
-            Assert.AreEqual( firstName, target.FirstName, "First Name doesn't match");
-            Assert.AreEqual( lastName, target.LastName, "Last Name doesn't match");
-
-            Assert.AreEqual(expectedDisplayName, target.DisplayName, "DisplayName doesn't match");
-        }
-
-
-        
-    }
+			// ASSERT
+			Assert.Equal(firstName, target.FirstName);
+			Assert.Equal(lastName, target.LastName);
+			Assert.Equal(expectedDisplayName, target.DisplayName);
+		}
+	}
 }

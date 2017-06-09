@@ -1,23 +1,34 @@
 ﻿using System.Text.RegularExpressions;
+using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
+using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class LastNameCommaFirstNameNickNameInitialPattern : IPattern {
+	[UsedImplicitly]
+	public class LastNameCommaFirstNameNickNameInitialPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Last + CommaSpace + First + Space + Nick + Space + Initial + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			@"^" + Last + CommaSpace + First + OptionalSpace + Nick + OptionalSpace + Initial + @"$",
+			CommonPatternRegexOptions);
 
-		public ParsedName Parse(string rawName) {
+		public ParsedFullName Parse(string rawName) {
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-            var pn = new ParsedName(this.GetType().Name)
-            {
-                FirstName = match.Groups["first"].Value,
-				LastName = match.Groups["last"].Value,
-				NickName = match.Groups["nick"].Value,
+			var firstName = match.Groups["first"].Value;
+			var lastName = match.Groups["last"].Value;
+			var nickName = match.Groups["nick"].Value;
 
-				DisplayName = $"{match.Groups["first"].Value} {match.Groups["last"].Value}",
-				Score = 100
+			var scoreMod = 0;
+			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
+			ModifyScoreExpectedName(ref scoreMod, nickName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastName);
+
+			var pn = new ParsedFullName {
+				FirstName = firstName,
+				LastName = lastName,
+				NickName = nickName,
+
+				DisplayName = $"{firstName} {lastName}",
+				Score = 100 + scoreMod
 			};
 			return pn;
 		}
