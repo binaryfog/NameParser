@@ -1,23 +1,34 @@
 ﻿using System.Text.RegularExpressions;
+using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
+using static BinaryFog.NameParser.NameComponentSets;
 
 namespace BinaryFog.NameParser.Patterns {
-	internal class TitleFirstIrishLastPattern : IPattern {
+	[UsedImplicitly]
+	public class TitleFirstIrishLastPattern : IFullNamePattern {
 		private static readonly Regex Rx = new Regex(
-			@"^" + Title + Space + First + Space + "O'" + Last + @"$",
-			RegexOptions.Compiled | RegexOptions.IgnoreCase);
+			@"^" + Title + Space + First + Space + @"(?<irishPrefix>O'|Mc|Mac)" + Last + @"$",
+			CommonPatternRegexOptions);
 
-		public ParsedName Parse(string rawName) {
+		public ParsedFullName Parse(string rawName) {
 			//Title should be Mr or Mr. or Ms or Ms. or Mrs or Mrs.
 			var match = Rx.Match(rawName);
 			if (!match.Success) return null;
-            var pn = new ParsedName(this.GetType().Name)
-            {
-                Title = match.Groups["title"].Value,
-				FirstName = match.Groups["first"].Value,
-                LastName = $"O'{match.Groups["last"].Value}",
-                DisplayName = $"{match.Groups["first"].Value} O'{match.Groups["last"].Value}",
-                Score = 300
+			var firstName = match.Groups["first"].Value;
+			var irishPrefix = match.Groups["irishPrefix"].Value;
+			var lastPart = match.Groups["last"].Value;
+			var lastName = $"{irishPrefix}{lastPart}";
+
+			var scoreMod = 0;
+			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
+			ModifyScoreExpectedLastName(ref scoreMod, lastPart);
+
+			var pn = new ParsedFullName {
+				Title = match.Groups["title"].Value,
+				FirstName = firstName,
+				LastName = lastName,
+				DisplayName = $"{firstName} {lastName}",
+				Score = 300 + scoreMod
 			};
 
 			return pn;

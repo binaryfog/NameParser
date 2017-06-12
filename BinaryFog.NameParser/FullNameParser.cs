@@ -1,9 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Loader;
+using JetBrains.Annotations;
+using Microsoft.Extensions.PlatformAbstractions;
 
 namespace BinaryFog.NameParser {
+	using static Helpers;
+
 	/// <summary>
 	/// Parse a person full name 
 	/// </summary>
@@ -20,13 +27,43 @@ namespace BinaryFog.NameParser {
 	/// 1. The prefix "ATTN:" is removed if exists and the parsing proceeds on the new string
 	/// </remarks>
 	public class FullNameParser {
-		public IReadOnlyList<ParsedName> Results { get; set; }
+		public IReadOnlyList<ParsedFullName> Results { get; set; } = new ParsedFullName[0];
 
-		string _fullName;
-		private static readonly Type PatternType = typeof(IPattern);
-		private static readonly IEnumerable<IPattern> PatternsMap =
-			AppDomain.CurrentDomain.GetAssemblies().SelectMany(s => s.GetTypes()).Where(p => p.IsClass && PatternType.IsAssignableFrom(p))
-			.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null)).OfType<IPattern>().Where(o => o != null);
+		protected string FullName { get; private set; }
+
+		protected static Type PatternType { get; } = typeof(IFullNamePattern);
+
+		private static bool _enableThirdParty;
+
+		[UsedImplicitly]
+		public static bool EnableAutomaticThirdPartyIntegration {
+			get => _enableThirdParty;
+			set {
+				_enableThirdParty = value;
+				BuildPatternsMap();
+			}
+		}
+
+		private static void BuildPatternsMap() {
+			PatternsMap = (_enableThirdParty
+					? KnownAssemblies
+						.Where(a
+							=> !a.FullName.StartsWith("System.")
+								&& !a.FullName.StartsWith("Microsoft."))
+						.SelectMany(s => TryOrDefault(s.GetExportedTypes, Type.EmptyTypes))
+					: typeof(FullNameParser).GetTypeInfo().Assembly.GetExportedTypes()
+				)
+				.Where(p => PatternType.IsAssignableFrom(p))
+				.Select(t => t.GetConstructor(Type.EmptyTypes)?.Invoke(null))
+				.OfType<IFullNamePattern>();
+		}
+
+		static FullNameParser() {
+			BuildPatternsMap();
+		}
+
+		protected static IEnumerable<IFullNamePattern> PatternsMap { get; private set; }
+
 
 		public string FirstName { get; private set; }
 		public string MiddleName { get; private set; }
@@ -41,8 +78,7 @@ namespace BinaryFog.NameParser {
 		/// </summary>
 		/// <param name="fullName">The full name.</param>
 		public FullNameParser(string fullName) {
-			_fullName = fullName;
-			Results = new ParsedName[0];
+			FullName = fullName;
 		}
 
 		public static FullNameParser Parse(string fullName) {
@@ -55,40 +91,35 @@ namespace BinaryFog.NameParser {
 		/// Parses this instance.
 		/// </summary>
 		public void Parse() {
-			DisplayName = _fullName;
-			if (string.IsNullOrWhiteSpace(_fullName))
+			DisplayName = FullName;
+			if (string.IsNullOrWhiteSpace(FullName))
 				return;
 
-			RemoveAttnPrefixIfNeeded();
+			Preparse();
 
 			Results = PatternsMap
-				.Select(pattern => pattern.Parse(_fullName))
-				.OrderByDescending( result => result?.Score ?? 0 )
+				.Select(pattern => pattern.Parse(FullName))
+				.Where(NotNull)
+				.OrderByDescending(result => result?.Score ?? 0)
 				.ToImmutableArray();
 
-			var v = Results.FirstOrDefault();
+			var selectedResult = Results.FirstOrDefault();
 
-			FirstName = v?.FirstName;
-			MiddleName = v?.MiddleName;
-			LastName = v?.LastName;
-			Title = v?.Title;
-			NickName = v?.NickName;
-			Suffix = v?.Suffix;
-			DisplayName = v?.DisplayName ?? _fullName;
-
+			FirstName = selectedResult?.FirstName;
+			MiddleName = selectedResult?.MiddleName;
+			LastName = selectedResult?.LastName;
+			Title = selectedResult?.Title;
+			NickName = selectedResult?.NickName;
+			Suffix = selectedResult?.Suffix;
+			DisplayName = selectedResult?.DisplayName ?? FullName;
 		}
 
 		/// <summary>
 		/// Removes the attn prefix if needed.
 		/// </summary>
-		private void RemoveAttnPrefixIfNeeded() {
-			if (_fullName.StartsWith("ATTN:", StringComparison.InvariantCultureIgnoreCase)) {
-				_fullName = _fullName.Substring(5).Trim();
-			}
-
+		protected void Preparse() {
+			if (FullName.StartsWith("ATTN:", StringComparison.OrdinalIgnoreCase))
+				FullName = FullName.Substring(5).Trim();
 		}
-
-
-
 	}
 }

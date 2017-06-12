@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace BinaryFog.NameParser.Tests {
 
@@ -9,134 +9,98 @@ namespace BinaryFog.NameParser.Tests {
 	///This is a test class for FullNameParserTest and is intended
 	///to contain all FullNameParserTest Unit Tests
 	///</summary>
-	[TestClass]
 	public class MattGilletesParserTests
     {
-		/// <summary>
-		///Gets or sets the test context which provides
-		///information about and functionality for the current test run.
-		///</summary>
-		[ExcludeFromCodeCoverage]
-		public TestContext TestContext { get; set; }
-
-		#region Additional test attributes
-		// 
-		//You can use the following additional attributes as you write your tests:
-		//
-		//Use ClassInitialize to run code before running the first test in the class
-		//[ClassInitialize()]
-		//public static void MyClassInitialize(TestContext testContext)
-		//{
-		//}
-		//
-		//Use ClassCleanup to run code after all tests in a class have run
-		//[ClassCleanup()]
-		//public static void MyClassCleanup()
-		//{
-		//}
-		//
-		//Use TestInitialize to run code before running each test
-		//[TestInitialize()]
-		//public void MyTestInitialize()
-		//{
-		//}
-		//
-		//Use TestCleanup to run code after each test has run
-		//[TestCleanup()]
-		//public void MyTestCleanup()
-		//{
-		//}
-		//
-		#endregion
-
-
-		[TestMethod]
+		[Fact]
 		public void Parse_IfoEkpreDASHOlomu() {
 			var fullName = "Ifo Ekpre-Olomu";
 			var target = new FullNameParser(fullName);
 			target.Parse();
 
-			Assert.AreEqual("Ifo", target.FirstName);
-			Assert.AreEqual("Ekpre-Olomu", target.LastName);
-			Assert.AreEqual("Ifo Ekpre-Olomu", target.DisplayName);
+			Assert.Equal("Ifo", target.FirstName);
+			Assert.Equal("Ekpre-Olomu", target.LastName);
+			Assert.Equal("Ifo Ekpre-Olomu", target.DisplayName);
 			
 		}
 
-        [TestMethod]
+        [Fact]
         public void Parse_IsaAbdulDASHQuddus()
         {
             var fullName = "Isa Abdul-Quddus";
             var target = new FullNameParser(fullName);
             target.Parse();
 
-            Assert.AreEqual("Isa", target.FirstName);
-            Assert.AreEqual("Abdul-Quddus", target.LastName);
-            Assert.AreEqual("Isa Abdul-Quddus", target.DisplayName);
+            Assert.Equal("Isa", target.FirstName);
+            Assert.Equal("Abdul-Quddus", target.LastName);
+            Assert.Equal("Isa Abdul-Quddus", target.DisplayName);
 
         }
 
-        [TestMethod]
+        [Fact]
         public void Parse_EDOTJDOTSPACEManuel()
         {
             var fullName = "E.J. Manuel";
             var target = new FullNameParser(fullName);
             target.Parse();
 
-            Assert.AreEqual("E.J.", target.FirstName);
-            Assert.AreEqual("Manuel", target.LastName);
-            Assert.AreEqual("E.J. Manuel", target.DisplayName);
+            Assert.Equal("E.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
+            Assert.Equal("Manuel", target.LastName);
+            Assert.Equal("E. J. Manuel", target.DisplayName);
 
         }
 
-        [TestMethod]
+        [Fact]
         public void Parse_DDOTSpaceJDotSpaceFoster()
         {
             var fullName = "D. J. Foster";
             var target = new FullNameParser(fullName);
             target.Parse();
-
-            Assert.AreEqual("D.J.", target.FirstName);
-            Assert.AreEqual("Foster", target.LastName);
-            Assert.AreEqual("D.J. Foster", target.DisplayName);
+			
+	        Assert.Equal("D.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
+            Assert.Equal("Foster", target.LastName);
+            Assert.Equal("D. J. Foster", target.DisplayName);
 
         }
 
-        [TestMethod]
+        [Fact]
         public void Parse_AlDASHHajjSPACEShabazz()
         {
             var fullName = "Al-Hajj Shabazz";
             var target = new FullNameParser(fullName);
             target.Parse();
 
-            Assert.AreEqual("Al-Hajj", target.FirstName);
-            Assert.AreEqual("Shabazz", target.LastName);
-            Assert.AreEqual("Al-Hajj Shabazz", target.DisplayName);
+            Assert.Equal("Al-Hajj", target.FirstName);
+            Assert.Equal("Shabazz", target.LastName);
+            Assert.Equal("Al-Hajj Shabazz", target.DisplayName);
 
         }
 
-        [TestMethod]
+        [Fact]
         public void Parse_DeAndreHoustonDASHCarson()
         {
             var fullName = "DeAndre Houston-Carson";
             var target = new FullNameParser(fullName);
             target.Parse();
 
-            Assert.AreEqual("DeAndre", target.FirstName);
-            Assert.AreEqual("Houston-Carson", target.LastName);
-            Assert.AreEqual("DeAndre Houston-Carson", target.DisplayName);
+            Assert.Equal("DeAndre", target.FirstName);
+            Assert.Equal("Houston-Carson", target.LastName);
+            Assert.Equal("DeAndre Houston-Carson", target.DisplayName);
 
         }
 
-        [TestMethod]
+        [Fact]
         public void Parse_CDOTSpaceJSpaceFoster()
         {
             var fullName = "C. J Smith";
             var target = new FullNameParser(fullName);
             target.Parse();
-
-            Assert.AreEqual("C.J", target.FirstName);
-            Assert.AreEqual("Smith", target.LastName);
-            Assert.AreEqual("C.J Smith", target.DisplayName);
+			
+	        Assert.Equal("C.", target.FirstName);
+	        Assert.Equal("J.", target.MiddleName);
+            Assert.Equal("Smith", target.LastName);
+            Assert.Equal("C. J. Smith", target.DisplayName);
 
         }
 
