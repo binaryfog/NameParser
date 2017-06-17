@@ -2,7 +2,7 @@ NameParser
 ====
 
 [![Join the chat at https://gitter.im/binaryfog/NameParser](https://badges.gitter.im/binaryfog/NameParser.svg)](https://gitter.im/binaryfog/NameParser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build status](https://ci.appveyor.com/api/projects/status/8d3nkp5crr6mdftx/branch/master?svg=true)](https://ci.appveyor.com/project/binaryfog/nameparser/branch/master)   Human name parsing.
+
 
 Parses names using English conventions for persons names. 
 Intended to be extendable, the library can be extended just by implement `IPattern` interface and assign a score to the returned result.
