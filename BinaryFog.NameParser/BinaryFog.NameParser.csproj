@@ -8,7 +8,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette.</Description>
 		<Copyright>Copyright © BinaryFog.com 2015 - 2017</Copyright>
-		<Version>1.1.0</Version>
+		<Version>2.0.0</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -26,18 +26,9 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
+    <PackageReleaseNotes>Updated to .NetStandard 1.6 ; thanks to Tyler Young</PackageReleaseNotes>
+    <PackageTags>Name parser, name parsing</PackageTags>
   </PropertyGroup>
-	<ItemGroup>
-	  <None Remove="Resources\CompanySuffixes.txt" />
-	  <None Remove="Resources\FemaleFirstNames.txt" />
-	  <None Remove="Resources\JobTitles.txt" />
-	  <None Remove="Resources\LastNamePrefixes.txt" />
-	  <None Remove="Resources\MaleFirstNames.txt" />
-	  <None Remove="Resources\PostNominals.txt" />
-	  <None Remove="Resources\Suffixes.txt" />
-	  <None Remove="Resources\Titles.txt" />
-	</ItemGroup>
-
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
 	  <EmbeddedResource Include="Resources\FemaleFirstNames.txt" />
