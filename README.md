@@ -37,7 +37,7 @@ string nickName = target.NickName;
 string suffix = target.Suffix;
 string displayName = target.DisplayName;
 ```
-
+Jun. 17, 2017: Started a new related project Nameparser.Dataset on github as a repository for names and parsed names. Feel free to add there names and parsed names.
 
 Nov. 13 2015: More cases are now handled. These are the cases:
 * SR. John Henry William dela Vega, Jr Esq.
