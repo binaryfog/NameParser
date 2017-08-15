@@ -27,7 +27,24 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Null(target.Title);
 		}
 
-		[Fact]
+        [Fact]
+        public void Parse_InesDelaCuna()
+        {
+            //ARRANGE
+            var fullName = "Ines De La Cuna";
+            var target = new FullNameParser(fullName);
+
+            //ACT
+            target.Parse();
+
+            //ASSERT
+            Assert.Equal("Ines", target.FirstName);
+            Assert.Equal("De La Cuna", target.LastName);
+            Assert.Equal("Ines De La Cuna", target.DisplayName);
+            Assert.Null(target.Title);
+        }
+
+        [Fact]
 		public void Parse_DehartCommaTwoSpacesPhilip() {
 			var fullName = "DeHart,  Philip";
 			var target = new FullNameParser(fullName);
