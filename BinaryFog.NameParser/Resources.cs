@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BinaryFog.NameParser {
-	public static class Resources {
+namespace BinaryFog.NameParser
+{
+    public static class Resources {
 		private static Type Type { get; } = typeof(Resources);
 
 		public static string ResourceNamespace { get; } = Type.FullName;

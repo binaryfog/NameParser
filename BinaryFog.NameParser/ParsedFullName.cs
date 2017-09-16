@@ -1,12 +1,9 @@
-﻿using System;
-using System.Diagnostics;
-using System.Reflection;
-
-namespace BinaryFog.NameParser {
+﻿namespace BinaryFog.NameParser
+{
 #if DEBUG_FULL_NAME_PATTERN_RESULTS
 	[DebuggerDisplay("{" + nameof(DebuggerDisplay) + "}")]
 #endif
-	public sealed class ParsedFullName
+    public sealed class ParsedFullName
     {
 #if DEBUG_FULL_NAME_PATTERN_RESULTS
 		/*

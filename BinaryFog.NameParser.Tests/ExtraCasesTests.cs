@@ -45,6 +45,24 @@ namespace BinaryFog.NameParser.Tests {
         }
 
         [Fact]
+        public void Parse_JohnKennedyIII()
+        {
+            //ARRANGE
+            var fullName = "John Kennedy III";
+            var target = new FullNameParser(fullName);
+
+            //ACT
+            target.Parse();
+
+            //ASSERT
+            Assert.Equal("John", target.FirstName);
+            Assert.Equal("Kennedy", target.LastName);
+            Assert.Equal("John Kennedy", target.DisplayName);
+            Assert.Null(target.Title);
+            Assert.Equal("III", target.Suffix);
+        }
+
+        [Fact]
 		public void Parse_DehartCommaTwoSpacesPhilip() {
 			var fullName = "DeHart,  Philip";
 			var target = new FullNameParser(fullName);
@@ -402,7 +420,8 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Manuel", target.FirstName);
 			Assert.Equal("Esquipulas-Sohom", target.LastName);
 			Assert.Equal("Manuel Esquipulas-Sohom", target.DisplayName);
-		}
+            Assert.Equal("Manny", target.NickName);
+        }
 
 		[Fact]
 		public void SingleHyphenated() {

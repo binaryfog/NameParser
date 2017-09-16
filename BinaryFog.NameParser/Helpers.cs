@@ -4,12 +4,11 @@ using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
-using System.Reflection.Metadata;
 using System.Runtime.Loader;
-using System.Text;
 
-namespace BinaryFog.NameParser {
-	internal static class Helpers {
+namespace BinaryFog.NameParser
+{
+    internal static class Helpers {
 		/// <summary>
 		/// A helper that returns the result of a <see cref="Func{TResult}"/>,
 		/// or in the event of an exception, <paramref name="default"/>.
