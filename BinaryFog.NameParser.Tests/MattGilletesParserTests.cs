@@ -104,5 +104,20 @@ namespace BinaryFog.NameParser.Tests {
 
         }
 
+        [Fact]
+        public void Parse_CDOTJDOTSpaceFosterIII()
+        {
+            var fullName = "C.J. Foster III";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.Equal("C.", target.FirstName);
+            Assert.Equal("J.", target.MiddleName);
+            Assert.Equal("Foster", target.LastName);
+            Assert.Equal("III", target.Suffix);
+            Assert.Equal("C. J. Foster", target.DisplayName);
+
+        }
+
     }
 }
