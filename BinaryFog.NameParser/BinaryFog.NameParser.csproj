@@ -8,7 +8,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette.</Description>
 		<Copyright>Copyright © BinaryFog.com 2015 - 2017</Copyright>
-		<Version>2.1.0</Version>
+		<Version>2.1.1</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -26,10 +26,10 @@ Many thanks to Tyler Young, Matt Gillette.</Description>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Updated to .NetStandard 2.0 ; thanks to Tyler Young</PackageReleaseNotes>
+    <PackageReleaseNotes>Added pattern for two initials last name and suffix ; Thanks to Matt Gillette.</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <FileVersion>2.1.0.0</FileVersion>
+    <AssemblyVersion>2.1.1.0</AssemblyVersion>
+    <FileVersion>2.1.1.0</FileVersion>
   </PropertyGroup>
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
