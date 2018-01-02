@@ -5,9 +5,9 @@ NameParser
 
 
 Parses names using English conventions for persons names. 
-Intended to be extendable, the library can be extended just by implement `IPattern` interface and assign a score to the returned result.
+Intended to be extendable, the library can be extended just by implement `IFullNamePattern` interface and assign a score to the returned result.
 
-For the sake of performance, the assembly and types implementing `IPattern` must be loaded before the first attempt to use the `NameParser`.
+For the sake of performance, the assembly and types implementing `IFullNamePattern` must be loaded before the first attempt to use the `NameParser`.
 
 If you have a person name that is not parsed correctly, please post a message on https://gitter.im/binaryfog/NameParser. I'll see what I can do.
 
