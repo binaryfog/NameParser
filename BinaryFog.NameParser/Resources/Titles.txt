@@ -1,4 +1,4 @@
-﻿dame
+dame
 dr
 madam
 madame
@@ -18,3 +18,9 @@ lady
 hon
 honorable
 right hon
+fr
+rev
+revd
+cpt
+lt
+sgt
