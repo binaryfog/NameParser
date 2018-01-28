@@ -67,7 +67,8 @@ namespace BinaryFog.NameParser {
 		public const string TwoInitial = @"(?<initial1>[a-z])(?!"+Vowels+@")\.?" + OptionalSpace + @"(?<initial2>[a-z])\.?";
 		public const string Name = @"'?(\w+|\w+('\w+)+)('(?=\W))?";
 		public const string First = @"(?<first>"+Name+@")";
-		public const string Last = @"(?<last>"+Name+@")";
+        public const string AfricanFirst = @"(?<first>" + Name + "'" + Name + @")";
+        public const string Last = @"(?<last>"+Name+@")";
 		public const string Middle = @"(?<middle>"+Name+@")";
 		public const string TwoMiddle = @"(?<middle1>"+Name+@")" + Space + @"(?<middle2>"+Name+@")";
 		public const string Hyphen = "[-\u00AD\u058A\u1806\u2010\u2011\u30FB\uFE63\uFF0D\uFF65]";
@@ -75,7 +76,7 @@ namespace BinaryFog.NameParser {
 		public const string LastHyphenated = @"(?<last>(?<last1>"+Name+@")" + HyphenOptionallySpaced + @"(?<last2>"+Name+@"))";
 		public const string SpaceOrHyphen = Space + "|" + HyphenOptionallySpaced;
 		public const string Words = @"(\w+|" + SpaceOrHyphen + @")+";
-		public const string Nick = @"(\((?<nick>("+Words+@"))\)|(?<nickquote>['""])(?<nick>("+Words+@"))\k<nickquote>)";
+		public const string Nick = @"(\((?<nick>("+Words+ @"))\)|(?<nickquote>['""”“])(?<nick>(" + Words+ @"))(?<nickquote>['""”“]))";
 
 
 		public const RegexOptions CommonPatternRegexOptions

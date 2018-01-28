@@ -4,6 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Xml.Linq;
 
+
 namespace BinaryFog.NameParser.Tests {
 	public static class DataFiles {
 		private static readonly string DirectoryPath
@@ -29,5 +30,14 @@ namespace BinaryFog.NameParser.Tests {
 					XDocuments[fileName] = doc = XDocument.Load(stream);
 			return doc;
 		}
-	}
+
+        public static string GetJsonString(string fileName)
+        {
+            using (FileStream fileStream = (FileStream)GetStream(fileName))
+            using (StreamReader reader = new StreamReader(fileStream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+    }
 }

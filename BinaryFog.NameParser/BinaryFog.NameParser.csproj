@@ -8,7 +8,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
 		<Copyright>Copyright © BinaryFog.com 2015 - 2018</Copyright>
-		<Version>2.2</Version>
+		<Version>2.3</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -26,10 +26,10 @@ Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Added First Initial Last comma suffix pattern at mguiness suggestion.</PackageReleaseNotes>
+    <PackageReleaseNotes>More unit tests; Nicknames can be enclosed in non matching chars now. Sen, Rep and commish added to titles</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
-    <FileVersion>2.2.0.0</FileVersion>
+    <AssemblyVersion>2.3.0.0</AssemblyVersion>
+    <FileVersion>2.3.0.0</FileVersion>
   </PropertyGroup>
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />

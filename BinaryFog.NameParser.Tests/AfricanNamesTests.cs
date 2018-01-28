@@ -31,5 +31,19 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal(lastName, target.LastName);
 			Assert.Equal(expectedDisplayName, target.DisplayName);
 		}
-	}
+
+        [Fact]
+        public void Parse_SenQUOTEDerrickMarks()
+        {
+            var fullName = "Sen'Derrick Marks";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+            Assert.Equal("Sen'Derrick", target.FirstName);
+            Assert.Equal("Marks", target.LastName);
+            Assert.Equal("Sen'Derrick Marks", target.DisplayName);
+            Assert.Null(target.Title);
+        }
+
+    }
 }

@@ -24,3 +24,6 @@ revd
 cpt
 lt
 sgt
+sen
+rep
+commish

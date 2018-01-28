@@ -43,3 +43,4 @@ supervisor
 treasurer
 vice chairman
 vice president
+senator
