@@ -53,6 +53,5 @@ Nov. 13 2015: More cases are now handled. These are the cases:
     
 Jan. 8 2016: 100% code coverage. More test cases. These are the cases:
 * Empty string and white space cases.
-* ~~SR. John Henry William dela Vega, Jr Esq.~~ SR. is not a valid title.
 * Mr. Jack Francis Van Der Waal Sr.
 * Mr. Jack Francis Marion Van Der Waal Sr.
