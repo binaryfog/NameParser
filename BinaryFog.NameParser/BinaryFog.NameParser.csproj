@@ -14,7 +14,7 @@ Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 		<PackageIconUrl>https://avatars2.githubusercontent.com/u/999230?v=3&amp;s=460</PackageIconUrl>
-		<PackageLicenseUrl>https://github.com/binaryfog/NameParser</PackageLicenseUrl>
+		<PackageLicenseUrl></PackageLicenseUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Patterns|AnyCPU'">
@@ -31,6 +31,7 @@ More patterns for two initial patterns added</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
     <AssemblyVersion>2.5.0.0</AssemblyVersion>
     <FileVersion>2.5.0.0</FileVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
@@ -84,5 +85,12 @@ More patterns for two initial patterns added</PackageReleaseNotes>
 		<PackageReference Include="System.Threading" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>
