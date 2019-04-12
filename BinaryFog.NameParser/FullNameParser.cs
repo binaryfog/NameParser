@@ -113,11 +113,13 @@ namespace BinaryFog.NameParser
 		}
 
 		/// <summary>
-		/// Removes the attn prefix if needed.
+		/// Removes the attn prefix if needed and remove all trailing and leading white spaces.
 		/// </summary>
 		protected void Preparse() {
-			if (FullName.StartsWith("ATTN:", StringComparison.OrdinalIgnoreCase))
-				FullName = FullName.Substring(5).Trim();
-		}
+            if (FullName.StartsWith("ATTN:", StringComparison.OrdinalIgnoreCase))
+                FullName = FullName.Substring(5).Trim();
+
+            FullName = FullName.Trim();
+        }
 	}
 }

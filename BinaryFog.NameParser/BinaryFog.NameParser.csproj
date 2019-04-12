@@ -7,8 +7,8 @@
 		<Description>Human name parsing.
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
-		<Copyright>Copyright © BinaryFog.com 2015 - 2018</Copyright>
-		<Version>2.4</Version>
+		<Copyright>Copyright © BinaryFog.com 2015 - 2019</Copyright>
+		<Version>2.5</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -26,10 +26,11 @@ Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>More patterns for Initial as middle name added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Leading and traing spaces trimmed.
+More patterns for two initial patterns added</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>2.4.0.0</AssemblyVersion>
-    <FileVersion>2.4.0.0</FileVersion>
+    <AssemblyVersion>2.5.0.0</AssemblyVersion>
+    <FileVersion>2.5.0.0</FileVersion>
   </PropertyGroup>
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />

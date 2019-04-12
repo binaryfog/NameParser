@@ -64,8 +64,11 @@ namespace BinaryFog.NameParser {
 		public const string CommaSpace = OptionalSpace + @"," + Space;
 		public const string Initial = @"(?<initial>[a-z])\.?";
 		public const string Vowels = @"[aeiouy]";
-		public const string TwoInitial = @"(?<initial1>[a-z])(?!"+Vowels+@")\.?" + OptionalSpace + @"(?<initial2>[a-z])\.?";
-		public const string Name = @"'?(\w+|\w+('\w+)+)('(?=\W))?";
+		public const string TwoInitial = @"(?<initial1>[a-z])(?!"+Vowels+@")\." + OptionalSpace + @"(?<initial2>[a-z])\.";
+        public const string TwoInitialFirstOptionalDot = @"(?<initial1>[a-z])(?!" + Vowels + @")\.?" + OptionalSpace + @"(?<initial2>[a-z])\.";
+        public const string TwoInitialSecondOptionalDot = @"(?<initial1>[a-z])(?!" + Vowels + @")\." + OptionalSpace + @"(?<initial2>[a-z])\.?";
+
+        public const string Name = @"'?(\w+|\w+('\w+)+)('(?=\W))?";
 		public const string First = @"(?<first>"+Name+@")";
         public const string AfricanFirst = @"(?<first>" + Name + "'" + Name + @")";
         public const string Last = @"(?<last>"+Name+@")";

@@ -301,6 +301,34 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("Tammy L. van Baker", target.DisplayName);
         }
 
+        [Fact]
+        public void Parse_SpaceTammySpaceLDotVanSpaceBakerSpaceIISpace()
+        {
+            var fullName = " Tammy L. van Baker II ";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Tammy", target.FirstName);
+            Assert.Equal("L.", target.MiddleName);
+            Assert.Equal("van Baker", target.LastName);
+            Assert.Equal("II", target.Suffix);
+            Assert.Equal("Tammy L. van Baker", target.DisplayName);
+        }
+
+        [Fact]
+        public void Parse_AlSpaceBundy()
+        {
+            var fullName = "Al Bundy";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Al", target.FirstName);
+            Assert.Equal("Bundy", target.LastName);
+            Assert.Equal("Al Bundy", target.DisplayName);
+        }
+
         /* No, you can not have a title of SR.
         //SR. John Henry William dela Vega, Jr Esq.
         [Fact]
@@ -318,7 +346,7 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("John dela Vega", target.DisplayName);
         }
 		*/
-		[Fact]
+        [Fact]
 		public void FirstPrefixedLastSuffix() {
 			var fullName = "Tammy van Baker II";
 			var target = new FullNameParser(fullName);
