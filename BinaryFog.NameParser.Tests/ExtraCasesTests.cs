@@ -329,6 +329,20 @@ namespace BinaryFog.NameParser.Tests {
             Assert.Equal("Al Bundy", target.DisplayName);
         }
 
+        [Fact]
+        public void Parse_QuincyDeLaRosaSr()
+        {
+            var fullName = "Quincy De La Rosa Sr";
+            var target = new FullNameParser(fullName);
+            target.Parse();
+
+
+            Assert.Equal("Quincy", target.FirstName);
+            Assert.Equal("De La Rosa", target.LastName);
+            Assert.Equal("Sr", target.Suffix);
+            Assert.Equal("Quincy De La Rosa", target.DisplayName);
+        }
+
         /* No, you can not have a title of SR.
         //SR. John Henry William dela Vega, Jr Esq.
         [Fact]
