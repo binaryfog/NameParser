@@ -26,8 +26,7 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness</Description>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Leading and traing spaces trimmed.
-More patterns for two initial patterns added</PackageReleaseNotes>
+    <PackageReleaseNotes>Last Name, First Name Initial Pattern added.</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
     <AssemblyVersion>2.5.1.0</AssemblyVersion>
     <FileVersion>2.5.1.0</FileVersion>
