@@ -6,9 +6,9 @@
 		<Authors>BinaryFog</Authors>
 		<Description>Human name parsing.
 Parses names using English conventions for persons names.
-Many thanks to Tyler Young, Matt Gillette, mguiness.</Description>
+Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness</Description>
 		<Copyright>Copyright © BinaryFog.com 2015 - 2019</Copyright>
-		<Version>2.5</Version>
+		<Version>2.5.1</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
