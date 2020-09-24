@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Diagnostics;
 using System.Linq;
 using Xunit;
 
@@ -13,26 +12,27 @@ namespace BinaryFog.NameParser.Tests
 
         public static IEnumerable<object[]> GetUSRepresentatives()
         {
-            var j = JObject.Parse(DataFiles.GetJsonString("USRepresentatives.json"));
+            var j = JObject.Parse(DataFiles.GetJsonString("USRepresentatives.json")!);
             
-            return ( from e in j["objects"]
-                     select new object[] 
-                     {
-                         e["person"]["firstname"].ToString(),
-                         e["person"]["lastname"].ToString(),
-                         e["person"]["name"].ToString(),
-                         e["person"]["nickname"].ToString(),
-                     }).ToArray();
+            return (j["objects"]!
+                .Select(e => new object[]
+                {
+                    e["person"]?["firstname"]?.ToString(),
+                    e["person"]?["lastname"]?.ToString(),
+                    e["person"]?["name"]?.ToString(),
+                    e["person"]?["nickname"]?.ToString(),
+                })).ToArray();
         }
 
         [Theory]
-		[MemberData(nameof(GetUSRepresentatives),DisableDiscoveryEnumeration = true)]
-		public void GetUSRepresentatives_Test( string firstName, string lastName, string name, string nickname)
+        [MemberData(nameof(GetUSRepresentatives),DisableDiscoveryEnumeration = true)]
+        public void GetUSRepresentatives_Test(string firstName, string lastName, string name, string nickname)
         {
             //ARRANGE
             //Remove party suffix
-            int i = name.IndexOf('[');
-            string nameWithoutParty = name.Substring(0, i).Trim();
+            Debug.Assert(name != null, nameof(name) + " != null");
+            var i = name.IndexOf('[');
+            var nameWithoutParty = name.Substring(0, i).Trim();
 
             //ACT
             var target = new FullNameParser(nameWithoutParty);
@@ -40,14 +40,14 @@ namespace BinaryFog.NameParser.Tests
 
             //ASSERT
             Assert.Equal( firstName, target.FirstName);
-	        Assert.Equal( lastName, target.LastName);
+            Assert.Equal( lastName, target.LastName);
 
             if( lastName == "González-Colón")
                 Assert.Equal("Commish.", target.Title);
             else
                 Assert.Equal("Rep.", target.Title);
 
-            if (String.IsNullOrEmpty( nickname ))
+            if (string.IsNullOrEmpty( nickname ))
                 Assert.Null(target.NickName);
             else
                 Assert.Equal(nickname, target.NickName);
