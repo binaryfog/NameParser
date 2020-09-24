@@ -11,7 +11,8 @@ namespace BinaryFog.NameParser.Patterns {
 			CommonPatternRegexOptions);
 
 		public ParsedFullName Parse(string rawName) {
-			var match = Rx.Match(rawName);
+            if (rawName == null) return null;
+            var match = Rx!.Match(rawName);
 			if (!match.Success) return null;
 			var jobTitle = match.Groups["jobTitle"].Value;
 			var firstName = match.Groups["first"].Value;

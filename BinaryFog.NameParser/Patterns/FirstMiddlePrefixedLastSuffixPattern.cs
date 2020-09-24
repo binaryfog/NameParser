@@ -12,7 +12,8 @@ namespace BinaryFog.NameParser.Patterns {
 
 
 		public ParsedFullName Parse(string rawName) {
-			var match = Rx.Match(rawName);
+            if (rawName == null) return null;
+            var match = Rx!.Match(rawName);
 			if (!match.Success) return null;
 			var prefix = match.Groups["prefix"].Value;
 			var firstName = match.Groups["first"].Value;
