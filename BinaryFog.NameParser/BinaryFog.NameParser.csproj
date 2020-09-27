@@ -1,36 +1,44 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 		<Company>BinaryFog.com</Company>
 		<Authors>BinaryFog</Authors>
+    <Title>BinaryFog.NameParser</Title>
+    <Summary>
+      Human name parsing.
+      Parses names using English conventions for persons names.
+      Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby
+    </Summary>
 		<Description>Human name parsing.
 Parses names using English conventions for persons names.
-Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness</Description>
+Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</Description>
 		<Copyright>Copyright © BinaryFog.com 2015 - 2020</Copyright>
-		<Version>2.5.1</Version>
+		<Version>3.1.0</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
-		<PackageIconUrl>https://avatars2.githubusercontent.com/u/999230?v=3&amp;s=460</PackageIconUrl>
+		<PackageIconUrl></PackageIconUrl>
 		<PackageLicenseUrl></PackageLicenseUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Patterns|AnyCPU'">
-	  <DefineConstants>TRACE;DEBUG;NETSTANDARD1_6;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
+	  <DefineConstants>TRACE;DEBUG;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
 	</PropertyGroup>
 
   <PropertyGroup>
-    <SignAssembly>False</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Last Name, First Name Initial Pattern added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Upgraded to .Net Core 3.1 ; Thanks to Jamin Quimby</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.0.0.0</FileVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <FileVersion>3.1.0.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>999230.jpg</PackageIcon>
+    <Win32Resource></Win32Resource>
   </PropertyGroup>
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
@@ -88,6 +96,10 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness</Description>
 
 	<ItemGroup>
 	  <None Include="..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	  <None Include="Resources\999230.jpg">
 	    <Pack>True</Pack>
 	    <PackagePath></PackagePath>
 	  </None>
