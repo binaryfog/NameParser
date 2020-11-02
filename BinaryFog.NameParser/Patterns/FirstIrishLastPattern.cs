@@ -3,35 +3,38 @@ using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
 using static BinaryFog.NameParser.NameComponentSets;
 
-namespace BinaryFog.NameParser.Patterns {
-	[UsedImplicitly]
-	public class FirstIrishLastPattern : IFullNamePattern {
-		private static readonly Regex Rx = new Regex(
-			@"^" + First + Space + @"(?<irishPrefix>O'|Mc|Mac)" + Last + @"$",
-			CommonPatternRegexOptions);
+namespace BinaryFog.NameParser.Patterns
+{
+    [UsedImplicitly]
+    public class FirstIrishLastPattern : IFullNamePattern
+    {
+        private static readonly string Pattern = $@"^{First}{Space}(?<irishPrefix>O'|Mc|Mac){Last}$";
+        private static readonly Regex Rx = new Regex(Pattern, CommonPatternRegexOptions);
 
-		public ParsedFullName Parse(string rawName) {
+        public ParsedFullName Parse(string rawName)
+        {
             if (rawName == null) return null;
             var match = Rx!.Match(rawName);
-			if (!match.Success) return null;
+            if (!match.Success) return null;
 
 
-			var firstName = match.Groups["first"].Value;
-			var irishPrefix = match.Groups["irishPrefix"].Value;
-			var lastPart = match.Groups["last"].Value;
-			var lastName = $"{irishPrefix}{lastPart}";
+            var firstName = match.Groups["first"].Value;
+            var irishPrefix = match.Groups["irishPrefix"].Value;
+            var lastPart = match.Groups["last"].Value;
+            var lastName = $"{irishPrefix}{lastPart}";
 
-			var scoreMod = 0;
-			ModifyScoreExpectedFirstName(ref scoreMod, firstName);
-			ModifyScoreExpectedLastName(ref scoreMod, lastPart);
+            var scoreMod = 0;
+            ModifyScoreExpectedFirstName(ref scoreMod, firstName);
+            ModifyScoreExpectedLastName(ref scoreMod, lastPart);
 
-			var pn = new ParsedFullName {
-				FirstName = firstName,
-				LastName = lastName,
-				DisplayName = $"{firstName} {lastName}",
-				Score = 300 + scoreMod
-			};
-			return pn;
-		}
-	}
+            var pn = new ParsedFullName
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                DisplayName = $"{firstName} {lastName}",
+                Score = 300 + scoreMod
+            };
+            return pn;
+        }
+    }
 }
