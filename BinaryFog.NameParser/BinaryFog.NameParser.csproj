@@ -1,31 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-	<PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-		<Company>BinaryFog.com</Company>
-		<Authors>BinaryFog</Authors>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Company>BinaryFog.com</Company>
+    <Authors>BinaryFog</Authors>
     <Title>BinaryFog.NameParser</Title>
     <Summary>
       Human name parsing.
       Parses names using English conventions for persons names.
       Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby
     </Summary>
-		<Description>Human name parsing.
+    <Description>Human name parsing.
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</Description>
-		<Copyright>Copyright © BinaryFog.com 2015 - 2020</Copyright>
-		<Version>3.1.0</Version>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
-		<RepositoryType>Git</RepositoryType>
-		<PackageIconUrl></PackageIconUrl>
-		<PackageLicenseUrl></PackageLicenseUrl>
-	</PropertyGroup>
+    <Copyright>Copyright © BinaryFog.com 2015 - 2020</Copyright>
+    <Version>3.1.1</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+  </PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Patterns|AnyCPU'">
-	  <DefineConstants>TRACE;DEBUG;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
-	</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Patterns|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
+  </PropertyGroup>
 
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -40,68 +40,68 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</
     <PackageIcon>999230.jpg</PackageIcon>
     <Win32Resource></Win32Resource>
   </PropertyGroup>
-	<ItemGroup>
-	  <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
-	  <EmbeddedResource Include="Resources\FemaleFirstNames.txt" />
-	  <EmbeddedResource Include="Resources\JobTitles.txt" />
-	  <EmbeddedResource Include="Resources\LastNamePrefixes.txt" />
-	  <EmbeddedResource Include="Resources\MaleFirstNames.txt" />
-	  <EmbeddedResource Include="Resources\PostNominals.txt" />
-	  <EmbeddedResource Include="Resources\Suffixes.txt" />
-	  <EmbeddedResource Include="Resources\Titles.txt" />
-	  <EmbeddedResource Include="Resources\LastNames.txt" />
-	</ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CompanySuffixes.txt" />
+    <EmbeddedResource Include="Resources\FemaleFirstNames.txt" />
+    <EmbeddedResource Include="Resources\JobTitles.txt" />
+    <EmbeddedResource Include="Resources\LastNamePrefixes.txt" />
+    <EmbeddedResource Include="Resources\MaleFirstNames.txt" />
+    <EmbeddedResource Include="Resources\PostNominals.txt" />
+    <EmbeddedResource Include="Resources\Suffixes.txt" />
+    <EmbeddedResource Include="Resources\Titles.txt" />
+    <EmbeddedResource Include="Resources\LastNames.txt" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="JetBrains.Annotations" Version="2020.1.0">
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0">
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Collections" Version="4.3.0">
+    <PackageReference Include="System.Collections" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Collections.Immutable" Version="1.7.1">
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Diagnostics.Debug" Version="4.3.0">
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Diagnostics.Process" Version="4.3.0">
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Diagnostics.StackTrace" Version="4.3.0">
+    <PackageReference Include="System.Diagnostics.StackTrace" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Globalization" Version="4.3.0">
+    <PackageReference Include="System.Globalization" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Linq" Version="4.3.0">
+    <PackageReference Include="System.Linq" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Runtime" Version="4.3.1">
+    <PackageReference Include="System.Runtime" Version="4.3.1">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Runtime.Extensions" Version="4.3.1">
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Runtime.Loader" Version="4.3.0">
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-		<PackageReference Include="System.Threading" Version="4.3.0">
+    <PackageReference Include="System.Threading" Version="4.3.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-	</ItemGroup>
+  </ItemGroup>
 
-	<ItemGroup>
-	  <None Include="..\LICENSE">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
-	  <None Include="Resources\999230.jpg">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="Resources\999230.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>

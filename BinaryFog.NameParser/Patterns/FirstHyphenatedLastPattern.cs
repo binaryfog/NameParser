@@ -3,14 +3,16 @@ using JetBrains.Annotations;
 using static BinaryFog.NameParser.RegexNameComponents;
 using static BinaryFog.NameParser.NameComponentSets;
 
-namespace BinaryFog.NameParser.Patterns {
+namespace BinaryFog.NameParser.Patterns
+{
     [UsedImplicitly]
     public class FirstHyphenatedLastPattern : IFullNamePattern
     {
-        private const string Pattern = @"^" + First + Space + LastHyphenated + @"$";
+        private static readonly string Pattern = $@"^{First}{Space}{LastHyphenated}$";
         private static readonly Regex Rx = new Regex(Pattern, CommonPatternRegexOptions);
 
-        public ParsedFullName Parse(string rawName) {
+        public ParsedFullName Parse(string rawName)
+        {
             if (rawName == null) return null;
             var match = Rx!.Match(rawName);
             if (!match.Success) return null;
@@ -25,7 +27,8 @@ namespace BinaryFog.NameParser.Patterns {
             ModifyScoreExpectedLastName(ref scoreMod, lastPart1);
             ModifyScoreExpectedLastName(ref scoreMod, lastPart2);
 
-            var pn = new ParsedFullName {
+            var pn = new ParsedFullName
+            {
                 FirstName = firstName,
                 LastName = lastName,
                 DisplayName = $"{firstName} {lastPart1}-{lastPart2}",

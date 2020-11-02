@@ -7,7 +7,7 @@ namespace BinaryFog.NameParser.Patterns
     [UsedImplicitly]
     public class AfricanFirstLastPattern : IFullNamePattern
     {
-        private const string Pattern = @"^" + AfricanFirst + Space + Last + @"$";
+        private static readonly string Pattern = $@"^{AfricanFirst}{Space}{Last}$";
         private static readonly Regex Rx = new Regex(Pattern, CommonPatternRegexOptions);
 
         public ParsedFullName Parse(string rawName)
