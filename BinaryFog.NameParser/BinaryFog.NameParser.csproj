@@ -14,7 +14,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</Description>
     <Copyright>Copyright © BinaryFog.com 2015 - 2020</Copyright>
-    <Version>3.1.1</Version>
+    <Version>3.2.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
     <RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -32,10 +32,10 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Upgraded to .Net Core 3.1 ; Thanks to Jamin Quimby</PackageReleaseNotes>
+    <PackageReleaseNotes>Added LastName, FirstName MiddleName Suffix pattern</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <FileVersion>3.1.0.0</FileVersion>
+    <AssemblyVersion>3.2.0.0</AssemblyVersion>
+    <FileVersion>3.2.0.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>999230.jpg</PackageIcon>
     <Win32Resource></Win32Resource>

@@ -475,7 +475,19 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("Esquipulas-Sohom", target.DisplayName);
 		}
 
+		[Fact]
+		public void LastNameCommaFirstNameMiddleNameSuffixPattern_Test()
+		{
+			var fullName = "SAWYER, JONATHAN DAVID JR";
+			var target = new FullNameParser(fullName);
+			target.Parse();
 
+			Assert.Equal("JONATHAN", target.FirstName);
+			Assert.Equal("SAWYER", target.LastName);
+			Assert.Equal("DAVID", target.MiddleName);
+			Assert.Equal("JR", target.Suffix);
+			Assert.Equal("JONATHAN SAWYER", target.DisplayName);
+		}
 
 	}
 }
