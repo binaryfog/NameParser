@@ -66,6 +66,8 @@ namespace BinaryFog.NameParser
         //public static readonly string Suffix = @"(?<suffix>((" + Suffixes + @")((?!\s)\W)?)([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?)*?|([\s]*(?<=[\s\W]+)(" + PostNominals + @")((?!\s)\W)?))";
 
         public static readonly string Suffix = $@"(?<suffix>({Suffixes})((?!\s)\W)?)";
+        public static readonly string Suffix1 = $@"(?<suffix1>({Suffixes})((?!\s)\W)?)";
+        public static readonly string Suffix2 = $@"(?<suffix2>({Suffixes})((?!\s)\W)?)";
 
         public static readonly string Prefix = $@"(?<prefix>{LastNamePrefixes})";
 

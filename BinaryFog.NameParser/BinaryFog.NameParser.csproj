@@ -14,7 +14,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</Description>
     <Copyright>Copyright © BinaryFog.com 2015 - 2021</Copyright>
-    <Version>3.2.1</Version>
+    <Version>3.2.2</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
     <RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -33,11 +33,10 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\BenefitAgent\src\key.pfx</AssemblyOriginatorKeyFile>
     <PackageReleaseNotes>Added patterns:
-Single Hyphenated LastName, FirstName MiddleName Suffix
-Single Hyphenated LastName, FirstName MiddleName</PackageReleaseNotes>
+First Name LastName Suffix Sufix</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <FileVersion>3.2.1.0</FileVersion>
+    <AssemblyVersion>3.2.2.0</AssemblyVersion>
+    <FileVersion>3.2.2.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>999230.jpg</PackageIcon>
     <Win32Resource></Win32Resource>

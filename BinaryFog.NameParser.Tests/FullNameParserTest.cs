@@ -96,6 +96,21 @@ namespace BinaryFog.NameParser.Tests {
 		}
 
 		[Fact]
+		public void Parse_JoeSpaceLastmanSpaceJrSpaceEsq()
+		{
+			var fullName = "Joe Lastman Jr. Esq.";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Joe", target.FirstName);
+			Assert.Equal("Lastman", target.LastName);
+			Assert.Equal("Jr. Esq.", target.Suffix);
+			Assert.Equal("Joe Lastman", target.DisplayName);
+
+		}
+
+
+		[Fact]
 		public void Parse_AffiliatedForkliftServices() {
 			var fullName = "AFFILIATED FORKLIFT SERVICES";
 			var target = new FullNameParser(fullName);
