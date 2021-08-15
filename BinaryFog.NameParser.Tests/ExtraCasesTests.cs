@@ -178,6 +178,37 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal(fullName, target.DisplayName);
 		}
 
+		//Esquivel-Moreno, Maria Delores 
+		[Fact]
+		public void Parse_EsquivelDashMorenoCommaMariaSpaceDelores()
+		{
+			var fullName = "Esquivel-Moreno, Maria Delores";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+
+			Assert.Equal("Maria", target.FirstName);
+			Assert.Equal("Delores", target.MiddleName);
+			Assert.Equal("Esquivel-Moreno", target.LastName);
+			Assert.Equal("Maria Esquivel-Moreno", target.DisplayName);
+		}
+
+		//Esquivel-Moreno, Maria Delores III
+		[Fact]
+		public void Parse_EsquivelDashMorenoCommaMariaSpaceDeloresSpaceThird()
+		{
+			var fullName = "Esquivel-Moreno, Maria Delores III";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+
+			Assert.Equal("Maria", target.FirstName);
+			Assert.Equal("Delores", target.MiddleName);
+			Assert.Equal("III", target.Suffix);
+			Assert.Equal("Esquivel-Moreno", target.LastName);
+			Assert.Equal("Maria Esquivel-Moreno", target.DisplayName);
+		}
+
 		//MANUEL ESQUIPULAS SOHOM
 		[Fact]
 		public void Parse_ManuelSpaceEsquipulasSpaceSohom() {
