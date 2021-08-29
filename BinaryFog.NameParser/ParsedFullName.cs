@@ -1,4 +1,7 @@
-﻿namespace BinaryFog.NameParser
+﻿using System;
+using System.Diagnostics;
+
+namespace BinaryFog.NameParser
 {
 #if DEBUG_FULL_NAME_PATTERN_RESULTS
     [DebuggerDisplay("{" + nameof(DebuggerDisplay) + "}")]

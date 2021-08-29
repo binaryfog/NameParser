@@ -520,5 +520,44 @@ namespace BinaryFog.NameParser.Tests {
 			Assert.Equal("JONATHAN SAWYER", target.DisplayName);
 		}
 
+
+		[Fact]
+		public void FirstNameMiddleNameDASHMiddleNameLastNamePattern_Test()
+		{
+			var fullName = "Lucy Sarah-Jane SAWYER";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Lucy", target.FirstName);
+			Assert.Equal("SAWYER", target.LastName);
+			Assert.Equal("Sarah-Jane", target.MiddleName);
+			Assert.Equal("Lucy Sarah-Jane SAWYER", target.DisplayName);
+		}
+
+		[Fact]
+		public void FirstNameChineseMiddleNameDASHMiddleNameLastNamePattern_Test()
+		{
+			var fullName = "Samantha Zhou-Yun Chou";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Samantha", target.FirstName);
+			Assert.Equal("Chou", target.LastName);
+			Assert.Equal("Zhou-Yun", target.MiddleName);
+			Assert.Equal("Samantha Zhou-Yun Chou", target.DisplayName);
+		}
+
+		[Fact]
+		public void FirstNameLastNamePattern_Test()
+		{
+			var fullName = "Catalin Hatmanu";
+			var target = new FullNameParser(fullName);
+			target.Parse();
+
+			Assert.Equal("Catalin", target.FirstName);
+			Assert.Equal("Hatmanu", target.LastName);
+			Assert.Equal("Catalin Hatmanu", target.DisplayName);
+		}
+
 	}
 }

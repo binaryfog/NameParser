@@ -33,6 +33,7 @@ namespace BinaryFog.NameParser
         public const string TwoMiddle = @"(?<middle1>" + Name + @")" + Space + @"(?<middle2>" + Name + @")";
         public const string Hyphen = "[-\u00AD\u058A\u1806\u2010\u2011\u30FB\uFE63\uFF0D\uFF65]";
         public const string HyphenOptionallySpaced = OptionalSpace + Hyphen + OptionalSpace;
+        public const string TwoHyphenOptionallySpacedMiddle = @"(?<middle1>" + Name + @")" + HyphenOptionallySpaced + @"(?<middle2>" + Name + @")";
 
         public const string LastHyphenated =
             @"(?<last>(?<last1>" + Name + @")" + HyphenOptionallySpaced + @"(?<last2>" + Name + @"))";
