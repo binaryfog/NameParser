@@ -14,7 +14,7 @@
 Parses names using English conventions for persons names.
 Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</Description>
     <Copyright>Copyright © BinaryFog.com 2015 - 2021</Copyright>
-    <Version>3.2.3</Version>
+    <Version>3.2.4</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/binaryfog/NameParser</PackageProjectUrl>
     <RepositoryUrl>https://github.com/binaryfog/NameParser</RepositoryUrl>
@@ -35,11 +35,12 @@ Many thanks to Tyler Young, Matt Gillette, mguiness,Paul Forness, Jamin Quimby</
     <PackageReleaseNotes>Added patterns:
 Two Hyphen Optionally Spaced Middle pattern</PackageReleaseNotes>
     <PackageTags>Name parser, name parsing</PackageTags>
-    <AssemblyVersion>3.2.3.0</AssemblyVersion>
-    <FileVersion>3.2.3.0</FileVersion>
+    <AssemblyVersion>3.2.4.0</AssemblyVersion>
+    <FileVersion>3.2.4.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>999230.jpg</PackageIcon>
     <Win32Resource></Win32Resource>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>DEBUG;TRACE;DEBUG_FULL_NAME_PATTERN_RESULTS</DefineConstants>
@@ -102,6 +103,10 @@ Two Hyphen Optionally Spaced Middle pattern</PackageReleaseNotes>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
     <None Include="Resources\999230.jpg">
       <Pack>True</Pack>
